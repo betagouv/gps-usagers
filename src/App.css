@@ -1,25 +1,94 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.Container {
+  height: 575px;
+  width: 1170px;
+  margin: 0 auto;
+  border: 1px solid #cdcdcd;
+  background-color: #f4f2e6;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Header {
+  height: 3rem;
+  padding: 0 2rem;
+}
+
+.Content {
+  padding: 1rem 4rem;
+}
+
+.Info {
+  background-color: rgba(72, 185, 95, 0.7);
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.Button {
+  display: block;
+  background-color: #356eab;
+  border: 2px solid transparent;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8em;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.Choice {
+  padding: 0 0.5rem;
+  margin: 1rem 8rem 1rem 2rem;
+  width: auto;
+  border: 1px solid #979797;
+  background-color: #e7e3c8;
+  cursor: pointer;
+}
+
+.Choice > h4 {
+  margin: 0.8rem 0.4rem;
+}
+
+.Card {
+  display: inline-block;
+  text-align: center;
+  margin: 2rem;
+  height: 8rem;
+  width: 8rem;
+  padding: 2rem;
+  border: 1px solid #979797;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  color: lightGray;
+}
+
+.Card:hover {
+  color: gray;
+}
+
+.CheckTrue:hover {
+  color: green;
+}
+
+.CheckFalse:hover {
+  color: red;
+}
+
+.Card h4 {
+  color: black;
+}
+
+.InputText {
+  display: block;
+  width: 40rem;
+  height: 2rem;
+  padding: 0;
+  font-size: 1.3rem;
 }
 
 @keyframes App-logo-spin {

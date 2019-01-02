@@ -1,0 +1,17 @@
+.Previous {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  height: 2rem;
+  margin-top: 1.2rem;
+}
+
+.PreviousLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PreviousLink span {
+  margin-left: 0.8rem;
+}
