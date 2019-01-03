@@ -1,6 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./Styles.css";
 
 const SelectorCard = ({ label, icon, onClick, className }) => {
   return (

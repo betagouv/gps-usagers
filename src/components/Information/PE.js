@@ -11,7 +11,19 @@ const InfoPE = ({ transition }) => {
       <div className="Content">
         <h1>Contactez Pôle emploi</h1>
         <p>
-          Appelez le numéro suivant :<h2 className="Phone">02 31 25 39 39</h2>
+          Pour joindre le pôle emploi par téléphone, appelez le numéro suivant :
+          <h2 className="Phone">39 49</h2>
+        </p>
+        <br />
+        <p>
+          Vous pouvez obtenir plus de renseignements sur leur site : <br />
+          <a
+            href="https://www.pole-emploi.fr/accueil/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            https://www.pole-emploi.fr/accueil/
+          </a>
         </p>
       </div>
     </div>

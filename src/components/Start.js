@@ -15,7 +15,7 @@ const Start = ({ transition }) => {
       </div>
       <div className="Content">
         <h3>
-          <FontAwesomeIcon icon={faArrowRight} /> Quel est l’object de votre
+          <FontAwesomeIcon icon={faArrowRight} /> Quel est l’objet de votre
           demande ?
         </h3>
         <Card

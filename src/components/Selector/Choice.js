@@ -1,5 +1,6 @@
 import React from "react";
 import classNames from "classnames";
+import "./Styles.css";
 
 const SelectorChoice = ({ label, onClick, className }) => {
   return (

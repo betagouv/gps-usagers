@@ -61,7 +61,7 @@ const statechart = {
       onEntry: "infoCaf"
     },
     infoCafOnline: {
-      on: { BACK: "rsaLetter" },
+      on: { BACK: "rsaOther" },
       onEntry: "infoCafOnline"
     },
     infoMsa: {
