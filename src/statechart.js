@@ -10,7 +10,7 @@ const statechart = {
     rsa: {
       on: {
         RSA_TRUE: "rsaSelection",
-        RSA_FALSE: "start",
+        RSA_FALSE: "rsaOther",
         BACK: "start"
       },
       onEntry: "rsa"
@@ -24,6 +24,16 @@ const statechart = {
         BACK: "rsa"
       },
       onEntry: "rsaSelection"
+    },
+    rsaOther: {
+      on: {
+        INFO_PE: "infoPe",
+        INFO_EPN: "infoEpn",
+        INFO_CAF_ONLINE: "infoCafOnline",
+        INFO_ONLINE: "infoOnline",
+        BACK: "rsa"
+      },
+      onEntry: "rsaOther"
     },
     rsaLetter: {
       on: {
@@ -50,6 +60,10 @@ const statechart = {
       on: { BACK: "rsaLetter" },
       onEntry: "infoCaf"
     },
+    infoCafOnline: {
+      on: { BACK: "rsaLetter" },
+      onEntry: "infoCafOnline"
+    },
     infoMsa: {
       on: { BACK: "rsaLetter" },
       onEntry: "infoMsa"
@@ -57,6 +71,18 @@ const statechart = {
     infoCpam: {
       on: { BACK: "rsaSelection" },
       onEntry: "infoCpam"
+    },
+    infoPe: {
+      on: { BACK: "rsaOther" },
+      onEntry: "infoPe"
+    },
+    infoEpn: {
+      on: { BACK: "rsaOther" },
+      onEntry: "infoEpn"
+    },
+    infoOnline: {
+      on: { BACK: "rsaOther" },
+      onEntry: "infoOnline"
     }
   }
 };

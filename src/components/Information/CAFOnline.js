@@ -2,35 +2,36 @@ import React from "react";
 import { Back } from "../../components";
 import "./Styles.css";
 
-const InfoCPAM = ({ transition }) => {
+const InfoCAFOnline = ({ transition }) => {
   return (
     <div className="Container Info">
       <div className="Header">
         <Back transition={transition} />
       </div>
       <div className="Content">
-        <h1>Contactez l'Assurance Maladie</h1>
-        Vous pouvez obtenir plus de renseignements sur le site de l'Assurance
-        Maladie :
+        <h1>
+          Utilisez le simulateur de la Caisse d'Allocations Familiales (CAF)
+        </h1>
+        La CAF possède un simulateur vous permettant si vous êtes éligibles au
+        RSA et pour quel montant :
         <p>
           <button
             className="Button"
             onClick={() =>
               window.open(
-                "https://www.ameli.fr/paris/assure/adresses-et-contacts/laide-pour-une-complementaire-sante-cmuc/acs/obtenir-la-cmuc-ou-lacs",
+                "http://www.caf.fr/allocataires/mes-services-en-ligne/estimer-vos-droits/simulation-rsa",
                 "_blank"
               )
             }
           >
-            Accèder au site
+            Simulateur de la CAF
           </button>
         </p>
         <br />
         <p>
-          Si vous souhaitez joindre l'Assurance Maladie, vous pouvez également
-          contacter le :
+          Pour joindre la CAF par téléphone, appelez le numéro suivant :
           <h2 className="Phone">
-            3646 <span>(6 cts / minute + prix appel)</span>
+            0810 25 14 10 <span>(6cts / minute + prix de l'appel)</span>
           </h2>
         </p>
       </div>
@@ -38,4 +39,4 @@ const InfoCPAM = ({ transition }) => {
   );
 };
 
-export default InfoCPAM;
+export default InfoCAFOnline;

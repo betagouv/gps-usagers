@@ -15,8 +15,10 @@ const InfoCAF = ({ transition }) => {
           <button
             className="Button"
             onClick={() =>
-              (window.location.href =
-                "https://wwwd.caf.fr/wps/portal/caffr/login/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAfGjzOID_A3dPbyDDdz9A1yNDTxdzQNDXJ19DS0CjYAKIoEKDHAARwNC-sP1o8BK8JjgpR-VnpOfBHZNpGNekrFFun5UUWpaalFqkV5pEVA4o6SkwErVQNWgvLxcLzkxTS-tSNUAm-qM_OIS_QiEKv2C3AgD3aikynJHRUUAO_ejAA!!/dl5/d5/L2dBISEvZ0FBIS9nQSEh/#/signature")
+              window.open(
+                "https://wwwd.caf.fr/wps/portal/caffr/login/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAfGjzOID_A3dPbyDDdz9A1yNDTxdzQNDXJ19DS0CjYAKIoEKDHAARwNC-sP1o8BK8JjgpR-VnpOfBHZNpGNekrFFun5UUWpaalFqkV5pEVA4o6SkwErVQNWgvLxcLzkxTS-tSNUAm-qM_OIS_QiEKv2C3AgD3aikynJHRUUAO_ejAA!!/dl5/d5/L2dBISEvZ0FBIS9nQSEh/#/signature",
+                "_blank"
+              )
             }
           >
             Accèder à votre compte
@@ -26,7 +28,11 @@ const InfoCAF = ({ transition }) => {
         <p>
           Si vous avez oublié votre numéro d'allocataire ou votre mot de passe,
           suivez les instructions sur{" "}
-          <a href="http://www.caf.fr/allocataires/aide/utiliser-mon-compte">
+          <a
+            href="http://www.caf.fr/allocataires/aide/utiliser-mon-compte"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             cette page
           </a>
         </p>
@@ -39,7 +45,11 @@ const InfoCAF = ({ transition }) => {
         <p>
           Vous pouvez également retrouver la liste des points d'accueil CAF sur
           cette{" "}
-          <a href="https://www.caf.fr/allocataires/caf-du-calvados/points-d-accueil">
+          <a
+            href="https://www.caf.fr/allocataires/caf-du-calvados/points-d-accueil"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             cette page
           </a>
           .

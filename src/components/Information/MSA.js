@@ -15,8 +15,10 @@ const InfoMSA = ({ transition }) => {
           <button
             className="Button"
             onClick={() =>
-              (window.location.href =
-                "https://monespaceprive.msa.fr/lfy/web/msa/accueil?modalId=2")
+              window.open(
+                "https://monespaceprive.msa.fr/lfy/web/msa/accueil?modalId=2",
+                "_blank"
+              )
             }
           >
             Accèder à votre compte
