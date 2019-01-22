@@ -16,7 +16,7 @@ const InfoPE = ({ transition }) => {
         </p>
         <br />
         <p>
-          Vous pouvez obtenir plus de renseignements sur leur site : <br />
+          Vous pouvez obtenir plus de renseignements sur leur site :
           <a
             href="https://www.pole-emploi.fr/accueil/"
             rel="noopener noreferrer"

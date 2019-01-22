@@ -19,7 +19,7 @@ const RSALetter = ({ transition }) => {
           onClick={() => transition("RSA_GESTIONNAIRE")}
         />
         <Choice label="La CAF" onClick={() => transition("INFO_CAF")} />
-        <Choice label="Le MSA" onClick={() => transition("INFO_MSA")} />
+        <Choice label="La MSA" onClick={() => transition("INFO_MSA")} />
       </div>
     </div>
   );

@@ -36,7 +36,7 @@ const RSASelection = ({ transition }) => {
           onClick={() => transition("RSA_CIRCONSCRIPTION")}
         />
         <Choice
-          label="Je souhaite bénéficier de la CMU"
+          label="Je souhaite bénéficier de la CMU (Couverture Maladie Universelle)"
           onClick={() => transition("INFO_CPAM")}
         />
       </div>

@@ -27,7 +27,7 @@ const RSAOther = ({ transition }) => {
           onClick={() => transition("INFO_CAF_ONLINE")}
         />
         <Choice
-          label="Je veux avoir de informations générales sur le RSA"
+          label="Je veux avoir des informations générales sur le RSA"
           onClick={() => transition("INFO_ONLINE")}
         />
       </div>
