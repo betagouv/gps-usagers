@@ -1,22 +1,87 @@
-import React from "react";
+import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Autosuggest from "react-autosuggest";
+import { Map, TileLayer } from "react-leaflet";
 import { Back } from "../../components";
+import "./Styles.css";
 
-const RSACirconscription = ({ transition }) => {
-  return (
-    <div className="Container">
-      <div className="Header">
-        <Back transition={transition} />
+class RSACirconscription extends Component {
+  state = {
+    value: "",
+    suggestions: []
+  };
+
+  onChange = (event, { newValue }) => {
+    this.setState({
+      value: newValue
+    });
+  };
+
+  onSuggestionsFetchRequested = ({ value }) => {
+    fetch(`http://api-adresse.data.gouv.fr/search/?q=${value}&limit=10`)
+      .then(response => response.json())
+      .then(data => this.setState({ suggestions: data.features }));
+  };
+
+  onSuggestionsClearRequested = () => {
+    this.setState({
+      suggestions: []
+    });
+  };
+
+  onClick = suggestion => {
+    const [longitude, latitude] = suggestion.geometry.coordinates;
+
+    this.refs.map.leafletElement.setView([latitude, longitude], 16);
+    return suggestion.properties.label;
+  };
+
+  render() {
+    const { transition } = this.props;
+    const { value, suggestions } = this.state;
+
+    const inputProps = {
+      placeholder: "Veuillez renseigner votre adresse",
+      value,
+      onChange: this.onChange
+    };
+
+    return (
+      <div className="container">
+        <div className="header">
+          <Back transition={transition} />
+        </div>
+        <div className="content">
+          <h3>
+            <FontAwesomeIcon icon={faArrowRight} /> Quelle est votre adresse ?
+          </h3>
+          <Autosuggest
+            suggestions={suggestions}
+            onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
+            onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+            getSuggestionValue={this.onClick}
+            renderSuggestion={suggestion => (
+              <span>{suggestion.properties.label}</span>
+            )}
+            inputProps={inputProps}
+          />
+
+          <Map
+            ref="map"
+            className="mapSuggest"
+            center={[49.183333, -0.35]}
+            zoom={9}
+          >
+            <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            />
+          </Map>
+        </div>
       </div>
-      <div className="Content">
-        <h3>
-          <FontAwesomeIcon icon={faArrowRight} /> Quelle est votre adresse ?
-        </h3>
-        <input className="InputText" type="text" />
-      </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default RSACirconscription;

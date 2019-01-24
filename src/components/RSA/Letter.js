@@ -5,11 +5,11 @@ import { Choice, Back } from "../../components";
 
 const RSALetter = ({ transition }) => {
   return (
-    <div className="Container">
-      <div className="Header">
+    <div className="container">
+      <div className="header">
         <Back transition={transition} />
       </div>
-      <div className="Content">
+      <div className="content">
         <h3>
           <FontAwesomeIcon icon={faArrowRight} /> Qui vous a envoyé ce courrier
           ?

@@ -9,11 +9,11 @@ import { Card } from "../components";
 
 const Start = ({ transition }) => {
   return (
-    <div className="Container">
-      <div className="Header">
+    <div className="container">
+      <div className="header">
         <h2>Comment pouvons nous vous aider ?</h2>
       </div>
-      <div className="Content">
+      <div className="content">
         <h3>
           <FontAwesomeIcon icon={faArrowRight} /> Quel est l’objet de votre
           demande ?

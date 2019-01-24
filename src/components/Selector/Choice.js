@@ -4,7 +4,7 @@ import "./Styles.css";
 
 const SelectorChoice = ({ label, onClick, className }) => {
   return (
-    <div className={classNames("Choice", className)} onClick={onClick}>
+    <div className={classNames("choice", className)} onClick={onClick}>
       <h4>{label}</h4>
     </div>
   );

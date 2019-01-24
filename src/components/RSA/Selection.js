@@ -5,11 +5,11 @@ import { Choice, Back } from "../../components";
 
 const RSASelection = ({ transition }) => {
   return (
-    <div className="Container">
-      <div className="Header">
+    <div className="container">
+      <div className="header">
         <Back transition={transition} />
       </div>
-      <div className="Content">
+      <div className="content">
         <h3>
           <FontAwesomeIcon icon={faArrowRight} /> Quel est l’object de votre
           demande ?
@@ -25,7 +25,7 @@ const RSASelection = ({ transition }) => {
         <Choice
           label="Je n'ai pas reçu mon dernier versement ou mon dernier versement est
           inférieur à mon allocation habituelle"
-          onClick={() => transition("INFO_CAF")}
+          onClick={() => transition("RSA_SITUATION")}
         />
         <Choice
           label="Je souhaite avoir une aide financière supplémentaire"

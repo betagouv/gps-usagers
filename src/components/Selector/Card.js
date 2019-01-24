@@ -5,7 +5,7 @@ import "./Styles.css";
 
 const SelectorCard = ({ label, icon, onClick, className }) => {
   return (
-    <div className={classNames("Card", className)} onClick={onClick}>
+    <div className={classNames("card", className)} onClick={onClick}>
       <FontAwesomeIcon icon={icon} size="6x" />
       <h4>{label}</h4>
     </div>

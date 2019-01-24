@@ -59,16 +59,16 @@ export default class InfoEPN extends Component<{}, State> {
     const { zoom, value } = this.state;
     const { transition } = this.props;
     return (
-      <div className="Container Info">
-        <div className="Header">
+      <div className="container info">
+        <div className="header">
           <Back transition={transition} />
         </div>
-        <div className="Content">
+        <div className="content">
           <h3>
             <FontAwesomeIcon icon={faArrowRight} /> Quelle est votre adresse ?{" "}
             {value}
           </h3>
-          <Map className="Map" center={position} zoom={zoom}>
+          <Map className="map" center={position} zoom={zoom}>
             <TileLayer
               attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

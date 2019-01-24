@@ -4,6 +4,7 @@ import Start from "./components/Start";
 import RSAValidation from "./components/RSA/Validation";
 import RSASelection from "./components/RSA/Selection";
 import RSALetter from "./components/RSA/Letter";
+import RSASituation from "./components/RSA/Situation";
 import RSAGestionnaire from "./components/RSA/Gestionnaire";
 import RSACirconscription from "./components/RSA/Circonscription";
 import RSAOther from "./components/RSA/Other";
@@ -22,7 +23,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <div className="App">
+        <div className="app">
           <Action is="start">
             <Start {...this.props} />
           </Action>
@@ -34,6 +35,9 @@ class App extends Component {
           </Action>
           <Action is="rsaLetter">
             <RSALetter {...this.props} />
+          </Action>
+          <Action is="rsaSituation">
+            <RSASituation {...this.props} />
           </Action>
           <Action is="rsaGestionnaire">
             <RSAGestionnaire {...this.props} />

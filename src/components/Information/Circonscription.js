@@ -4,16 +4,16 @@ import "./Styles.css";
 
 const InfoCirconscription = ({ transition }) => {
   return (
-    <div className="Container Info">
-      <div className="Header">
+    <div className="container info">
+      <div className="header">
         <Back transition={transition} />
       </div>
-      <div className="Content">
+      <div className="content">
         <h1>Contactez la Mutualité sociale agricole (MSA)</h1>
         Rendez-vous sur votre compte MSA :
         <p>
           <button
-            className="Button"
+            className="button"
             onClick={() =>
               window.open(
                 "https://monespaceprive.msa.fr/lfy/web/msa/accueil?modalId=2",
@@ -27,7 +27,7 @@ const InfoCirconscription = ({ transition }) => {
         <br />
         <p>
           Pour joindre la MSA par téléphone, appelez le numéro suivant :
-          <h2 className="Phone">02 31 25 39 39</h2>
+          <h2 className="phone">02 31 25 39 39</h2>
         </p>
       </div>
     </div>

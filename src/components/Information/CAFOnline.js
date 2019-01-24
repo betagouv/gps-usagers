@@ -4,11 +4,11 @@ import "./Styles.css";
 
 const InfoCAFOnline = ({ transition }) => {
   return (
-    <div className="Container Info">
-      <div className="Header">
+    <div className="container info">
+      <div className="header">
         <Back transition={transition} />
       </div>
-      <div className="Content">
+      <div className="content">
         <h1>
           Utilisez le simulateur de la Caisse d'Allocations Familiales (CAF)
         </h1>
@@ -16,7 +16,7 @@ const InfoCAFOnline = ({ transition }) => {
         RSA et pour quel montant :
         <p>
           <button
-            className="Button"
+            className="button"
             onClick={() =>
               window.open(
                 "http://www.caf.fr/allocataires/mes-services-en-ligne/estimer-vos-droits/simulation-rsa",
@@ -30,7 +30,7 @@ const InfoCAFOnline = ({ transition }) => {
         <br />
         <p>
           Pour joindre la CAF par téléphone, appelez le numéro suivant :
-          <h2 className="Phone">
+          <h2 className="phone">
             0810 25 14 10 <span>(6cts / minute + prix de l'appel)</span>
           </h2>
         </p>

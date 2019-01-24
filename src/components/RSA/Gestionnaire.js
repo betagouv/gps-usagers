@@ -5,15 +5,15 @@ import { Back } from "../../components";
 
 const RSAGestionnaire = ({ transition }) => {
   return (
-    <div className="Container">
-      <div className="Header">
+    <div className="container">
+      <div className="header">
         <Back transition={transition} />
       </div>
-      <div className="Content">
+      <div className="content">
         <h3>
           <FontAwesomeIcon icon={faArrowRight} /> Quelle est votre adresse ?
         </h3>
-        <input className="InputText" type="text" />
+        <input className="inputText" type="text" />
       </div>
     </div>
   );

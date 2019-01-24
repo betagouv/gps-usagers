@@ -4,15 +4,15 @@ import "./Styles.css";
 
 const InfoPE = ({ transition }) => {
   return (
-    <div className="Container Info">
-      <div className="Header">
+    <div className="container info">
+      <div className="header">
         <Back transition={transition} />
       </div>
-      <div className="Content">
+      <div className="content">
         <h1>Contactez Pôle emploi</h1>
         <p>
           Pour joindre le pôle emploi par téléphone, appelez le numéro suivant :
-          <h2 className="Phone">39 49</h2>
+          <h2 className="phone">39 49</h2>
         </p>
         <br />
         <p>
