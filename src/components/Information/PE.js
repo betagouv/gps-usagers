@@ -8,11 +8,11 @@ const InfoPE = ({ transition }) => {
       <div className="header">
         <Back transition={transition} />
       </div>
-      <div className="content">
-        <h1>Contactez Pôle emploi</h1>
+      <div className="Content">
+        <h1>Contactez Pôle Emploi</h1>
         <p>
-          Pour joindre le pôle emploi par téléphone, appelez le numéro suivant :
-          <h2 className="phone">39 49</h2>
+          Pour joindre Pôle Emploi par téléphone, appelez le numéro suivant :
+          <h2 className="Phone">39 49</h2>
         </p>
         <br />
         <p>
