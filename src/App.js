@@ -11,6 +11,7 @@ import RSAOther from "./components/RSA/Other";
 
 import InfoCAF from "./components/Information/CAF";
 import InfoCAFOnline from "./components/Information/CAFOnline";
+import InfoGestionnaire from "./components/Information/Gestionnaire";
 import InfoMSA from "./components/Information/MSA";
 import InfoCPAM from "./components/Information/CPAM";
 import InfoPE from "./components/Information/PE";
@@ -51,6 +52,9 @@ class App extends Component {
 
           <Action is="infoCaf">
             <InfoCAF {...this.props} />
+          </Action>
+          <Action is="infoGestionnaire">
+            <InfoGestionnaire {...this.props} />
           </Action>
           <Action is="infoCafOnline">
             <InfoCAFOnline {...this.props} />

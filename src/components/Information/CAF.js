@@ -4,7 +4,7 @@ import "./Styles.css";
 
 const InfoCAF = ({ transition }) => {
   return (
-    <div className="container info">
+    <div className="container final">
       <div className="header">
         <Back transition={transition} />
       </div>

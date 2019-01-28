@@ -16,7 +16,7 @@ const RSALetter = ({ transition }) => {
         </h3>
         <Choice
           label="Le département du Calvados"
-          onClick={() => transition("RSA_GESTIONNAIRE")}
+          onClick={() => transition("INFO_GESTIONNAIRE")}
         />
         <Choice label="La CAF" onClick={() => transition("INFO_CAF")} />
         <Choice label="La MSA" onClick={() => transition("INFO_MSA")} />

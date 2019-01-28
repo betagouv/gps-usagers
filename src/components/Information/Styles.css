@@ -3,12 +3,7 @@
 }
 
 .map {
-  height: 24rem;
-}
-
-.info h4 {
-  margin: 0 0 5px;
-  color: #777;
+  height: 28rem;
 }
 
 .content h1,
@@ -20,4 +15,21 @@ h3 {
   font-size: 0.5em;
   font-weight: 500;
   margin-left: 0.5rem;
+}
+
+.heading1 {
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.heading2 {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.address {
+  display: block;
+  font-size: 15px;
 }

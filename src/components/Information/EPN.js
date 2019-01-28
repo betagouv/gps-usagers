@@ -1,90 +1,106 @@
 import React, { Component } from "react";
-import { Map, TileLayer, GeoJSON } from "react-leaflet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Autosuggest from "react-autosuggest";
+import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 import { Back } from "../../components";
+import epnData from "../../assets/epn";
 import "./Styles.css";
 
-import { getGeoJson } from "../../assets/data";
-
-export default class InfoEPN extends Component<{}, State> {
+class InfoEpn extends Component {
   state = {
-    lat: 49.183333,
-    lng: -0.35,
-    zoom: 9,
-    value: ""
+    value: "",
+    suggestions: []
   };
 
-  getStyle = (feature, layer) => {
-    return {
-      color: "#003d7e",
-      weight: 1,
-      opacity: 0.65
-    };
-  };
-
-  highlightFeature = e => {
-    const layer = e.target;
-    const { value } = this.state;
-    layer.setStyle({
-      weight: 2,
-      color: "#003d7e",
-      dashArray: "",
-      fillOpacity: 0.5
+  onChange = (event, { newValue }) => {
+    this.setState({
+      value: newValue
     });
-    if (value !== layer.feature.properties.tags.cas) {
-      this.setState(() => ({ value: layer.feature.properties.tags.cas }));
-    }
   };
 
-  resetHighlight = e => {
-    this.refs.geojson.leafletElement.resetStyle(e.target);
-    this.setState(() => ({ value: "" }));
+  onSuggestionsFetchRequested = ({ value }) => {
+    fetch(`http://api-adresse.data.gouv.fr/search/?q=${value}&limit=10`)
+      .then(response => response.json())
+      .then(data => this.setState({ suggestions: data.features }));
   };
 
-  // zoomToFeature = e => {
-  //   map.fitBounds(e.target.getBounds());
-  // };
-
-  onEachFeature = (feature, layer) => {
-    layer.on({
-      mouseover: this.highlightFeature,
-      mouseout: this.resetHighlight
-      // click: this.zoomToFeature
+  onSuggestionsClearRequested = () => {
+    this.setState({
+      suggestions: []
     });
+  };
+
+  onClick = suggestion => {
+    const [longitude, latitude] = suggestion.geometry.coordinates;
+
+    this.refs.map.leafletElement.setView([latitude, longitude], 13);
+    return suggestion.properties.label;
   };
 
   render() {
-    const position = [this.state.lat, this.state.lng];
-    const { zoom, value } = this.state;
     const { transition } = this.props;
+    const { value, suggestions } = this.state;
+
+    const inputProps = {
+      placeholder: "Veuillez renseigner votre adresse",
+      value,
+      onChange: this.onChange
+    };
+
     return (
-      <div className="container info">
+      <div className="container final">
         <div className="header">
           <Back transition={transition} />
         </div>
         <div className="content">
           <h3>
-            <FontAwesomeIcon icon={faArrowRight} /> Quelle est votre adresse ?{" "}
-            {value}
+            <FontAwesomeIcon icon={faArrowRight} /> Quelle est votre adresse ?
           </h3>
-          <Map className="map" center={position} zoom={zoom}>
+          <Autosuggest
+            suggestions={suggestions}
+            onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
+            onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+            getSuggestionValue={this.onClick}
+            renderSuggestion={suggestion => (
+              <span>{suggestion.properties.label}</span>
+            )}
+            inputProps={inputProps}
+          />
+
+          <Map
+            ref="map"
+            className="mapSuggest"
+            center={[49.183333, -0.35]}
+            zoom={9}
+          >
             <TileLayer
-              attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             />
-            <GeoJSON
-              ref="geojson"
-              key={Math.random()
-                .toString(36)
-                .substr(2, 9)}
-              data={getGeoJson()}
-              onEachFeature={this.onEachFeature}
-              style={this.getStyle}
-            />
+            {epnData &&
+              epnData.map(data => (
+                <Marker
+                  key={data.name}
+                  position={[data.latitude, data.longitude]}
+                >
+                  <Popup>
+                    <div className="heading1">{data.name}</div>
+                    <div className="heading2">{data.structure}</div>
+                    <div className="address">
+                      {data.address}
+                      <br />
+                      {data.zip} {data.city}
+                    </div>
+                    <div className="heading2">{data.phone}</div>
+                  </Popup>
+                </Marker>
+              ))}
           </Map>
         </div>
       </div>
     );
   }
 }
+
+export default InfoEpn;

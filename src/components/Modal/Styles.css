@@ -1,0 +1,26 @@
+.modalContent {
+  position: relative;
+  text-align: center;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90px;
+}
+
+.modalClose {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.modalContent > .phone {
+  font-size: 24px;
+}
+
+.modalContent > .close {
+  font-size: 24px;
+}
