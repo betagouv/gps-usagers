@@ -55,7 +55,7 @@ class InfoEpn extends Component {
         </div>
         <div className="content">
           <h3>
-            <FontAwesomeIcon icon={faArrowRight} /> Quelle est votre adresse ?
+            <FontAwesomeIcon icon={faArrowRight} /> Rendez-vous dans l‘EPN ou le Point Info 14 le plus proche
           </h3>
           <Autosuggest
             suggestions={suggestions}
