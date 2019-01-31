@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { Component } from "react";
 import Autosuggest from "react-autosuggest";
-import { Map, TileLayer, Marker, Popup } from "react-leaflet";
-import { Back } from "../../components";
+import { Map, Marker, Popup, TileLayer } from "react-leaflet";
 import epnData from "../../assets/epn";
+import { Back } from "../../components";
 import "./Styles.css";
 
 class InfoEpn extends Component {

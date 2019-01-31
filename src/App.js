@@ -1,26 +1,29 @@
 import React, { Component } from "react";
 import { Action, withStateMachine } from "react-automata";
-import Start from "./components/Start";
-import RSAValidation from "./components/RSA/Validation";
-import RSASelection from "./components/RSA/Selection";
-import RSALetter from "./components/RSA/Letter";
-import RSASituation from "./components/RSA/Situation";
-import RSAGestionnaire from "./components/RSA/Gestionnaire";
-import RSACirconscription from "./components/RSA/Circonscription";
-import RSAOther from "./components/RSA/Other";
-
+import "./App.css";
 import InfoCAF from "./components/Information/CAF";
 import InfoCAFOnline from "./components/Information/CAFOnline";
+import InfoCPAM from "./components/Information/CPAM";
+import InfoEPN from "./components/Information/EPN";
 import InfoGestionnaire from "./components/Information/Gestionnaire";
 import InfoMSA from "./components/Information/MSA";
-import InfoCPAM from "./components/Information/CPAM";
-import InfoPE from "./components/Information/PE";
-import InfoEPN from "./components/Information/EPN";
 import InfoOnline from "./components/Information/Online";
+import InfoPE from "./components/Information/PE";
+import RSACirconscription from "./components/RSA/Circonscription";
+import RSAGestionnaire from "./components/RSA/Gestionnaire";
+import RSALetter from "./components/RSA/Letter";
+import RSAOther from "./components/RSA/Other";
+import RSASelection from "./components/RSA/Selection";
+import RSASituation from "./components/RSA/Situation";
+import RSAValidation from "./components/RSA/Validation";
+import Start from "./components/Start";
 import statechart from "./statechart";
-import "./App.css";
 
 class App extends Component {
+  handleClick = () => {
+    this.props.transition("BACK");
+  };
+
   render() {
     return (
       <>
@@ -80,4 +83,4 @@ class App extends Component {
   }
 }
 
-export default withStateMachine(statechart)(App);
+export default withStateMachine(statechart, { devTools: true })(App);

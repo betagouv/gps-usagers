@@ -1,13 +1,13 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Choice, Back } from "../../components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import { Back, Choice } from "../../components";
 
-const RSASelection = ({ transition }) => {
+const RSASelection = ({ transition, machineState }) => {
   return (
     <div className="container">
       <div className="header">
-        <Back transition={transition} />
+        <Back transition={transition} machineState={machineState} />
       </div>
       <div className="content">
         <h3>
@@ -27,14 +27,14 @@ const RSASelection = ({ transition }) => {
           inférieur à mon allocation habituelle"
           onClick={() => transition("RSA_SITUATION")}
         />
-        <Choice
+        {/* <Choice
           label="Je souhaite avoir une aide financière supplémentaire"
           onClick={() => transition("RSA_CIRCONSCRIPTION")}
         />
         <Choice
           label="J'ai besoin d'un suivi pour remplir des démarches administratives"
           onClick={() => transition("RSA_CIRCONSCRIPTION")}
-        />
+        /> */}
         <Choice
           label="Je souhaite bénéficier de la CMU (Couverture Maladie Universelle)"
           onClick={() => transition("INFO_CPAM")}

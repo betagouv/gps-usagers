@@ -15,6 +15,7 @@
     "react-dom": "^16.7.0",
     "react-leaflet": "2.2.0",
     "react-onclickoutside": "6.7.1",
+    "react-piwik": "1.6.0",
     "react-router-dom": "4.3.1",
     "react-scripts": "2.1.2",
     "react-test-renderer": "16.7.0"

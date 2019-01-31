@@ -21,7 +21,7 @@ const statechart = {
         RSA_CIRCONSCRIPTION: "rsaCirconscription",
         RSA_SITUATION: "rsaSituation",
         INFO_CPAM: "infoCpam",
-        INFO_CAF: "infoCaf",
+        INFO_CAF: "infoCafRsaSelection",
         BACK: "rsa"
       },
       onEntry: "rsaSelection"
@@ -47,8 +47,9 @@ const statechart = {
     },
     rsaSituation: {
       on: {
-        INFO_EPN: "infoEpn",
-        INFO_CAF: "infoCaf"
+        INFO_GESTIONNAIRE: "infoGestionnaireRsaSituation",
+        INFO_CAF: "infoCafRsaSituation",
+        BACK: "rsaSelection"
       },
       onEntry: "rsaSituation"
     },
@@ -68,8 +69,20 @@ const statechart = {
       on: { BACK: "rsaLetter" },
       onEntry: "infoCaf"
     },
+    infoCafRsaSelection: {
+      on: { BACK: "rsaSelection" },
+      onEntry: "infoCaf"
+    },
+    infoCafRsaSituation: {
+      on: { BACK: "rsaSituation" },
+      onEntry: "infoCaf"
+    },
     infoGestionnaire: {
       on: { BACK: "rsaLetter" },
+      onEntry: "infoGestionnaire"
+    },
+    infoGestionnaireRsaSituation: {
+      on: { BACK: "rsaSituation" },
       onEntry: "infoGestionnaire"
     },
     infoCafOnline: {

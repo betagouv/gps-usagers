@@ -1,13 +1,15 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,
   faFileInvoice,
   faSignOutAlt
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import ReactPiwik from "react-piwik";
 import { Card } from "../components";
 
 const Start = ({ transition }) => {
+  ReactPiwik.push(["trackPageView", "start"]);
   return (
     <div className="container">
       <div className="header">

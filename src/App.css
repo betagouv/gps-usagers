@@ -4,8 +4,8 @@
 
 .container {
   position: relative;
-  height: 650px;
-  width: 1170px;
+  min-height: 650px;
+  max-width: 1170px;
   margin: 0 auto;
   background-color: #f4f2e6;
   border: 1px solid #cdcdcd;
@@ -27,7 +27,7 @@
 }
 
 .button {
-  display: block;
+  display: inline-block;
   background-color: #356eab;
   border: 2px solid transparent;
   color: #fff;
@@ -49,10 +49,12 @@
 
 .react-autosuggest__container {
   position: relative;
+  text-align: left;
 }
 
 .react-autosuggest__input {
-  width: 990px;
+  max-width: 990px;
+  width: -webkit-fill-available;
   height: 30px;
   padding: 10px 20px;
   font-family: "Open Sans", sans-serif;
@@ -84,7 +86,8 @@
   display: block;
   position: absolute;
   top: 50px;
-  width: 1030px;
+  max-width: 1030px;
+  width: -webkit-fill-available;
   border: 1px solid #aaa;
   background-color: #fff;
   font-family: "Open Sans", sans-serif;
@@ -125,4 +128,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 640px) {
+  .content {
+    padding: 1rem;
+    text-align: center;
+  }
+  .react-autosuggest__input,
+  .react-autosuggest__suggestions-container--open {
+    width: -webkit-fill-available;
+  }
 }
