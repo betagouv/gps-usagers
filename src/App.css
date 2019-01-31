@@ -116,7 +116,8 @@
 .modal {
   position: fixed;
   background: white;
-  width: 600px;
+  max-width: 600px;
+  width: -webkit-fill-available;
   height: 200px;
   top: 300px;
   left: 50%;
@@ -138,5 +139,9 @@
   .react-autosuggest__input,
   .react-autosuggest__suggestions-container--open {
     width: -webkit-fill-available;
+  }
+  .modal {
+    margin: 0 auto;
+    width: 80vw;
   }
 }
