@@ -27,14 +27,15 @@ const RSASelection = ({ transition }) => {
           inférieur à mon allocation habituelle"
           onClick={() => transition("RSA_SITUATION")}
         />
-        <Choice
+        // removed until we have a better understanding of what we want for theses answers
+        /*<Choice
           label="Je souhaite avoir une aide financière supplémentaire"
           onClick={() => transition("RSA_CIRCONSCRIPTION")}
         />
         <Choice
           label="J'ai besoin d'un suivi pour remplir des démarches administratives"
           onClick={() => transition("RSA_CIRCONSCRIPTION")}
-        />
+        />*/
         <Choice
           label="Je souhaite bénéficier de la CMU (Couverture Maladie Universelle)"
           onClick={() => transition("INFO_CPAM")}
