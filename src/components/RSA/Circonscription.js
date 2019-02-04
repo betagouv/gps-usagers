@@ -19,7 +19,7 @@ class RSACirconscription extends Component {
   };
 
   onSuggestionsFetchRequested = ({ value }) => {
-    fetch(`http://api-adresse.data.gouv.fr/search/?q=${value}&limit=10`)
+    fetch(`https://api-adresse.data.gouv.fr/search/?q=${value}&limit=10`)
       .then(response => response.json())
       .then(data => this.setState({ suggestions: data.features }));
   };
