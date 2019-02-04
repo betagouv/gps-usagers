@@ -38,7 +38,6 @@ class RSACirconscription extends Component {
   };
 
   render() {
-    const { transition } = this.props;
     const { value, suggestions } = this.state;
 
     const inputProps = {
@@ -50,7 +49,7 @@ class RSACirconscription extends Component {
     return (
       <div className="container">
         <div className="header">
-          <Back transition={transition} />
+          <Back {...this.props} />
         </div>
         <div className="content">
           <h3>

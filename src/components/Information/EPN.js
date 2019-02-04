@@ -39,7 +39,6 @@ class InfoEpn extends Component {
   };
 
   render() {
-    const { transition } = this.props;
     const { value, suggestions } = this.state;
 
     const inputProps = {
@@ -51,11 +50,12 @@ class InfoEpn extends Component {
     return (
       <div className="container final">
         <div className="header">
-          <Back transition={transition} />
+          <Back {...this.props} />
         </div>
         <div className="content">
           <h3>
-            <FontAwesomeIcon icon={faArrowRight} /> Rendez-vous dans l‘EPN ou le Point Info 14 le plus proche
+            <FontAwesomeIcon icon={faArrowRight} /> Rendez-vous dans l‘EPN ou le
+            Point Info 14 le plus proche
           </h3>
           <Autosuggest
             suggestions={suggestions}

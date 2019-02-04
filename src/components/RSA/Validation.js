@@ -7,11 +7,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Back, Card } from "../../components";
 
-const RSASelection = ({ transition }) => {
+const RSASelection = ({ transition, machineState }) => {
   return (
     <div className="container">
       <div className="header">
-        <Back transition={transition} />
+        <Back transition={transition} machineState={machineState} />
       </div>
       <div className="content">
         <h3>

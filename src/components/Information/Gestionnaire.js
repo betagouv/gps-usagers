@@ -87,11 +87,11 @@ export default class InfoGestionnaire extends Component<{}, State> {
   render() {
     const position = [this.state.lat, this.state.lng];
     const { zoom, selectedCirconscription, showModal } = this.state;
-    const { transition } = this.props;
+
     return (
       <div className="container final">
         <div className="header">
-          <Back transition={transition} />
+          <Back {...this.props} />
         </div>
         <div className="content">
           <h3>

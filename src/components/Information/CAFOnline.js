@@ -2,11 +2,11 @@ import React from "react";
 import { Back } from "../../components";
 import "./Styles.css";
 
-const InfoCAFOnline = ({ transition }) => {
+const InfoCAFOnline = ({ transition, machineState }) => {
   return (
     <div className="container final">
       <div className="header">
-        <Back transition={transition} />
+        <Back transition={transition} machineState={machineState} />
       </div>
       <div className="content">
         <h1>

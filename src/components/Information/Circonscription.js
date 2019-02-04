@@ -2,11 +2,11 @@ import React from "react";
 import { Back } from "../../components";
 import "./Styles.css";
 
-const InfoCirconscription = ({ transition }) => {
+const InfoCirconscription = ({ transition, machineState }) => {
   return (
     <div className="container final">
       <div className="header">
-        <Back transition={transition} />
+        <Back transition={transition} machineState={machineState} />
       </div>
       <div className="content">
         <h1>Contactez la Mutualité sociale agricole (MSA)</h1>
