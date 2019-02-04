@@ -6,7 +6,9 @@ import "./Styles.css";
 class Back extends React.Component {
   componentDidMount() {
     const { machineState } = this.props;
-    ReactPiwik.push(["trackPageView", machineState.value]);
+    ReactPiwik.push(["setCustomUrl", "/" + window.location.hash.substr(1)]);
+    ReactPiwik.push(["setDocumentTitle", machineState.value]);
+    ReactPiwik.push(["trackPageView"]);
   }
   render() {
     const { transition } = this.props;

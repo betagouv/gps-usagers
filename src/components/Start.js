@@ -10,7 +10,8 @@ import { Card } from "../components";
 
 class Start extends React.Component {
   componentDidMount() {
-    ReactPiwik.push(["trackPageView", "start"]);
+    ReactPiwik.push(["setDocumentTitle", "start"]);
+    ReactPiwik.push(["trackPageView"]);
   }
   render() {
     const { transition } = this.props;
