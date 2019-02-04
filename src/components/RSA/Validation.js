@@ -5,11 +5,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import ReactPiwik from "react-piwik";
 import { Back, Card } from "../../components";
 
 const RSASelection = ({ transition }) => {
-  ReactPiwik.push(["trackPageView", "rsa"]);
   return (
     <div className="container">
       <div className="header">
