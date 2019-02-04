@@ -34,7 +34,7 @@ class Start extends React.Component {
             label="Autre"
             icon={faSignOutAlt}
             onClick={() =>
-              (window.location.href =
+              (window.top.location.href =
                 "https://www.calvados.fr/accueil/formulaire-de-contact-general.html")
             }
           />
