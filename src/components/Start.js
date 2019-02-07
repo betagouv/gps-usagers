@@ -18,7 +18,7 @@ class Start extends React.Component {
     return (
       <div className="container">
         <div className="header">
-          <h2>Comment pouvons nous vous aider ?</h2>
+          <h2> </h2>
         </div>
         <div className="content">
           <h3>

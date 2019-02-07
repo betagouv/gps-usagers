@@ -89,19 +89,19 @@ export default class InfoGestionnaire extends Component<{}, State> {
     const { zoom, selectedCirconscription, showModal } = this.state;
 
     return (
-      <div className="container final">
+      <div className="container">
         <div className="header">
           <Back {...this.props} />
         </div>
-        <div className="content">
+        <div className="content final">
           <h3>
             <FontAwesomeIcon icon={faArrowRight} /> Sélectionnez votre
             circonscription afin d'être orienté vers le bon interlocuteur
           </h3>
           <Map className="map" center={position} zoom={zoom}>
             <TileLayer
-              attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png"
+              attribution='<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>'
             />
             <GeoJSON
               ref="geojson"

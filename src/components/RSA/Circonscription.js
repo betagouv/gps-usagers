@@ -73,8 +73,8 @@ class RSACirconscription extends Component {
             zoom={9}
           >
             <TileLayer
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+              url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png"
+              attribution='<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>'
             />
           </Map>
         </div>

@@ -3,14 +3,8 @@
 }
 
 .container {
-  position: relative;
-  min-height: 650px;
   max-width: 1170px;
   margin: 0 auto;
-  background-color: #f4f2e6;
-  border: 1px solid #cdcdcd;
-  outline: 8px solid #f4f2e6;
-  outline-offset: -9px;
 }
 
 .final {
@@ -23,6 +17,14 @@
 }
 
 .content {
+  position: relative;
+  min-height: 600px;
+  max-width: 1170px;
+  margin: 0 auto;
+  background-color: #f4f2e6;
+  border: 1px solid #cdcdcd;
+  outline: 8px solid #f4f2e6;
+  outline-offset: -9px;
   padding: 1rem 4rem;
 }
 

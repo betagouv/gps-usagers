@@ -4,11 +4,11 @@ import "./Styles.css";
 
 const InfoOnline = ({ transition, machineState }) => {
   return (
-    <div className="container final">
+    <div className="container">
       <div className="header">
         <Back transition={transition} machineState={machineState} />
       </div>
-      <div className="content">
+      <div className="content final">
         <h1>Plus d'informations en ligne</h1>
         <p>
           Vous pouvez trouver plus d'informations sur le RSA sur le{" "}

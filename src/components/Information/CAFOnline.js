@@ -4,11 +4,11 @@ import "./Styles.css";
 
 const InfoCAFOnline = ({ transition, machineState }) => {
   return (
-    <div className="container final">
+    <div className="container">
       <div className="header">
         <Back transition={transition} machineState={machineState} />
       </div>
-      <div className="content">
+      <div className="content final">
         <h1>
           Utilisez le simulateur de la Caisse d'Allocations Familiales (CAF)
         </h1>
@@ -31,7 +31,8 @@ const InfoCAFOnline = ({ transition, machineState }) => {
         <p>
           Pour joindre la CAF par téléphone, appelez le numéro suivant :
           <h2 className="phone">
-            0810 25 14 10 <span>(6cts / minute + prix de l'appel)</span>
+            <a href="tel:+33810251410">0810 25 14 10</a>{" "}
+            <span>(6cts / minute + prix de l'appel)</span>
           </h2>
         </p>
       </div>

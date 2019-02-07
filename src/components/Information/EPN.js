@@ -48,11 +48,11 @@ class InfoEpn extends Component {
     };
 
     return (
-      <div className="container final">
+      <div className="container">
         <div className="header">
           <Back {...this.props} />
         </div>
-        <div className="content">
+        <div className="content final">
           <h3>
             <FontAwesomeIcon icon={faArrowRight} /> Rendez-vous dans l‘EPN ou le
             Point Info 14 le plus proche
@@ -75,8 +75,8 @@ class InfoEpn extends Component {
             zoom={9}
           >
             <TileLayer
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+              url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png"
+              attribution='<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>'
             />
             {epnData &&
               epnData.map(data => (

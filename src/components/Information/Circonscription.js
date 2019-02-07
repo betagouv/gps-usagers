@@ -4,11 +4,11 @@ import "./Styles.css";
 
 const InfoCirconscription = ({ transition, machineState }) => {
   return (
-    <div className="container final">
+    <div className="container">
       <div className="header">
         <Back transition={transition} machineState={machineState} />
       </div>
-      <div className="content">
+      <div className="content final">
         <h1>Contactez la Mutualité sociale agricole (MSA)</h1>
         Rendez-vous sur votre compte MSA :
         <p>
@@ -27,7 +27,9 @@ const InfoCirconscription = ({ transition, machineState }) => {
         <br />
         <p>
           Pour joindre la MSA par téléphone, appelez le numéro suivant :
-          <h2 className="phone">02 31 25 39 39</h2>
+          <h2 className="phone">
+            <a href="tel:+33231253939">02 31 25 39 39</a>
+          </h2>
         </p>
       </div>
     </div>
