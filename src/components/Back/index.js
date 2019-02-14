@@ -16,7 +16,7 @@ class Back extends React.Component {
       <div className="previous" onClick={() => transition("BACK")}>
         <div className="previousLink">
           <FontAwesomeIcon icon={faCaretLeft} size="2x" />
-          <span>Retour à l'écran précédent</span>
+          <span>Retour à l'étape précédente</span>
         </div>
       </div>
     );

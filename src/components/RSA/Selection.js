@@ -11,7 +11,7 @@ const RSASelection = ({ transition, machineState }) => {
       </div>
       <div className="content">
         <h3>
-          <FontAwesomeIcon icon={faArrowRight} /> Quel est l’object de votre
+          <FontAwesomeIcon icon={faArrowRight} /> Quel est l’objet de votre
           demande ?
         </h3>
         <Choice
