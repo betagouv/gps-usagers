@@ -92,7 +92,11 @@ class InfoEpn extends Component {
                       <br />
                       {data.zip} {data.city}
                     </div>
-                    <div className="heading2">{data.phone}</div>
+                    <div className="heading2">
+                      <a href={`tel:${data.phone}`} target="_top">
+                        {data.phone}
+                      </a>
+                    </div>
                   </Popup>
                 </Marker>
               ))}

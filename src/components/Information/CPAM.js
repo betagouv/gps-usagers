@@ -30,7 +30,9 @@ const InfoCPAM = ({ transition, machineState }) => {
           Si vous souhaitez joindre l'Assurance Maladie, vous pouvez également
           contacter le :
           <h2 className="phone">
-            <a href="tel:3646">3646</a>{" "}
+            <a href="tel:3646" target="_top">
+              3646
+            </a>{" "}
             <span>(6 cts / minute + prix appel)</span>
           </h2>
         </p>

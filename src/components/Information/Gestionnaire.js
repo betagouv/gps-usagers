@@ -126,7 +126,12 @@ export default class InfoGestionnaire extends Component<{}, State> {
                   au numéro de téléphone suivant :
                 </div>
                 <div className="phone">
-                  {circonscription[selectedCirconscription]}
+                  <a
+                    href={`tel:${circonscription[selectedCirconscription]}`}
+                    target="_top"
+                  >
+                    {circonscription[selectedCirconscription]}
+                  </a>
                 </div>
               </div>
             </div>

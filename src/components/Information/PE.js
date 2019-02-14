@@ -13,7 +13,9 @@ const InfoPE = ({ transition, machineState }) => {
         <p>
           Pour joindre Pôle Emploi par téléphone, appelez le numéro suivant :
           <h2 className="Phone">
-            <a href="tel:3949">39 49</a>
+            <a href="tel:3949" target="_top">
+              39 49
+            </a>
           </h2>
         </p>
         <br />

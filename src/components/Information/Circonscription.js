@@ -28,7 +28,9 @@ const InfoCirconscription = ({ transition, machineState }) => {
         <p>
           Pour joindre la MSA par téléphone, appelez le numéro suivant :
           <h2 className="phone">
-            <a href="tel:+33231253939">02 31 25 39 39</a>
+            <a href="tel:+33231253939" target="_top">
+              02 31 25 39 39
+            </a>
           </h2>
         </p>
       </div>

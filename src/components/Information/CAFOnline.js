@@ -31,7 +31,9 @@ const InfoCAFOnline = ({ transition, machineState }) => {
         <p>
           Pour joindre la CAF par téléphone, appelez le numéro suivant :
           <h2 className="phone">
-            <a href="tel:+33810251410">0810 25 14 10</a>{" "}
+            <a href="tel:+33810251410" target="_top">
+              0810 25 14 10
+            </a>{" "}
             <span>(6cts / minute + prix de l'appel)</span>
           </h2>
         </p>
