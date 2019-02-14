@@ -1,5 +1,6 @@
+import "react-app-polyfill/ie9";
+
 import React from "react";
-import 'react-app-polyfill/ie9';
 import ReactDOM from "react-dom";
 import ReactPiwik from "react-piwik";
 import App from "./App";
