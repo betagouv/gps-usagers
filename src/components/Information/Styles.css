@@ -48,6 +48,22 @@ h3 {
   width: 31%;
 }
 
+.circoName {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10rem;
+  background-color: #fff;
+  z-index: 1200;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 12px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  top: 6rem;
+}
+
 @media screen and (max-width: 640px) {
   .cms {
     width: 100%;

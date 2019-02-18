@@ -29,6 +29,7 @@ const ContexedMap = React.forwardRef((props, ref) => {
 });
 export default class InfoGestionnaire extends Component<{}, State> {
   state = {
+    circoName: null,
     lat: 49.183333,
     lng: -0.35,
     zoom: 9,
@@ -53,13 +54,16 @@ export default class InfoGestionnaire extends Component<{}, State> {
       fillOpacity: 0.5
     });
     if (value !== layer.feature.properties.tags.cas) {
-      this.setState(() => ({ value: layer.feature.properties.tags.cas }));
+      this.setState(() => ({
+        circoName: layer.feature.properties.tags.cas,
+        value: layer.feature.properties.tags.cas
+      }));
     }
   };
 
   resetHighlight = e => {
     this.refs.geojson.leafletElement.resetStyle(e.target);
-    this.setState(() => ({ value: "" }));
+    this.setState(() => ({ circoName: null, value: "" }));
   };
 
   onClick = e => {
@@ -74,6 +78,9 @@ export default class InfoGestionnaire extends Component<{}, State> {
       circo: CIRCO_PHONE[circoName],
       cms: CIRCO_PHONE[circoName]
     });
+    this.setState(() => ({
+      circoName: null
+    }));
   };
 
   onEachFeature = (feature, layer) => {
@@ -86,7 +93,7 @@ export default class InfoGestionnaire extends Component<{}, State> {
 
   render() {
     const position = [this.state.lat, this.state.lng];
-    const { zoom } = this.state;
+    const { circoName, zoom } = this.state;
 
     return (
       <div className="container">
@@ -98,6 +105,7 @@ export default class InfoGestionnaire extends Component<{}, State> {
             <FontAwesomeIcon icon={faArrowRight} /> Sélectionnez votre
             circonscription afin d'être orienté vers le bon interlocuteur
           </h3>
+          {circoName && <div className="circoName">{circoName}</div>}
           <Map className="map" center={position} zoom={zoom}>
             <TileLayer
               url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png"
