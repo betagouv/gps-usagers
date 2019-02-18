@@ -12,7 +12,7 @@ h3 {
 }
 
 .phone > span {
-  font-size: 0.5em;
+  font-size: 0.8em;
   font-weight: 500;
   margin-left: 0.5rem;
 }
@@ -32,4 +32,31 @@ h3 {
 .address {
   display: block;
   font-size: 15px;
+  font-weight: lighter;
+  color: #333333;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cms {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  width: 31%;
+}
+
+@media screen and (max-width: 640px) {
+  .cms {
+    width: 100%;
+  }
+  .modalText {
+    padding: 0 1rem;
+  }
+  .modal.big {
+    height: 75vh !important;
+    top: 390px !important;
+  }
 }

@@ -1,53 +1,90 @@
-import React, { Component } from "react";
-import onClickOutside from "react-onclickoutside";
+import React from "react";
+import Modal from "react-modal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./Styles.css";
 
-class Modal extends Component {
-  state = {
-    showModal: false
-  };
-
-  static open = e => {
-    e.preventDefault();
-    this.showModal();
-  };
-
-  static close = e => {
-    e.preventDefault();
-    this.hideModal();
-  };
-
-  handleClickOutside = evt => {
-    this.hideModal();
-  };
-
-  showModal = () => {
-    this.setState(() => ({
-      showModal: true
-    }));
-  };
-
-  hideModal = () => {
-    this.setState(() => ({
-      showModal: false
-    }));
-  };
-
-  render() {
-    const { children } = this.props;
-
-    return (
-      <div
-        style={{ display: +this.state.showModal ? "" : "none" }}
-        className="modal"
-      >
-        <div onClick={this.hideModal} className="modalClose">
-          X
-        </div>
-        <div className="modalContent">{children}</div>
+export const CMSModal = ({ onRequestClose, circo, cms, ...rest }) => (
+  <Modal
+    className="modal"
+    overlayClassName="overlay"
+    isOpen
+    onRequestClose={onRequestClose}
+    ariaHideApp={false}
+    {...rest}
+  >
+    <div className="modalHeader">
+      <div onClick={onRequestClose} className="modalClose">
+        <FontAwesomeIcon icon={faTimes} size="1x" />
       </div>
-    );
-  }
-}
+    </div>
+    <div className="modalContent">
+      <div>
+        <div className="modalText">
+          Vous pouvez joindre par téléphone ou vous déplacer dans la
+          circonscription ou le centre médico-social le plus proche de chez vous
+          :
+        </div>
+        <h3>{circo.title}</h3>
+        <div className="address">
+          {circo.address}
+          <br />
+          {circo.zipCode} {circo.city}
+        </div>
+        <div className="phone">
+          <a href={`tel:${circo.phone}`} target="_top">
+            {circo.phone}
+          </a>
+        </div>
+      </div>
+      <br />
+      <h3>Centre médico-social</h3>
+      <div className="flex">
+        {cms.map(c => (
+          <div key={c.name} className="cms">
+            <div className="heading2">{c.name}</div>
+            <div className="address">
+              {c.address} <br />
+              {c.zipCode} {c.city}
+            </div>
+            <div className="phone">
+              <a href={`tel:${c.phone}`} target="_top">
+                {c.phone}
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+    <div className="modalFooter" />
+  </Modal>
+);
 
-export default onClickOutside(Modal);
+export const GestionnaireModal = ({ onRequestClose, circo, cms, ...rest }) => (
+  <Modal
+    className="modal"
+    overlayClassName="overlay"
+    isOpen
+    onRequestClose={onRequestClose}
+    ariaHideApp={false}
+    {...rest}
+  >
+    <div className="modalHeader">
+      <div onClick={onRequestClose} className="modalClose">
+        <FontAwesomeIcon icon={faTimes} size="1x" />
+      </div>
+    </div>
+    <div className="modalContent">
+      <div>
+        Veuillez contacter votre gestionnaire de dossier <br />
+        au numéro de téléphone suivant :
+      </div>
+      <div className="phone">
+        <a href={`tel:${circo}`} target="_top">
+          {circo}
+        </a>
+      </div>
+    </div>
+    <div className="modalFooter" />
+  </Modal>
+);

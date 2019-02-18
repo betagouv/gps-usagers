@@ -5,8 +5,8 @@ import { GeoJSON, Map, TileLayer } from "react-leaflet";
 import { getGeoJson } from "../../assets/data";
 import { Back } from "../../components";
 import { ModalConsumer } from "../../components/Modal/ModalContext";
-import { GestionnaireModal } from "../../components/Modal";
-import { CIRCO_PHONE } from "../../utils/circonscriptions";
+import { CMSModal } from "../../components/Modal";
+import { CIRCO, CMS } from "../../utils/circonscriptions";
 import "./Styles.css";
 
 const ContexedMap = React.forwardRef((props, ref) => {
@@ -26,7 +26,8 @@ const ContexedMap = React.forwardRef((props, ref) => {
     </ModalConsumer>
   );
 });
-export default class InfoGestionnaire extends Component<{}, State> {
+
+export default class InfoCMS extends Component<{}, State> {
   state = {
     lat: 49.183333,
     lng: -0.35,
@@ -63,9 +64,9 @@ export default class InfoGestionnaire extends Component<{}, State> {
 
   onClick = e => {
     const circoName = e.target.feature.properties.tags.cas;
-    e.target.options.showModal(GestionnaireModal, {
-      circo: CIRCO_PHONE[circoName],
-      cms: CIRCO_PHONE[circoName]
+    e.target.options.showModal(CMSModal, {
+      circo: CIRCO[circoName],
+      cms: CMS[circoName]
     });
   };
 
