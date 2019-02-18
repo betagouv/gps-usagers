@@ -1,6 +1,7 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
+import ReactPiwik from "react-piwik";
 import { GeoJSON, Map, TileLayer } from "react-leaflet";
 import { getGeoJson } from "../../assets/data";
 import { Back } from "../../components";
@@ -64,6 +65,12 @@ export default class InfoCMS extends Component<{}, State> {
 
   onClick = e => {
     const circoName = e.target.feature.properties.tags.cas;
+    ReactPiwik.push([
+      "trackEvent",
+      "infoCms",
+      "circonscription",
+      e.target.feature.properties.tags.cas
+    ]);
     e.target.options.showModal(CMSModal, {
       circo: CIRCO[circoName],
       cms: CMS[circoName]

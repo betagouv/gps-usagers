@@ -1,6 +1,7 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
+import ReactPiwik from "react-piwik";
 import { GeoJSON, Map, TileLayer } from "react-leaflet";
 import { getGeoJson } from "../../assets/data";
 import { Back } from "../../components";
@@ -63,6 +64,12 @@ export default class InfoGestionnaire extends Component<{}, State> {
 
   onClick = e => {
     const circoName = e.target.feature.properties.tags.cas;
+    ReactPiwik.push([
+      "trackEvent",
+      "infoGestionnaire",
+      "circonscription",
+      e.target.feature.properties.tags.cas
+    ]);
     e.target.options.showModal(GestionnaireModal, {
       circo: CIRCO_PHONE[circoName],
       cms: CIRCO_PHONE[circoName]

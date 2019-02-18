@@ -1,7 +1,7 @@
 export const CIRCO = {
   "Pays d'Auge Sud": {
     dga: "DGA Solidarité",
-    title: "Circonscription d'action sociale du Pays de Lisieu",
+    title: "Circonscription d'action sociale du Pays de Lisieux",
     name: "Pôle Accueil",
     address: "127 b, rue Roger Aini",
     zipCode: "14100",

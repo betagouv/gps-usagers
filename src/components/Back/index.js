@@ -10,10 +10,16 @@ class Back extends React.Component {
     ReactPiwik.push(["setDocumentTitle", machineState.value]);
     ReactPiwik.push(["trackPageView"]);
   }
+
+  handleClick = () => {
+    const { transition, machineState } = this.props;
+    ReactPiwik.push(["trackEvent", machineState.value, "étape précédente"]);
+    transition("BACK");
+  };
+
   render() {
-    const { transition } = this.props;
     return (
-      <div className="previous" onClick={() => transition("BACK")}>
+      <div className="previous" onClick={this.handleClick}>
         <div className="previousLink">
           <FontAwesomeIcon icon={faCaretLeft} size="2x" />
           <span>Retour à l'étape précédente</span>

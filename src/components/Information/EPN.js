@@ -1,6 +1,7 @@
+import React, { Component } from "react";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { Component } from "react";
+import ReactPiwik from "react-piwik";
 import Autosuggest from "react-autosuggest";
 import { Map, Marker, Popup, TileLayer } from "react-leaflet";
 import epnData from "../../assets/epn";
@@ -33,6 +34,12 @@ class InfoEpn extends Component {
 
   onClick = suggestion => {
     const [longitude, latitude] = suggestion.geometry.coordinates;
+    ReactPiwik.push([
+      "trackEvent",
+      "infoEpn",
+      "adresse",
+      suggestion.properties.postcode
+    ]);
 
     this.refs.map.leafletElement.setView([latitude, longitude], 13);
     return suggestion.properties.label;
@@ -83,6 +90,14 @@ class InfoEpn extends Component {
                 <Marker
                   key={data.name}
                   position={[data.latitude, data.longitude]}
+                  onClick={marker =>
+                    ReactPiwik.push([
+                      "trackEvent",
+                      "infoEpn",
+                      "marqueur carte",
+                      data.name
+                    ])
+                  }
                 >
                   <Popup>
                     <div className="heading1">{data.name}</div>
