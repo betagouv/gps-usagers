@@ -33,7 +33,7 @@ export const CIRCO = {
     address: "26 avenue de la Grande Cavée",
     zipCode: "14200",
     city: "Hérouville-Saint-Clair",
-    phone: "02 14 47 51 00"
+    phone: "02 31 46 73 00"
   },
   "USDA Sud": {
     dga: "DGA Solidarité",
@@ -78,7 +78,7 @@ export const CIRCO = {
     address: "4 rue de la résistance",
     zipCode: "14700",
     city: "Falaise",
-    phone: "02 31 41 64 65"
+    phone: "02 31 41 64 52"
   },
   Bessin: {
     dga: "DGA Solidarité",
@@ -128,7 +128,7 @@ export const CMS = {
       address: "2 bis, Rue de Verdun",
       zipCode: "14290",
       city: "Orbec",
-      phone: "02 31 32 70 59"
+      phone: "02 14 47 54 18"
     },
     {
       name: "Lisieux - Chéron",
@@ -158,7 +158,7 @@ export const CMS = {
       address: "1 place du canada",
       zipCode: "14000",
       city: "Caen",
-      phone: "02 31 35 57 20"
+      phone: "02 31 15 23 07"
     },
     {
       name: "Chemin vert",
@@ -197,21 +197,21 @@ export const CMS = {
       address: "49, Boulevard Général Vanier",
       zipCode: "14000",
       city: "Caen",
-      phone: "02.31.44.25.89"
+      phone: "02 31 44 25 89"
     },
     {
       name: "Hérouville Saint Clair",
       address: "Esplanade Rabelais, avenue de la Grande Cavée",
       zipCode: "14200",
       city: "Hérouville Saint Clair",
-      phone: "02.31.47.46.22"
+      phone: "02 31 47 46 22"
     },
     {
       name: "Folie Couvrechef",
       address: "29, rue du devon",
       zipCode: "14000",
       city: "Caen",
-      phone: "02.31.46.84.60"
+      phone: "02 31 46 84 60"
     }
   ],
   "USDA Sud": [
@@ -220,14 +220,14 @@ export const CMS = {
       address: "12 Boulevard Yitzhak Rabin",
       zipCode: "14123",
       city: "Ifs",
-      phone: "02.31.35.21.20"
+      phone: "02 31 35 21 20"
     },
     {
       name: "Grâce de Dieu",
       address: "31 place du Commerce",
       zipCode: "14000",
       city: "Caen",
-      phone: "02.31.52.17.54"
+      phone: "02 31 52 17 54"
     }
   ],
   "Caen Ouest": [
@@ -266,7 +266,7 @@ export const CMS = {
       address: "La Crête",
       zipCode: "14410",
       city: "Vassy",
-      phone: "02 31 66 27 30"
+      phone: "02 31 68 57 06"
     },
     {
       name: "Condé sur Noireau",
@@ -312,7 +312,7 @@ export const CMS = {
       address: "3, rue Général de Gaulle",
       zipCode: "14680",
       city: "Bretteville sur Laize",
-      phone: "02 31 41 64 65"
+      phone: "02 31 41 64 72"
     },
     {
       name: "Thury-Harcourt",
