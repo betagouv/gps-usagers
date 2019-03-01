@@ -3,7 +3,8 @@ const statechart = {
   states: {
     start: {
       on: {
-        RSA: "rsa"
+        RSA: "rsa",
+        HOUSING: "housingSelection"
       },
       onEntry: "start"
     },
@@ -58,6 +59,90 @@ const statechart = {
         BACK: "rsaLetter"
       },
       onEntry: "rsaGestionnaire"
+    },
+    housingSelection: {
+      on: {
+        BACK: "start",
+        INFO_HOUSING_SEARCH: "infoHousingSearch",
+        HOUSING_ASSISTANCE: "housingAssistance",
+        HOUSING_RENT: "housingRent",
+        HOUSING_ACQUISITION: "housingAcquisition",
+        INFO_HOUSING_ENERGY_BILLS: "infoHousingEnergyBills"
+      },
+      onEntry: "housingSelection"
+    },
+    housingAssistance: {
+      on: {
+        BACK: "housingSelection",
+        INFO_HOUSING_ASSISTANCE: "infoHousingAssistance",
+        INFO_HOUSING_ASSISTANCE_REQUEST: "infoHousingAssistanceRequest",
+        INFO_HOUSING_ASSISTANCE_HELP: "infoHousingAssistanceHelp"
+      },
+      onEntry: "housingAssistance"
+    },
+    housingRent: {
+      on: {
+        BACK: "housingSelection",
+        INFO_HOUSING_RENT: "infoHousingRent",
+        INFO_HOUSING_RENT_REQUEST: "infoHousingRentRequest",
+        INFO_HOUSING_RENT_HELP: "infoHousingRentHelp"
+      },
+      onEntry: "housingRent"
+    },
+    housingAcquisition: {
+      on: {
+        BACK: "housingSelection",
+        HOUSING_ACQUISITION_SELECTION: "housingAcquisitionSelection"
+      },
+      onEntry: "housingAcquisition"
+    },
+    housingAcquisitionSelection: {
+      on: {
+        BACK: "housingAcquisition",
+        INFO_HOUSING_ACQUISITION_INFOS: "infoHousingAcquisitionInfos",
+        INFO_HOUSING_ACQUISITION_HELP: "infoHousingAcquisitionHelp"
+      },
+      onEntry: "housingAcquisitionSelection"
+    },
+    infoHousingSearch: {
+      on: { BACK: "housingSelection" },
+      onEntry: "infoHousingSearch"
+    },
+    infoHousingAssistance: {
+      on: { BACK: "housingAssistance" },
+      onEntry: "infoHousingAssistance"
+    },
+    infoHousingAssistanceRequest: {
+      on: { BACK: "housingAssistance" },
+      onEntry: "infoHousingAssistanceRequest"
+    },
+    infoHousingAssistanceHelp: {
+      on: { BACK: "housingAssistance" },
+      onEntry: "infoHousingAssistanceHelp"
+    },
+    infoHousingRent: {
+      on: { BACK: "housingRent" },
+      onEntry: "infoHousingRent"
+    },
+    infoHousingRentRequest: {
+      on: { BACK: "housingRent" },
+      onEntry: "infoHousingRentRequest"
+    },
+    infoHousingRentHelp: {
+      on: { BACK: "housingRent" },
+      onEntry: "infoHousingRentHelp"
+    },
+    infoHousingAcquisitionInfos: {
+      on: { BACK: "housingAcquisitionSelection" },
+      onEntry: "infoHousingAcquisitionInfos"
+    },
+    infoHousingAcquisitionHelp: {
+      on: { BACK: "housingAcquisitionSelection" },
+      onEntry: "infoHousingAcquisitionHelp"
+    },
+    infoHousingEnergyBills: {
+      on: { BACK: "housingSelection" },
+      onEntry: "infoHousingEnergyBills"
     },
     infoCaf: {
       on: { BACK: "rsaLetter" },

@@ -1,7 +1,8 @@
 import {
   faArrowRight,
   faFileInvoice,
-  faSignOutAlt
+  faSignOutAlt,
+  faHome
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
@@ -29,6 +30,11 @@ class Start extends React.Component {
             label="Le RSA"
             icon={faFileInvoice}
             onClick={() => transition("RSA")}
+          />
+          <Card
+            label="Le logement"
+            icon={faHome}
+            onClick={() => transition("HOUSING")}
           />
           <Card
             label="Autre"

@@ -21,6 +21,23 @@ import Start from "./components/Start";
 import statechart from "./statechart";
 import { ModalProvider } from "./components/Modal/ModalContext";
 import ModalRoot from "./components/Modal/ModalRoot";
+
+import HousingSelection from "./components/Housing/Selection";
+import HousingAssistance from "./components/Housing/Assistance";
+import HousingRent from "./components/Housing/Rent";
+import HousingAcquisition from "./components/Housing/Acquisition";
+import HousingAcquisitionSelection from "./components/Housing/AcquisitionSelection";
+import InfoHousingSearch from "./components/Information/Housing/Search";
+import InfoHousingAssistance from "./components/Information/Housing/Assistance";
+import InfoHousingAssistanceRequest from "./components/Information/Housing/AssistanceRequest";
+import InfoHousingAssistanceHelp from "./components/Information/Housing/AssistanceHelp";
+import InfoHousingRent from "./components/Information/Housing/Rent";
+import InfoHousingRentRequest from "./components/Information/Housing/RentRequest";
+import InfoHousingRentHelp from "./components/Information/Housing/RentHelp";
+import InfoHousingAcquisitionInfos from "./components/Information/Housing/AcquisitionInfos";
+import InfoHousingAcquisitionHelp from "./components/Information/Housing/AcquisitionHelp";
+import InfoHousingEnergyBills from "./components/Information/Housing/EnergyBills";
+
 class App extends Component {
   render() {
     return (
@@ -30,6 +47,7 @@ class App extends Component {
           <Action is="start">
             <Start {...this.props} />
           </Action>
+          {/* RSA */}
           <Action is="rsa">
             <RSAValidation {...this.props} />
           </Action>
@@ -51,7 +69,56 @@ class App extends Component {
           <Action is="rsaOther">
             <RSAOther {...this.props} />
           </Action>
+          {/* HOUSING */}
+          <Action is="housingSelection">
+            <HousingSelection {...this.props} />
+          </Action>
+          <Action is="housingAssistance">
+            <HousingAssistance {...this.props} />
+          </Action>
+          <Action is="housingRent">
+            <HousingRent {...this.props} />
+          </Action>
+          <Action is="housingAcquisition">
+            <HousingAcquisition {...this.props} />
+          </Action>
+          <Action is="housingAcquisitionSelection">
+            <HousingAcquisitionSelection {...this.props} />
+          </Action>
 
+          {/* INFO HOUSING */}
+          <Action is="infoHousingSearch">
+            <InfoHousingSearch {...this.props} />
+          </Action>
+          <Action is="infoHousingAssistance">
+            <InfoHousingAssistance {...this.props} />
+          </Action>
+          <Action is="infoHousingAssistanceRequest">
+            <InfoHousingAssistanceRequest {...this.props} />
+          </Action>
+          <Action is="infoHousingAssistanceHelp">
+            <InfoHousingAssistanceHelp {...this.props} />
+          </Action>
+          <Action is="infoHousingRent">
+            <InfoHousingRent {...this.props} />
+          </Action>
+          <Action is="infoHousingRentRequest">
+            <InfoHousingRentRequest {...this.props} />
+          </Action>
+          <Action is="infoHousingRentHelp">
+            <InfoHousingRentHelp {...this.props} />
+          </Action>
+          <Action is="infoHousingAcquisitionInfos">
+            <InfoHousingAcquisitionInfos {...this.props} />
+          </Action>
+          <Action is="infoHousingAcquisitionHelp">
+            <InfoHousingAcquisitionHelp {...this.props} />
+          </Action>
+          <Action is="infoHousingEnergyBills">
+            <InfoHousingEnergyBills {...this.props} />
+          </Action>
+
+          {/* INFO RSA */}
           <Action is="infoCaf">
             <InfoCAF {...this.props} />
           </Action>

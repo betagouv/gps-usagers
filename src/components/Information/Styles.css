@@ -11,6 +11,10 @@ h3 {
   color: #003d7e;
 }
 
+.phoneList {
+  line-height: 1.5;
+}
+
 .phone > span {
   font-size: 0.8em;
   font-weight: 500;
@@ -34,6 +38,15 @@ h3 {
   font-size: 15px;
   font-weight: lighter;
   color: #333333;
+}
+
+.infoAddress {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 2rem auto;
+  color: #007bff;
+  text-align: center;
 }
 
 .flex {
