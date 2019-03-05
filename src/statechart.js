@@ -125,8 +125,15 @@ const statechart = {
       onEntry: "infoHousingRent"
     },
     infoHousingRentRequest: {
-      on: { BACK: "housingRent" },
+      on: {
+        BACK: "housingRent",
+        INFO_HOUSING_RENT_REQUEST_CMS: "infoHousingRentRequestCms"
+      },
       onEntry: "infoHousingRentRequest"
+    },
+    infoHousingRentRequestCms: {
+      on: { BACK: "infoHousingRentRequest" },
+      onEntry: "infoHousingRentRequestCms"
     },
     infoHousingRentHelp: {
       on: { BACK: "housingRent" },

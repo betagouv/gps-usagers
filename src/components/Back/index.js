@@ -9,6 +9,7 @@ class Back extends React.Component {
     ReactPiwik.push(["setCustomUrl", "/" + window.location.hash.substr(1)]);
     ReactPiwik.push(["setDocumentTitle", machineState.value]);
     ReactPiwik.push(["trackPageView"]);
+    ReactPiwik.push(["enableLinkTracking"]);
   }
 
   handleClick = () => {

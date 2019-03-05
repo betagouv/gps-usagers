@@ -42,7 +42,7 @@ const InfoHousingRentRequest = ({ transition, machineState }) => {
           <br />
           <button
             className="button"
-            onClick={() => transition("INFO_HOUSING_ACQUISITION_HELP_CMS")}
+            onClick={() => transition("INFO_HOUSING_RENT_REQUEST_CMS")}
           >
             Accèder à la liste des circonscriptions
           </button>
