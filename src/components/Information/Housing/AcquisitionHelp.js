@@ -28,21 +28,30 @@ const InfoHousingAcquisitionHelp = ({ transition, machineState }) => {
             </a>
           </h2>
         </p>
-
         <p>
           - En format papier à l'adresse suivante :
-          <p>
-            <div className="infoAddress">
+          <div className="infoAddress">
+            <h4>
               Direction générale adjointe de la solidarité Fond de solidarité
               logement
-              <br />
-              17 avenue Pierre Mendès France
-              <br />
-              14000 Caen
-              <br />
-              Merci de vous adresser à l'accueil
-            </div>
-          </p>
+            </h4>
+            17 avenue Pierre Mendès France
+            <br />
+            14000 Caen
+            <br />
+            Merci de vous adresser à l'accueil
+          </div>
+        </p>
+        <p>
+          - Dans l'un des centres médicaux-sociaux de votre circonscription
+          <br />
+          <br />
+          <button
+            className="button"
+            onClick={() => transition("INFO_HOUSING_ACQUISITION_HELP_CMS")}
+          >
+            Accèder à la liste des circonscriptions
+          </button>
         </p>
       </div>
     </div>

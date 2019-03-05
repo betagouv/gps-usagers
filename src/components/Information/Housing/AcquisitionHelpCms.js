@@ -3,7 +3,7 @@ import { Back } from "../../../components";
 import MapCms from "../../MapCms";
 import "../Styles.css";
 
-const InfoHousingRentHelp = ({ transition, machineState }) => {
+const InfoHousingAcquisitionHelpCms = ({ transition, machineState }) => {
   return (
     <div className="container">
       <div className="header">
@@ -14,4 +14,4 @@ const InfoHousingRentHelp = ({ transition, machineState }) => {
   );
 };
 
-export default InfoHousingRentHelp;
+export default InfoHousingAcquisitionHelpCms;

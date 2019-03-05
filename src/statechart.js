@@ -137,8 +137,17 @@ const statechart = {
       onEntry: "infoHousingAcquisitionInfos"
     },
     infoHousingAcquisitionHelp: {
-      on: { BACK: "housingAcquisitionSelection" },
+      on: {
+        BACK: "housingAcquisitionSelection",
+        INFO_HOUSING_ACQUISITION_HELP_CMS: "infoHousingAcquisitionHelpCms"
+      },
       onEntry: "infoHousingAcquisitionHelp"
+    },
+    infoHousingAcquisitionHelpCms: {
+      on: {
+        BACK: "infoHousingAcquisitionHelp"
+      },
+      onEntry: "infoHousingAcquisitionHelpCms"
     },
     infoHousingEnergyBills: {
       on: { BACK: "housingSelection" },

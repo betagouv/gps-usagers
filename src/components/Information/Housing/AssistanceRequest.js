@@ -24,18 +24,17 @@ const InfoHousingAssistanceRequest = ({ transition, machineState }) => {
 
         <p>
           - En format papier à l'une des adresses suivantes :
-          <p>
-            <div className="infoAddress">
+          <div className="infoAddress">
+            <h4>
               Direction générale adjointe de la solidarité Fond de solidarité
               logement
-              <br />
-              17 avenue Pierre Mendès France
-              <br />
-              14000 Caen
-              <br />
-              Merci de vous adresser à l'accueil
-            </div>
-          </p>
+            </h4>
+            17 avenue Pierre Mendès France
+            <br />
+            14000 Caen
+            <br />
+            Merci de vous adresser à l'accueil
+          </div>
         </p>
       </div>
     </div>
