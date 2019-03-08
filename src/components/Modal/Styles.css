@@ -1,9 +1,9 @@
 .overlay {
   position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   /* background-color: rgba(0, 0, 0, 0.6); */
   z-index: 1000;
 }
@@ -12,16 +12,15 @@
   position: fixed;
   background: white;
   max-width: 800px;
-  width: 90%;
-  max-height: 500px;
-  top: 22rem;
-  left: 50%;
-  padding: 20px;
+  width: 95vw;
+  max-height: 75vh;
   border-radius: 8px;
   transform: translate(-50%, -50%);
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 12px 0 rgba(0, 0, 0, 0.19);
   z-index: 1300;
   color: black;
+  top: 50%;
+  left: 50%;
 }
 
 .modal:focus {
@@ -43,20 +42,19 @@
   top: 0;
   text-align: right;
   padding: 1rem;
-  margin-right: 1.5rem;
-  width: 93%;
 }
 
 .modalContent {
   position: relative;
   text-align: center;
   line-height: 20px;
+  padding: 2.5rem 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  overflow: auto;
-  top: 1.5rem;
-  margin-bottom: 2rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 70vh;
 }
 
 .modalFooter {
@@ -67,8 +65,6 @@
   bottom: 0;
   text-align: right;
   padding: 1rem;
-  margin-right: 1.5rem;
-  width: 93%;
 }
 
 .modalClose {
@@ -86,4 +82,10 @@
 
 .modalText {
   padding: 0 4rem;
+}
+
+@media screen and (max-width: 780px) {
+  .modal {
+    top: 50%;
+  }
 }

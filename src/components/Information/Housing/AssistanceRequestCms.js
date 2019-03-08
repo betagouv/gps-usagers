@@ -1,9 +1,9 @@
 import React from "react";
-import { Back } from "../../../components";
+import { Back } from "../..";
 import MapCms from "../../MapCms";
 import "../Styles.css";
 
-const InfoHousingAcquisitionHelpCms = ({ transition, machineState }) => {
+const InfoHousingAssistanceRequestCms = ({ transition, machineState }) => {
   return (
     <div className="container">
       <div className="header">
@@ -14,4 +14,4 @@ const InfoHousingAcquisitionHelpCms = ({ transition, machineState }) => {
   );
 };
 
-export default InfoHousingAcquisitionHelpCms;
+export default InfoHousingAssistanceRequestCms;

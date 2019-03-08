@@ -36,6 +36,17 @@ const InfoHousingAssistanceRequest = ({ transition, machineState }) => {
             Merci de vous adresser à l'accueil
           </div>
         </p>
+        <p>
+          - Dans l'un des centres médicaux-sociaux de votre circonscription
+          <br />
+          <br />
+          <button
+            className="button"
+            onClick={() => transition("INFO_HOUSING_ASSISTANCE_REQUEST_CMS")}
+          >
+            Accèder à la liste des circonscriptions
+          </button>
+        </p>
       </div>
     </div>
   );

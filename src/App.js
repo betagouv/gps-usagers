@@ -37,7 +37,7 @@ import InfoHousingRentRequestCms from "./components/Information/Housing/RentRequ
 import InfoHousingRentHelp from "./components/Information/Housing/RentHelp";
 import InfoHousingAcquisitionInfos from "./components/Information/Housing/AcquisitionInfos";
 import InfoHousingAcquisitionHelp from "./components/Information/Housing/AcquisitionHelp";
-import InfoHousingAcquisitionHelpCms from "./components/Information/Housing/AcquisitionHelpCms";
+import InfoHousingAssistanceRequestCms from "./components/Information/Housing/AssistanceRequestCms";
 import InfoHousingEnergyBills from "./components/Information/Housing/EnergyBills";
 
 class App extends Component {
@@ -98,6 +98,9 @@ class App extends Component {
           <Action is="infoHousingAssistanceRequest">
             <InfoHousingAssistanceRequest {...this.props} />
           </Action>
+          <Action is="infoHousingAssistanceRequestCms">
+            <InfoHousingAssistanceRequestCms {...this.props} />
+          </Action>
           <Action is="infoHousingAssistanceHelp">
             <InfoHousingAssistanceHelp {...this.props} />
           </Action>
@@ -118,9 +121,6 @@ class App extends Component {
           </Action>
           <Action is="infoHousingAcquisitionHelp">
             <InfoHousingAcquisitionHelp {...this.props} />
-          </Action>
-          <Action is="infoHousingAcquisitionHelpCms">
-            <InfoHousingAcquisitionHelpCms {...this.props} />
           </Action>
           <Action is="infoHousingEnergyBills">
             <InfoHousingEnergyBills {...this.props} />

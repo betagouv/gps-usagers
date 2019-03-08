@@ -113,8 +113,17 @@ const statechart = {
       onEntry: "infoHousingAssistance"
     },
     infoHousingAssistanceRequest: {
-      on: { BACK: "housingAssistance" },
+      on: {
+        BACK: "housingAssistance",
+        INFO_HOUSING_ASSISTANCE_REQUEST_CMS: "infoHousingAssistanceRequestCms"
+      },
       onEntry: "infoHousingAssistanceRequest"
+    },
+    infoHousingAssistanceRequestCms: {
+      on: {
+        BACK: "infoHousingAssistanceRequest"
+      },
+      onEntry: "infoHousingAssistanceRequestCms"
     },
     infoHousingAssistanceHelp: {
       on: { BACK: "housingAssistance" },
@@ -145,16 +154,9 @@ const statechart = {
     },
     infoHousingAcquisitionHelp: {
       on: {
-        BACK: "housingAcquisitionSelection",
-        INFO_HOUSING_ACQUISITION_HELP_CMS: "infoHousingAcquisitionHelpCms"
+        BACK: "housingAcquisitionSelection"
       },
       onEntry: "infoHousingAcquisitionHelp"
-    },
-    infoHousingAcquisitionHelpCms: {
-      on: {
-        BACK: "infoHousingAcquisitionHelp"
-      },
-      onEntry: "infoHousingAcquisitionHelpCms"
     },
     infoHousingEnergyBills: {
       on: { BACK: "housingSelection" },
