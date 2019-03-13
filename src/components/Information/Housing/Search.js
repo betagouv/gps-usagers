@@ -24,7 +24,7 @@ const InfoHousingSearch = ({ transition, machineState }) => {
           Vous pouvez également vous rendre à la Maison de l'Habitat à l'adresse
           suivante :
           <div className="infoAddress">
-            37 rue Jean Romain
+            16 rue Rosa Parks
             <br /> 14000 CAEN
           </div>
         </p>

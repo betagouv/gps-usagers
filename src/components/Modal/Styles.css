@@ -42,13 +42,14 @@
   top: 0;
   text-align: right;
   padding: 1rem;
+  z-index: 1300;
 }
 
 .modalContent {
   position: relative;
   text-align: center;
   line-height: 20px;
-  padding: 2.5rem 2rem 0;
+  padding: 3rem 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
