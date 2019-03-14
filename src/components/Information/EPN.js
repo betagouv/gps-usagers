@@ -5,7 +5,7 @@ import ReactPiwik from "react-piwik";
 import Autosuggest from "react-autosuggest";
 import { Map, Marker, Popup, TileLayer } from "react-leaflet";
 import epnData from "../../assets/epn";
-import { Back } from "../../components";
+import { Back, Feedback } from "../../components";
 import "./Styles.css";
 
 class InfoEpn extends Component {
@@ -56,6 +56,7 @@ class InfoEpn extends Component {
 
     return (
       <div className="container">
+        <Feedback />
         <div className="header">
           <Back {...this.props} />
         </div>

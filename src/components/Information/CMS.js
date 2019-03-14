@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import ReactPiwik from "react-piwik";
 import { GeoJSON, Map, TileLayer } from "react-leaflet";
 import { getGeoJson } from "../../assets/data";
-import { Back } from "../../components";
+import { Back, Feedback } from "../../components";
 import { ModalConsumer } from "../../components/Modal/ModalContext";
 import { CMSModal } from "../../components/Modal";
 import { CIRCO, CMS } from "../../utils/circonscriptions";
@@ -98,6 +98,7 @@ export default class InfoCMS extends Component<{}, State> {
 
     return (
       <div className="container">
+        <Feedback />
         <div className="header">
           <Back {...this.props} />
         </div>
