@@ -37,7 +37,7 @@
 .modalHeader {
   background-color: white;
   border-radius: 8px;
-  position: fixed;
+  /* position: fixed; */
   width: -webkit-fill-available;
   top: 0;
   text-align: right;
@@ -85,8 +85,17 @@
   padding: 0 4rem;
 }
 
+@media screen and (min-width: 780px) and (max-width: 1196px) {
+  .modal {
+    top: 25%;
+  }
+}
+
 @media screen and (max-width: 780px) {
   .modal {
-    top: 50%;
+    top: 40%;
+  }
+  .modalContent > .phone {
+    font-size: 1.6rem;
   }
 }
