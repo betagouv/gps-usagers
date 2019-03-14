@@ -18,42 +18,44 @@ export const CMSModal = ({ onRequestClose, circo, cms, ...rest }) => (
         <FontAwesomeIcon icon={faTimes} size="1x" />
       </div>
     </div>
-    <div className="modalContent">
-      <div>
-        <div className="modalText">
-          Vous pouvez joindre par téléphone ou vous déplacer dans la
-          circonscription ou le centre médico-social le plus proche de chez vous
-          :
-        </div>
-        <h3>{circo.title}</h3>
-        <div className="address">
-          {circo.address}
-          <br />
-          {circo.zipCode} {circo.city}
-        </div>
-        <div className="phone">
-          <a href={`tel:${circo.phone}`} target="_top">
-            {circo.phone}
-          </a>
-        </div>
-      </div>
-      <br />
-      <h3>Centre médico-social</h3>
-      <div className="flex">
-        {cms.map(c => (
-          <div key={c.name} className="cms">
-            <div className="heading2">{c.name}</div>
-            <div className="address">
-              {c.address} <br />
-              {c.zipCode} {c.city}
-            </div>
-            <div className="phone">
-              <a href={`tel:${c.phone}`} target="_top">
-                {c.phone}
-              </a>
-            </div>
+    <div className="modalContainer">
+      <div className="modalContent">
+        <div>
+          <div className="modalText">
+            Vous pouvez joindre par téléphone ou vous déplacer dans la
+            circonscription ou le centre médico-social le plus proche de chez
+            vous :
           </div>
-        ))}
+          <h3>{circo.title}</h3>
+          <div className="address">
+            {circo.address}
+            <br />
+            {circo.zipCode} {circo.city}
+          </div>
+          <div className="phone">
+            <a href={`tel:${circo.phone}`} target="_top">
+              {circo.phone}
+            </a>
+          </div>
+        </div>
+        <br />
+        <h3>Centre médico-social</h3>
+        <div className="flex">
+          {cms.map(c => (
+            <div key={c.name} className="cms">
+              <div className="heading2">{c.name}</div>
+              <div className="address">
+                {c.address} <br />
+                {c.zipCode} {c.city}
+              </div>
+              <div className="phone">
+                <a href={`tel:${c.phone}`} target="_top">
+                  {c.phone}
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
     <div className="modalFooter" />
