@@ -543,7 +543,7 @@ const epnData = [
     name: "EPN - Cyber-Base Médiathèque",
     structure: "Médiathèque Jean-François Sarasin",
     address: "144 Grande rue",
-    zip: 14880,
+    zip: 14880, 
     city: "Hermanville-sur-Mer",
     phone: "02 31 36 18 05",
     latitude: 49.2862929,
@@ -560,5 +560,148 @@ const epnData = [
     longitude: ""
   }
 ];
+
+// const pointInfo = [
+//   {
+//     name: "Point Info 14 de Caen-Venoix",
+//     structure: "",
+//     address: "18 avenue des chevaliers",
+//     zip: 14000,
+//     city: "Caen",
+//     phone: "02 14 37 31 09",
+//     latitude: 49.176966,
+//     longitude: 0.400750600000037
+//   },
+//   {
+//     name: "Point Info 14 de Caen - Pierre Heuzé",
+//     structure: "",
+//     address: "15 place Champlain",
+//     zip: 14000,
+//     city: "Caen",
+//     phone: "02 31 94 97 89",
+//     latitude: 49.1980268,
+//     longitude: -0.346622199999956
+//   },
+//   {
+//     name: "Point Info 14 de May-sur-Orne",
+//     structure: "",
+//     address: "Mairie - Rue Eugène Figeac",
+//     zip: 14320,
+//     city: "May-sur-Orne",
+//     phone: "02 31 50 31 15",
+//     latitude: 49.1980268,
+//     longitude: -0.346622199999956
+//   },
+//   {
+//     name: "Point Info 14 de Bellengreville",
+//     structure: "",
+//     address: "10, rue Léonard Gille",
+//     zip: 14370,
+//     city: "Bellengreville",
+//     phone: "02 31 80 78 28",
+//     latitude: 49.1254928,
+//     longitude: -0.211149900000009
+//   },
+//   {
+//     name: "Point Info 14 de Evrecy",
+//     structure: "",
+//     address: "1 place du Général de Gaulle",
+//     zip: 14210,
+//     city: "Evrecy",
+//     phone: "02 31 29 33 38",
+//     latitude: 49.0992288,
+//     longitude: -0.502404800000022
+//   },
+//   {
+//     name: "Point Info 14 de Ouistreham",
+//     structure: "",
+//     address: "Place Albert Lemarignier",
+//     zip: 14150,
+//     city: "Ouistreham",
+//     phone: "02 31 37 44 16",
+//     latitude: 49.276346,
+//     longitude: -0.257916000000022
+//   },
+//   {
+//     name: "Point Info 14 de Ouistreham",
+//     structure: "",
+//     address: "Place Albert Lemarignier",
+//     zip: 14150,
+//     city: "Ouistreham",
+//     phone: "02 31 37 44 16",
+//     latitude: 49.276346,
+//     longitude: -0.257916000000022
+//   },
+//   {
+//     name: "Point Info 14 de Bretteville-sur-Laize",
+//     structure: "",
+//     address: "Place de la mairie",
+//     zip: 14680,
+//     city: "Bretteville sur Laize",
+//     phone: "02 31 23 49 47",
+//     latitude: 49.0450591,
+//     longitude: -0.326052900000036
+//   },
+//   {
+//     name: "Point Info 14 de Merville-Franceville",
+//     structure: "",
+//     address: "4 avenue Alexandre de Lavergne",
+//     zip: 14810,
+//     city: "Merville-Franceville-Plage",
+//     phone: "02 61 53 59 21",
+//     latitude: 49.2772545,
+//     longitude: -0.472798900000043
+//   },
+//   {
+//     name: "Point Info 14 de Val d'Arry (Noyers-Bocage)",
+//     structure: "",
+//     address: "Route de Bretagne",
+//     zip: 14210,
+//     city: "Noyers-Bocage",
+//     phone: "02 31 30 11 53",
+//     latitude: 49.1203444,
+//     longitude: -0.567715799999973
+//   },
+//   {
+//     name: "Point Info 14 de Creully-sur-Seulles",
+//     structure: "",
+//     address: "16 place Edmond Paillaud",
+//     zip: 14480,
+//     city: "Creully-sur-Seulles",
+//     phone: "02 31 20 20 07",
+//     latitude: 49.2844734,
+//     longitude: -0.539048900000011
+//   },
+//   {
+//     name: "Point Info 14 de Courseulles-sur-Mer",
+//     structure: "",
+//     address: "4 rue Arthur-Leduc",
+//     zip: 14470,
+//     city: "Courseulles-sur-Mer",
+//     phone: "02 31 36 22 50",
+//     latitude: 49.3340214,
+//     longitude: -0.456813300000021
+//   },
+//   {
+//     name: "Point Info 14 de Tilly-sur-Seulles",
+//     structure: "",
+//     address: "Route de Juvigny",
+//     zip: 14250,
+//     city: "Tilly-sur-Seulles",
+//     phone: "02 31 08 38 39",
+//     latitude: 49.1702326,
+//     longitude: -0.622700200000053
+//   },
+//   {
+//     name: "Point Info 14 de Le Hom",
+//     structure: "",
+//     address: "Route de Juvigny",
+//     zip: 14250,
+//     city: "Tilly-sur-Seulles",
+//     phone: "02 31 08 38 39",
+//     latitude: 49.1702326,
+//     longitude: -0.622700200000053
+//   }
+// ]
 
 export default epnData;

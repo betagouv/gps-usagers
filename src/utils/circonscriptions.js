@@ -59,8 +59,8 @@ export const CIRCO = {
     name: "Pôle accueil de Vire",
     address: "Rue Alfred Le Nouvel",
     zipCode: "14500",
-    city: "Vire",
-    phone: "02 31 66 27 31"
+    city: "Vire-Normandie",
+    phone: "02 31 66 27 38"
   },
   "Pré-Bocage": {
     dga: "DGA Solidarité",
@@ -263,30 +263,30 @@ export const CMS = {
   Bocage: [
     {
       name: "Vassy",
-      address: "La Crête",
+      address: "La Crête, Vassy",
       zipCode: "14410",
-      city: "Vassy",
+      city: "Valdalière",
       phone: "02 31 68 57 06"
     },
     {
       name: "Condé sur Noireau",
-      address: "29 place de l'Hôtel de Ville",
+      address: "29 place de l'Hôtel de Ville, Condé-sur-Noireau",
       zipCode: "14110",
-      city: "Condé sur Noireau",
+      city: "Condé-en-Normandie",
       phone: "02 31 69 34 25"
     },
     {
       name: "Saint Sever Calvados",
-      address: "12 rue de Vire",
+      address: "12, rue de Vire, Saint-Sever-Calvados",
       zipCode: "14380",
-      city: "Saint Sever Calvados",
+      city: "Noues-de-sienne",
       phone: "02 31 68 80 05"
     },
     {
       name: "Le Bény Bocage",
-      address: "Rue Georges brassens",
+      address: "Rue Georges Brassens, le Bény Bocage ",
       zipCode: "14350",
-      city: "Le Bény Bocage",
+      city: "Souleuvre en bocage",
       phone: "02 31 68 69 79"
     }
   ],

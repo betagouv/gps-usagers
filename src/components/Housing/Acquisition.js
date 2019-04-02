@@ -26,7 +26,7 @@ const HousingAcquisition = ({ transition, machineState }) => {
           onClick={() => transition("HOUSING_ACQUISITION_SELECTION")}
         />
         <Choice
-          label="Je souhaite une aide pour la construction de mon logement"
+          label="Je souhaite avoir une aide pour la construction ou l'acquisition de mon logement"
           onClick={() => transition("HOUSING_ACQUISITION_SELECTION")}
         />
       </div>
