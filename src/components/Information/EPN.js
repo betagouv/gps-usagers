@@ -5,6 +5,7 @@ import ReactPiwik from "react-piwik";
 import Autosuggest from "react-autosuggest";
 import { Map, Marker, Popup, TileLayer } from "react-leaflet";
 import epnData from "../../assets/epn";
+import pointInfo from "../../assets/pointInfo";
 import { Back, Feedback } from "../../components";
 import "./Styles.css";
 
@@ -88,6 +89,36 @@ class InfoEpn extends Component {
             />
             {epnData &&
               epnData.map(data => (
+                <Marker
+                  key={data.name}
+                  position={[data.latitude, data.longitude]}
+                  onClick={marker =>
+                    ReactPiwik.push([
+                      "trackEvent",
+                      "infoEpn",
+                      "marqueur carte",
+                      data.name
+                    ])
+                  }
+                >
+                  <Popup>
+                    <div className="heading1">{data.name}</div>
+                    <div className="heading2">{data.structure}</div>
+                    <div className="address">
+                      {data.address}
+                      <br />
+                      {data.zip} {data.city}
+                    </div>
+                    <div className="heading2">
+                      <a href={`tel:${data.phone}`} target="_top">
+                        {data.phone}
+                      </a>
+                    </div>
+                  </Popup>
+                </Marker>
+              ))}
+            {pointInfo &&
+              pointInfo.map(data => (
                 <Marker
                   key={data.name}
                   position={[data.latitude, data.longitude]}

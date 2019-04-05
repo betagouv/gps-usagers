@@ -266,7 +266,7 @@ export const CMS = {
       address: "La Crête, Vassy",
       zipCode: "14410",
       city: "Valdalière",
-      phone: "02 31 68 57 06"
+      phone: "02 31 66 26 26"
     },
     {
       name: "Condé sur Noireau",
@@ -280,7 +280,7 @@ export const CMS = {
       address: "12, rue de Vire, Saint-Sever-Calvados",
       zipCode: "14380",
       city: "Noues-de-sienne",
-      phone: "02 31 68 80 05"
+      phone: "02 31 66 26 26"
     },
     {
       name: "Le Bény Bocage",
