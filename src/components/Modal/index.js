@@ -1,7 +1,6 @@
 import React from "react";
 import Modal from "react-modal";
 import "./Styles.css";
-s;
 
 export const CMSModal = ({ onRequestClose, circo, cms, ...rest }) => (
   <Modal
