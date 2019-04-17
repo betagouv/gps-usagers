@@ -1,5 +1,3 @@
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
 import ReactPiwik from "react-piwik";
 import { GeoJSON, Map, TileLayer } from "react-leaflet";
@@ -27,7 +25,7 @@ const ContexedMap = React.forwardRef((props, ref) => {
     </ModalConsumer>
   );
 });
-export default class InfoGestionnaire extends Component<{}, State> {
+export default class InfoGestionnaire extends Component {
   state = {
     circoName: null,
     lat: 49.183333,
@@ -103,8 +101,8 @@ export default class InfoGestionnaire extends Component<{}, State> {
         </div>
         <div className="content final">
           <h3>
-            <FontAwesomeIcon icon={faArrowRight} /> Sélectionnez votre
-            circonscription afin d'être orienté vers le bon interlocuteur
+            Sélectionnez votre circonscription afin d'être orienté vers le bon
+            interlocuteur
           </h3>
           {circoName && <div className="circoName">{circoName}</div>}
           <Map className="map" center={position} zoom={zoom}>

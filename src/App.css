@@ -9,12 +9,15 @@
 }
 
 .final {
-  outline: 8px solid rgba(72, 185, 95, 0.6) !important;
+  outline: 8px solid #48b95f !important;
+  border: 1px solid #48b95f !important;
 }
 
 .header {
-  height: 3rem;
-  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  padding: 0;
 }
 
 .content {
@@ -26,12 +29,19 @@
   border: 1px solid #cdcdcd;
   outline: 8px solid #f4f2e6;
   outline-offset: -9px;
-  padding: 1rem 4rem;
+  padding: 2rem 3.2rem;
+}
+
+.contentCard {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
 }
 
 .button {
   display: inline-block;
-  background-color: #356eab;
+  background-color: #48b95f;
   border: 2px solid transparent;
   color: #fff;
   font-weight: 700;

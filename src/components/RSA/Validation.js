@@ -1,35 +1,35 @@
-import {
-  faArrowRight,
-  faCheck,
-  faTimes
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Back, Card } from "../../components";
+import { RSA } from "../BreadCrumps";
 
 const RSASelection = ({ transition, machineState }) => {
   return (
     <div className="container">
       <div className="header">
-        <Back transition={transition} machineState={machineState} />
+        <Back
+          transition={transition}
+          machineState={machineState}
+          breadCrumps={[RSA]}
+        />
       </div>
       <div className="content">
-        <h3>
-          <FontAwesomeIcon icon={faArrowRight} /> Êtes-vous déjà allocataire du
-          RSA?{" "}
-        </h3>
-        <Card
-          label="OUI"
-          icon={faCheck}
-          onClick={() => transition("RSA_TRUE")}
-          className="checkTrue"
-        />
-        <Card
-          label="NON"
-          icon={faTimes}
-          onClick={() => transition("RSA_FALSE")}
-          className="checkFalse"
-        />
+        <h3>Êtes vous déjà allocataire du RSA ?</h3>
+        <div className="contentCard">
+          <Card
+            label="OUI"
+            icon="done"
+            color="#48b95f"
+            onClick={() => transition("RSA_TRUE")}
+            className="checkTrue"
+          />
+          <Card
+            label="NON"
+            icon="clear"
+            color="#e73f57"
+            onClick={() => transition("RSA_FALSE")}
+            className="checkFalse"
+          />
+        </div>
       </div>
     </div>
   );

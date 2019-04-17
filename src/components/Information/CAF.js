@@ -1,5 +1,6 @@
 import React from "react";
 import { Back, Feedback } from "../../components";
+import { RSA, RECIPIENT_RSA, RSA_LETTER, INFO_CAF } from "../BreadCrumps";
 import "./Styles.css";
 
 const InfoCAF = ({ transition, machineState }) => {
@@ -7,7 +8,11 @@ const InfoCAF = ({ transition, machineState }) => {
     <div className="container">
       <Feedback />
       <div className="header">
-        <Back transition={transition} machineState={machineState} />
+        <Back
+          transition={transition}
+          machineState={machineState}
+          breadCrumps={[RSA, RECIPIENT_RSA, RSA_LETTER, INFO_CAF]}
+        />
       </div>
       <div className="content final">
         <h1>Contactez la Caisse d'Allocations Familiales (CAF)</h1>

@@ -1,8 +1,7 @@
 import React from "react";
 import Modal from "react-modal";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./Styles.css";
+s;
 
 export const CMSModal = ({ onRequestClose, circo, cms, ...rest }) => (
   <Modal
@@ -14,9 +13,7 @@ export const CMSModal = ({ onRequestClose, circo, cms, ...rest }) => (
     {...rest}
   >
     <div className="modalHeader">
-      <div onClick={onRequestClose} className="modalClose">
-        <FontAwesomeIcon icon={faTimes} size="1x" />
-      </div>
+      <div onClick={onRequestClose} className="modalClose" />
     </div>
     <div className="modalContainer">
       <div className="modalContent">
@@ -72,9 +69,7 @@ export const GestionnaireModal = ({ onRequestClose, circo, cms, ...rest }) => (
     {...rest}
   >
     <div className="modalHeader">
-      <div onClick={onRequestClose} className="modalClose">
-        <FontAwesomeIcon icon={faTimes} size="1x" />
-      </div>
+      <div onClick={onRequestClose} className="modalClose" />
     </div>
     <div className="modalContent">
       <div>

@@ -1,5 +1,3 @@
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
 import Autosuggest from "react-autosuggest";
 import { Map, TileLayer } from "react-leaflet";
@@ -52,31 +50,31 @@ class RSACirconscription extends Component {
           <Back {...this.props} />
         </div>
         <div className="content">
-          <h3>
-            <FontAwesomeIcon icon={faArrowRight} /> Quelle est votre adresse ?
-          </h3>
-          <Autosuggest
-            suggestions={suggestions}
-            onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
-            onSuggestionsClearRequested={this.onSuggestionsClearRequested}
-            getSuggestionValue={this.onClick}
-            renderSuggestion={suggestion => (
-              <span>{suggestion.properties.label}</span>
-            )}
-            inputProps={inputProps}
-          />
-
-          <Map
-            ref="map"
-            className="mapSuggest"
-            center={[49.183333, -0.35]}
-            zoom={9}
-          >
-            <TileLayer
-              url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png"
-              attribution='<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>'
+          <h3>Quelle est votre adresse ?</h3>
+          <div className="contentCard">
+            <Autosuggest
+              suggestions={suggestions}
+              onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
+              onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+              getSuggestionValue={this.onClick}
+              renderSuggestion={suggestion => (
+                <span>{suggestion.properties.label}</span>
+              )}
+              inputProps={inputProps}
             />
-          </Map>
+
+            <Map
+              ref="map"
+              className="mapSuggest"
+              center={[49.183333, -0.35]}
+              zoom={9}
+            >
+              <TileLayer
+                url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png"
+                attribution='<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>'
+              />
+            </Map>
+          </div>
         </div>
       </div>
     );

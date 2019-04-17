@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import ReactPiwik from "react-piwik";
 import Autosuggest from "react-autosuggest";
 import { Map, Marker, Popup, TileLayer } from "react-leaflet";
@@ -62,10 +61,7 @@ class InfoEpn extends Component {
           <Back {...this.props} />
         </div>
         <div className="content final">
-          <h3>
-            <FontAwesomeIcon icon={faArrowRight} /> Rendez-vous dans l‘EPN ou le
-            Point Info 14 le plus proche
-          </h3>
+          <h3>Rendez-vous dans l‘EPN ou le Point Info 14 le plus proche</h3>
           <Autosuggest
             suggestions={suggestions}
             onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}

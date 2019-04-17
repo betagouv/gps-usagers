@@ -1,12 +1,12 @@
 import React from "react";
 import classNames from "classnames";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import MaterialIcon from "material-icons-react";
 import "./Styles.css";
 
-const SelectorCard = ({ label, icon, onClick, className }) => {
+const SelectorCard = ({ label, icon, onClick, className, color }) => {
   return (
     <div className={classNames("card", className)} onClick={onClick}>
-      <FontAwesomeIcon icon={icon} size="6x" />
+      <MaterialIcon icon={icon} size={50} color={color ? color : "black"} />
       <h4>{label}</h4>
     </div>
   );

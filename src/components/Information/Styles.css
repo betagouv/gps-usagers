@@ -6,9 +6,17 @@
   height: 32rem;
 }
 
-.content h1,
-h3 {
+.final h1 {
+  color: #48b95f !important;
+}
+
+.content h1 {
   color: #003d7e;
+}
+
+.content h3 {
+  color: #003d7e;
+  text-transform: uppercase;
 }
 
 .phoneList {

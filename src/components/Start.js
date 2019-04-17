@@ -1,10 +1,3 @@
-import {
-  faArrowRight,
-  faFileInvoice,
-  faSignOutAlt,
-  faHome
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import ReactPiwik from "react-piwik";
 import { Card } from "../components";
@@ -22,28 +15,37 @@ class Start extends React.Component {
           <h2> </h2>
         </div>
         <div className="content">
-          <h3>
-            <FontAwesomeIcon icon={faArrowRight} /> Quel est l’objet de votre
-            demande ?
-          </h3>
-          <Card
-            label="Le RSA"
-            icon={faFileInvoice}
-            onClick={() => transition("RSA")}
-          />
-          <Card
-            label="Le logement"
-            icon={faHome}
-            onClick={() => transition("HOUSING")}
-          />
-          <Card
-            label="Autre"
-            icon={faSignOutAlt}
-            onClick={() =>
-              (window.top.location.href =
-                "https://www.calvados.fr/accueil/formulaire-de-contact-general.html")
-            }
-          />
+          <h3>QUEL EST L'OBJET DE VOTRE DEMANDE ?</h3>
+          <div className="contentCard">
+            <Card
+              label="RSA"
+              icon="library_books"
+              onClick={() => transition("RSA")}
+            />
+            <Card
+              label="Logement"
+              icon="home"
+              onClick={() => transition("HOUSING")}
+            />
+            <Card
+              label="Personnes handicapées"
+              icon="accessible_forward"
+              onClick={() => transition("HOUSING")}
+            />
+            <Card
+              label="Personnes âgées"
+              icon="hearing"
+              onClick={() => transition("SENIORS")}
+            />
+            <Card
+              label="Autre"
+              icon="help_outline"
+              onClick={() =>
+                (window.top.location.href =
+                  "https://www.calvados.fr/accueil/formulaire-de-contact-general.html")
+              }
+            />
+          </div>
         </div>
       </div>
     );

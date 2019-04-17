@@ -1,5 +1,3 @@
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Back } from "../../components";
 
@@ -10,10 +8,10 @@ const RSAGestionnaire = ({ transition, machineState }) => {
         <Back transition={transition} machineState={machineState} />
       </div>
       <div className="content">
-        <h3>
-          <FontAwesomeIcon icon={faArrowRight} /> Quelle est votre adresse ?
-        </h3>
-        <input className="inputText" type="text" />
+        <h3>Quelle est votre adresse ?</h3>
+        <div className="contentCard">
+          <input className="inputText" type="text" />
+        </div>
       </div>
     </div>
   );

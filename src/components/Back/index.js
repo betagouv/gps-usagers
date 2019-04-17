@@ -1,7 +1,6 @@
-import { faCaretLeft } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import ReactPiwik from "react-piwik";
+import MaterialIcon from "material-icons-react";
 import "./Styles.css";
 class Back extends React.Component {
   componentDidMount() {
@@ -19,11 +18,28 @@ class Back extends React.Component {
   };
 
   render() {
+    const { breadCrumps } = this.props;
     return (
-      <div className="previous" onClick={this.handleClick}>
-        <div className="previousLink">
-          <FontAwesomeIcon icon={faCaretLeft} size="2x" />
-          <span>Retour à l'étape précédente</span>
+      <div className="previous">
+        <div className="previousLink" onClick={this.handleClick}>
+          <MaterialIcon icon="keyboard_arrow_left" size={25} color="#e73f57" />
+          <span>retour</span>
+        </div>
+        <div className="breadCrumps">
+          {(breadCrumps || []).map((item, i, arr) => {
+            return (
+              <span key={`breadCrumps-${i}`}>
+                {i !== 0 && (
+                  <MaterialIcon
+                    icon="keyboard_arrow_right"
+                    size={25}
+                    color="#7e7e7e"
+                  />
+                )}
+                <div>{item}</div>
+              </span>
+            );
+          })}
         </div>
       </div>
     );

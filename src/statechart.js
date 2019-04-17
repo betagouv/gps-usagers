@@ -4,10 +4,12 @@ const statechart = {
     start: {
       on: {
         RSA: "rsa",
-        HOUSING: "housingSelection"
+        HOUSING: "housingSelection",
+        SENIORS: "seniorsSelection"
       },
       onEntry: "start"
     },
+    // RSA
     rsa: {
       on: {
         RSA_TRUE: "rsaSelection",
@@ -60,6 +62,7 @@ const statechart = {
       },
       onEntry: "rsaGestionnaire"
     },
+    // HOUSING
     housingSelection: {
       on: {
         BACK: "start",
@@ -104,6 +107,42 @@ const statechart = {
       },
       onEntry: "housingAcquisitionSelection"
     },
+    // SENIORS
+    seniorsSelection: {
+      on: {
+        BACK: "start",
+        SENIORS_HOMECARE_SERVICES: "seniorsHomecareServices",
+        SENIORS_INSTITUTIONS: "seniorsInstitutions",
+        SENIORS_REPORTING: "seniorsReporting"
+      },
+      onEntry: "seniorsSelection"
+    },
+    seniorsInstitutions: {
+      on: {
+        BACK: "seniorsSelection",
+        SENIORS_FINANCIAL_AID: "seniorsFinancialAid",
+        SENIORS_ACCOMMODATION: "seniorsAccommodation"
+      },
+      onEntry: "seniorsInstitutions"
+    },
+    seniorsFinancialAid: {
+      on: {
+        BACK: "seniorsInstitutions",
+        SENIORS_APA: "infoSeniorsApa",
+        SENIORS_MAINTENANCE_OBLIGATION: "infoSeniorsMaintenanceObligation",
+        SENIORS_SUCCESSIONS: "infoSeniorsSuccessions"
+      },
+      onEntry: "seniorsFinancialAid"
+    },
+    infoSeniorsMaintenanceObligation: {
+      on: { BACK: "seniorsFinancialAid" },
+      onEntry: "infoSeniorsMaintenanceObligation"
+    },
+    infoSeniorsSuccessions: {
+      on: { BACK: "seniorsFinancialAid" },
+      onEntry: "infoSeniorsSuccessions"
+    },
+    // FINAL
     infoHousingSearch: {
       on: { BACK: "housingSelection" },
       onEntry: "infoHousingSearch"

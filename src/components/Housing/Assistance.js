@@ -1,5 +1,3 @@
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Back, Choice } from "../../components";
 
@@ -10,9 +8,7 @@ const HousingAssistance = ({ transition, machineState }) => {
         <Back transition={transition} machineState={machineState} />
       </div>
       <div className="content">
-        <h3>
-          <FontAwesomeIcon icon={faArrowRight} /> Votre demande concerne :
-        </h3>
+        <h3>Votre demande concerne :</h3>
         <Choice
           label="Je souhaite avoir des informations générales sur les aides ﬁnancières"
           onClick={() => transition("INFO_HOUSING_ASSISTANCE")}

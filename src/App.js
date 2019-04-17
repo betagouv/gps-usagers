@@ -23,6 +23,9 @@ import { ModalProvider } from "./components/Modal/ModalContext";
 import ModalRoot from "./components/Modal/ModalRoot";
 
 import HousingSelection from "./components/Housing/Selection";
+import SeniorsSelection from "./components/Seniors/Selection";
+import SeniorsFinancialAid from "./components/Seniors/FinancialAid";
+import SeniorsInstitutions from "./components/Seniors/Institutions";
 import HousingAssistance from "./components/Housing/Assistance";
 import HousingRent from "./components/Housing/Rent";
 import HousingAcquisition from "./components/Housing/Acquisition";
@@ -87,7 +90,16 @@ class App extends Component {
           <Action is="housingAcquisitionSelection">
             <HousingAcquisitionSelection {...this.props} />
           </Action>
-
+          {/* SEnIORS */}
+          <Action is="seniorsSelection">
+            <SeniorsSelection {...this.props} />
+          </Action>
+          <Action is="seniorsInstitutions">
+            <SeniorsInstitutions {...this.props} />
+          </Action>
+          <Action is="seniorsFinancialAid">
+            <SeniorsFinancialAid {...this.props} />
+          </Action>
           {/* INFO HOUSING */}
           <Action is="infoHousingSearch">
             <InfoHousingSearch {...this.props} />
