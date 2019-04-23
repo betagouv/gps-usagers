@@ -133,15 +133,15 @@ const statechart = {
       },
       onEntry: "seniorsHomecareServices"
     },
-    seniorsFinancialAid: {
-      on: {
-        BACK: "seniorsInstitutions",
-        SENIORS_APA: "infoSeniorsApa",
-        SENIORS_MAINTENANCE_OBLIGATION: "infoSeniorsMaintenanceObligation",
-        SENIORS_SUCCESSIONS: "infoSeniorsSuccessions"
-      },
-      onEntry: "seniorsFinancialAid"
-    },
+    // seniorsFinancialAid: {
+    //   on: {
+    //     BACK: "seniorsInstitutions",
+    //     SENIORS_APA: "infoSeniorsApa",
+    //     SENIORS_MAINTENANCE_OBLIGATION: "infoSeniorsMaintenanceObligation",
+    //     SENIORS_SUCCESSIONS: "infoSeniorsSuccessions"
+    //   },
+    //   onEntry: "seniorsFinancialAid"
+    // },
     seniorsAutonomy: {
       on: {
         BACK: "seniorsSelection",
@@ -155,8 +155,8 @@ const statechart = {
     seniorsFamilyHome: {
       on: {
         BACK: "seniorsSelection",
-        INFO_SENIORS_FAMILY_HOME_REQUEST: "infoSeniorsApa",
-        INFO_SENIORS_FAMILY_HOME_TRACKING: "infoSeniorsApaRequest"
+        INFO_SENIORS_FAMILY_HOME_REQUEST: "infoSeniorsFamilyHomeRequest",
+        INFO_SENIORS_FAMILY_HOME_TRACKING: "infoSeniorsFamilyHomeTracking"
       },
       onEntry: "seniorsFamilyHome"
     },
@@ -172,6 +172,30 @@ const statechart = {
     infoSeniorHomecareServiceAsk: {
       on: { BACK: "seniorsHomecareServices" },
       onEntry: "infoSeniorHomecareServiceAsk"
+    },
+    infoSeniorsApa: {
+      on: { BACK: "seniorsAutonomy" },
+      onEntry: "infoSeniorsApa"
+    },
+    infoSeniorsApaRequest: {
+      on: { BACK: "seniorsAutonomy" },
+      onEntry: "infoSeniorsApaRequest"
+    },
+    infoSeniorsApaHelpRequest: {
+      on: { BACK: "seniorsAutonomy" },
+      onEntry: "infoSeniorsApaHelpRequest"
+    },
+    infoSeniorsApaHelpOnline: {
+      on: { BACK: "seniorsAutonomy" },
+      onEntry: "infoSeniorsApaHelpOnline"
+    },
+    infoSeniorsFamilyHomeRequest: {
+      on: { BACK: "seniorsFamilyHome" },
+      onEntry: "infoSeniorsFamilyHomeRequest"
+    },
+    infoSeniorsFamilyHomeTracking: {
+      on: { BACK: "seniorsFamilyHome" },
+      onEntry: "infoSeniorsFamilyHomeTracking"
     },
     infoSeniorHomecareServiceDirectory: {
       on: { BACK: "seniorsHomecareServices" },

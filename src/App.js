@@ -35,6 +35,12 @@ import HousingAcquisitionSelection from "./components/Housing/AcquisitionSelecti
 import InfoSeniorHomecareServiceAsk from "./components/Information/Seniors/HomecareAsk";
 import InfoSeniorHomecareServiceDirectory from "./components/Information/Seniors/HomecareDirectory";
 import InfoSeniorsHomeHelp from "./components/Information/Seniors/HomeHelp";
+import InfoSeniorsFamilyHomeRequest from "./components/Information/Seniors/FamilyHomeRequest";
+import InfoSeniorsFamilyHomeTracking from "./components/Information/Seniors/FamilyHomeTracking";
+import InfoSeniorsApa from "./components/Information/Seniors/Apa";
+import InfoSeniorsApaRequest from "./components/Information/Seniors/ApaRequest";
+import InfoSeniorsApaHelpRequest from "./components/Information/Seniors/ApaHelpRequest";
+import InfoSeniorsApaHelpOnline from "./components/Information/Seniors/ApaHelpOnline";
 import InfoSeniorsTeleassistance from "./components/Information/Seniors/Teleassistance";
 import InfoSeniorsSuccession from "./components/Information/Seniors/Succession";
 import InfoSeniorsMaintenanceObligation from "./components/Information/Seniors/MaintenanceObligation";
@@ -132,6 +138,24 @@ class App extends Component {
           </Action>
           <Action is="infoSeniorsMaintenanceObligation">
             <InfoSeniorsMaintenanceObligation {...this.props} />
+          </Action>
+          <Action is="infoSeniorsApa">
+            <InfoSeniorsApa {...this.props} />
+          </Action>
+          <Action is="infoSeniorsApaRequest">
+            <InfoSeniorsApaRequest {...this.props} />
+          </Action>
+          <Action is="infoSeniorsApaHelpRequest">
+            <InfoSeniorsApaHelpRequest {...this.props} />
+          </Action>
+          <Action is="infoSeniorsApaHelpOnline">
+            <InfoSeniorsApaHelpOnline {...this.props} />
+          </Action>
+          <Action is="infoSeniorsFamilyHomeRequest">
+            <InfoSeniorsFamilyHomeRequest {...this.props} />
+          </Action>
+          <Action is="infoSeniorsFamilyHomeTracking">
+            <InfoSeniorsFamilyHomeTracking {...this.props} />
           </Action>
           {/* INFO HOUSING */}
           <Action is="infoHousingSearch">
