@@ -17,19 +17,19 @@ const SeniorsEPHAD = ({ transition, machineState }) => {
         <div className="contentCard">
           <Choice
             label="Liste des EHPAD "
-            onClick={() => transition("SENIORS_FINANCIAL_AID")}
+            onClick={() => transition("INFO_SENIORS_EHPAD_LIST")}
           />
           <Choice
             label="Demande d'hébergement en EHPAD"
-            onClick={() => transition("SENIORS_ACCOMMODATION")}
+            onClick={() => transition("INFO_SENIORS_EHPAD_REQUEST")}
           />
           <Choice
             label="Demande accompagnement pour mes démarches en ligne"
-            onClick={() => transition("SENIORS_ACCOMMODATION")}
+            onClick={() => transition("INFO_SENIORS_EHPAD_HELP_REQUEST")}
           />
           <Choice
             label="Dysfonctionnement de Via trajectoire lors de ma saisie en ligne"
-            onClick={() => transition("SENIORS_ACCOMMODATION")}
+            onClick={() => transition("INFO_SENIORS_EHPAD_HELP_ONLINE")}
           />
         </div>
       </div>

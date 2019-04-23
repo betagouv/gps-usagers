@@ -33,3 +33,9 @@ export const INFO_SENIORS_FAMILY_HOME_REQUEST =
   "Accueil familial ou en effectuer la demande";
 export const INFO_SENIORS_FAMILY_HOME_TRACKING =
   "Avancement de ma demande d'aide sociale en établissement";
+export const INFO_SENIORS_EHPAD_LIST = "Liste";
+export const INFO_SENIORS_EHPAD_REQUEST = "Demande d'hébergement";
+export const INFO_SENIORS_EHPAD_HELP_REQUEST =
+  "Demande accompagnement pour mes démarches en ligne";
+export const INFO_SENIORS_EHPAD_HELP_ONLINE =
+  "Dysfonctionnement de Via trajectoire lors de ma saisie en ligne";

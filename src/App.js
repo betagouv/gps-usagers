@@ -37,6 +37,10 @@ import InfoSeniorHomecareServiceDirectory from "./components/Information/Seniors
 import InfoSeniorsHomeHelp from "./components/Information/Seniors/HomeHelp";
 import InfoSeniorsFamilyHomeRequest from "./components/Information/Seniors/FamilyHomeRequest";
 import InfoSeniorsFamilyHomeTracking from "./components/Information/Seniors/FamilyHomeTracking";
+import InfoSeniorsEhpadList from "./components/Information/Seniors/EhpadList";
+import InfoSeniorsEhpadRequest from "./components/Information/Seniors/EhpadRequest";
+import InfoSeniorsEhpadHelpRequest from "./components/Information/Seniors/EhpadHelpRequest";
+import InfoSeniorsEhpadHelpOnline from "./components/Information/Seniors/EhpadHelpOnline";
 import InfoSeniorsApa from "./components/Information/Seniors/Apa";
 import InfoSeniorsApaRequest from "./components/Information/Seniors/ApaRequest";
 import InfoSeniorsApaHelpRequest from "./components/Information/Seniors/ApaHelpRequest";
@@ -156,6 +160,18 @@ class App extends Component {
           </Action>
           <Action is="infoSeniorsFamilyHomeTracking">
             <InfoSeniorsFamilyHomeTracking {...this.props} />
+          </Action>
+          <Action is="infoSeniorsEhpadList">
+            <InfoSeniorsEhpadList {...this.props} />
+          </Action>
+          <Action is="infoSeniorsEhpadRequest">
+            <InfoSeniorsEhpadRequest {...this.props} />
+          </Action>
+          <Action is="infoSeniorsEhpadHelpRequest">
+            <InfoSeniorsEhpadHelpRequest {...this.props} />
+          </Action>
+          <Action is="infoSeniorsEhpadHelpOnline">
+            <InfoSeniorsEhpadHelpOnline {...this.props} />
           </Action>
           {/* INFO HOUSING */}
           <Action is="infoHousingSearch">
