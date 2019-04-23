@@ -25,12 +25,19 @@ import ModalRoot from "./components/Modal/ModalRoot";
 import HousingSelection from "./components/Housing/Selection";
 import SeniorsSelection from "./components/Seniors/Selection";
 import SeniorsHomecareServices from "./components/Seniors/HomecareServices";
+import SeniorsAutonomy from "./components/Seniors/Autonomy";
+import SeniorsFamilyHome from "./components/Seniors/FamilyHome";
+import SeniorsEHPAD from "./components/Seniors/EPHAD";
 import HousingAssistance from "./components/Housing/Assistance";
 import HousingRent from "./components/Housing/Rent";
 import HousingAcquisition from "./components/Housing/Acquisition";
 import HousingAcquisitionSelection from "./components/Housing/AcquisitionSelection";
 import InfoSeniorHomecareServiceAsk from "./components/Information/Seniors/HomecareAsk";
 import InfoSeniorHomecareServiceDirectory from "./components/Information/Seniors/HomecareDirectory";
+import InfoSeniorsHomeHelp from "./components/Information/Seniors/HomeHelp";
+import InfoSeniorsTeleassistance from "./components/Information/Seniors/Teleassistance";
+import InfoSeniorsSuccession from "./components/Information/Seniors/Succession";
+import InfoSeniorsMaintenanceObligation from "./components/Information/Seniors/MaintenanceObligation";
 import InfoHousingSearch from "./components/Information/Housing/Search";
 import InfoHousingAssistance from "./components/Information/Housing/Assistance";
 import InfoHousingAssistanceRequest from "./components/Information/Housing/AssistanceRequest";
@@ -98,12 +105,33 @@ class App extends Component {
           <Action is="seniorsHomecareServices">
             <SeniorsHomecareServices {...this.props} />
           </Action>
+          <Action is="seniorsAutonomy">
+            <SeniorsAutonomy {...this.props} />
+          </Action>
+          <Action is="seniorsFamilyHome">
+            <SeniorsFamilyHome {...this.props} />
+          </Action>
+          <Action is="seniorsEHPAD">
+            <SeniorsEHPAD {...this.props} />
+          </Action>
           {/* INFO SENIORS */}
           <Action is="infoSeniorHomecareServiceAsk">
             <InfoSeniorHomecareServiceAsk {...this.props} />
           </Action>
           <Action is="infoSeniorHomecareServiceDirectory">
             <InfoSeniorHomecareServiceDirectory {...this.props} />
+          </Action>
+          <Action is="infoSeniorsHomeHelp">
+            <InfoSeniorsHomeHelp {...this.props} />
+          </Action>
+          <Action is="infoSeniorsTeleassistance">
+            <InfoSeniorsTeleassistance {...this.props} />
+          </Action>
+          <Action is="infoSeniorsSuccession">
+            <InfoSeniorsSuccession {...this.props} />
+          </Action>
+          <Action is="infoSeniorsMaintenanceObligation">
+            <InfoSeniorsMaintenanceObligation {...this.props} />
           </Action>
           {/* INFO HOUSING */}
           <Action is="infoHousingSearch">

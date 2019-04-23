@@ -114,10 +114,10 @@ const statechart = {
         SENIORS_HOMECARE_SERVICES: "seniorsHomecareServices",
         SENIORS_AUTONOMY: "seniorsAutonomy",
         SENIORS_FAMILY_HOME: "seniorsFamilyHome",
-        SENIORS_HOME_HELP: "seniorsHomeHelp",
-        SENIORS_TELEASSISTANCE: "seniorsTeleassistance",
-        SENIORS_SUCCESSION: "seniorsSuccession",
-        SENIORS_MAINTENANCE_OBLIGATION: "seniorsMaintenanceObligation",
+        INFO_SENIORS_HOME_HELP: "infoSeniorsHomeHelp",
+        SENIORS_TELEASSISTANCE: "infoSeniorsTeleassistance",
+        SENIORS_SUCCESSION: "infoSeniorsSuccession",
+        SENIORS_MAINTENANCE_OBLIGATION: "infoSeniorsMaintenanceObligation",
         SENIORS_EHPAD: "seniorsEHPAD",
         SENIORS_REPORTING: "seniorsReporting",
         SENIORS_FINANCIERS_MEETING: "seniorsFinanciersMeeting"
@@ -142,13 +142,31 @@ const statechart = {
       },
       onEntry: "seniorsFinancialAid"
     },
-    infoSeniorsMaintenanceObligation: {
-      on: { BACK: "seniorsFinancialAid" },
-      onEntry: "infoSeniorsMaintenanceObligation"
+    seniorsAutonomy: {
+      on: {
+        BACK: "seniorsSelection",
+        INFO_SENIORS_APA: "infoSeniorsApa",
+        INFO_SENIORS_APA_REQUEST: "infoSeniorsApaRequest",
+        INFO_SENIORS_APA_HELP_REQUEST: "infoSeniorsApaHelpRequest",
+        INFO_SENIORS_APA_HELP_ONLINE: "infoSeniorsApaHelpOnline"
+      },
+      onEntry: "seniorsAutonomy"
     },
-    infoSeniorsSuccessions: {
-      on: { BACK: "seniorsFinancialAid" },
-      onEntry: "infoSeniorsSuccessions"
+    seniorsFamilyHome: {
+      on: {
+        BACK: "seniorsSelection",
+        INFO_SENIORS_FAMILY_HOME_REQUEST: "infoSeniorsApa",
+        INFO_SENIORS_FAMILY_HOME_TRACKING: "infoSeniorsApaRequest"
+      },
+      onEntry: "seniorsFamilyHome"
+    },
+    seniorsEHPAD: {
+      on: {
+        BACK: "seniorsSelection",
+        INFO_SENIORS_FAMILY_HOME_REQUEST: "infoSeniorsApa",
+        INFO_SENIORS_FAMILY_HOME_TRACKING: "infoSeniorsApaRequest"
+      },
+      onEntry: "seniorsEHPAD"
     },
     // FINAL SENIOR
     infoSeniorHomecareServiceAsk: {
@@ -158,6 +176,22 @@ const statechart = {
     infoSeniorHomecareServiceDirectory: {
       on: { BACK: "seniorsHomecareServices" },
       onEntry: "infoSeniorHomecareServiceDirectory"
+    },
+    infoSeniorsHomeHelp: {
+      on: { BACK: "seniorsSelection" },
+      onEntry: "infoSeniorsHomeHelp"
+    },
+    infoSeniorsTeleassistance: {
+      on: { BACK: "seniorsSelection" },
+      onEntry: "infoSeniorsTeleassistance"
+    },
+    infoSeniorsSuccession: {
+      on: { BACK: "seniorsSelection" },
+      onEntry: "infoSeniorsSuccession"
+    },
+    infoSeniorsMaintenanceObligation: {
+      on: { BACK: "seniorsSelection" },
+      onEntry: "infoSeniorsMaintenanceObligation"
     },
     // FINAL HOUSING
     infoHousingSearch: {

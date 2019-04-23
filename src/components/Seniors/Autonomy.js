@@ -1,6 +1,6 @@
 import React from "react";
 import { Back, Choice } from "..";
-import { SENIORS, SENIORS_INSTITUTIONS } from "../BreadCrumps";
+import { SENIORS, SENIORS_AUTONOMY } from "../BreadCrumps";
 
 const SeniorsInstitutions = ({ transition, machineState }) => {
   return (
@@ -9,19 +9,27 @@ const SeniorsInstitutions = ({ transition, machineState }) => {
         <Back
           transition={transition}
           machineState={machineState}
-          breadCrumps={[SENIORS, SENIORS_INSTITUTIONS]}
+          breadCrumps={[SENIORS, SENIORS_AUTONOMY]}
         />
       </div>
       <div className="content">
         <h3>VOTRE DEMANDE CONCERNE :</h3>
         <div className="contentCard">
           <Choice
-            label="Aides financières et/ou techniques (demande ou fermeture)"
-            onClick={() => transition("SENIORS_FINANCIAL_AID")}
+            label="Informations générales sur l'APA"
+            onClick={() => transition("INFO_SENIORS_APA")}
           />
           <Choice
-            label="Hébergement"
-            onClick={() => transition("SENIORS_ACCOMMODATION")}
+            label="Création d'une demande d'APA"
+            onClick={() => transition("INFO_SENIORS_APA_REQUEST")}
+          />
+          <Choice
+            label="Demande accompagnement pour mes démarches en ligne"
+            onClick={() => transition("INFO_SENIORS_APA_HELP_REQUEST")}
+          />
+          <Choice
+            label="Dysfonctionnement lors de ma saisie en ligne"
+            onClick={() => transition("INFO_SENIORS_APA_HELP_ONLINE")}
           />
         </div>
       </div>

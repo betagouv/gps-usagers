@@ -29,7 +29,7 @@ const SeniorsSelection = ({ transition, machineState }) => {
           />
           <Choice
             label="Service d'aide à domicile (SAD)"
-            onClick={() => transition("SENIORS_HOME_HELP")}
+            onClick={() => transition("INFO_SENIORS_HOME_HELP")}
           />
           <Choice
             label="Téléassistance"
