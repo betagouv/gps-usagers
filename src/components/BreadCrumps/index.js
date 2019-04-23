@@ -12,5 +12,7 @@ export const INFO_MSA = "MSA";
 
 // SENIORS
 export const SENIORS = "Personnes âgées";
-export const SENIORS_INSTITUTIONS = "Établissements";
-export const SENIORS_FINANCIAL_AID = "Aides financières et/ou techniques";
+export const SENIORS_HOMECARE_SERVICES = "Aide ménagère";
+export const INFO_SENIORS_HOMECARE_SERVICES_ASK = "Demande d'aide ménagère";
+export const INFO_SENIORS_HOMECARE_SERVICES_DIRECTORY =
+  "Avancement de mon dossier";
