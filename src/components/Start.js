@@ -30,7 +30,7 @@ class Start extends React.Component {
             <Card
               label="Personnes handicapées"
               icon="accessible_forward"
-              onClick={() => transition("HOUSING")}
+              onClick={() => transition("HANDICAPPED")}
             />
             <Card
               label="Personnes âgées"

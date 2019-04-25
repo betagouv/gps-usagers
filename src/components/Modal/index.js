@@ -24,8 +24,10 @@ export const CMSModal = ({ onRequestClose, circo, cms, ...rest }) => (
           </div>
           <h3>{circo.title}</h3>
           <div className="address">
+            <div style={{ display: "block" }}>{circo.name}</div>
             {circo.address}
             <br />
+            {circo.bp ? `${circo.bp} - ` : ""}
             {circo.zipCode} {circo.city}
           </div>
           <div className="phone">

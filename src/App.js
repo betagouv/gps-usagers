@@ -23,6 +23,10 @@ import { ModalProvider } from "./components/Modal/ModalContext";
 import ModalRoot from "./components/Modal/ModalRoot";
 
 import HousingSelection from "./components/Housing/Selection";
+import HandicappedSelection from "./components/Handicapped/Selection";
+import HandicappedRequest from "./components/Handicapped/Request";
+import HandicappedTrackingRequest from "./components/Handicapped/TrackingRequest";
+import HandicappedTrackingRequestHelp from "./components/Handicapped/TrackingRequestHelp";
 import SeniorsSelection from "./components/Seniors/Selection";
 import SeniorsHomecareServices from "./components/Seniors/HomecareServices";
 import SeniorsAutonomy from "./components/Seniors/Autonomy";
@@ -37,6 +41,9 @@ import HousingAcquisitionSelection from "./components/Housing/AcquisitionSelecti
 import InfoSeniorHomecareServiceAsk from "./components/Information/Seniors/HomecareAsk";
 import InfoSeniorsFinanciersMeeting from "./components/Information/Seniors/FinanciersMeeting";
 import InfoSeniorsReportingInfo from "./components/Information/Seniors/ReportingInfo";
+import InfoHandicappedInfos from "./components/Information/Handicapped/Infos";
+import InfoHandicappedRequestForm from "./components/Information/Handicapped/RequestForm";
+import InfoHandicappedRequestHelp from "./components/Information/Handicapped/RequestHelp";
 import InfoSeniorsReportingRequestPersonal from "./components/Information/Seniors/ReportingRequestPersonal";
 import InfoSeniorsReportingRequestPro from "./components/Information/Seniors/ReportingRequestPro";
 import InfoSeniorHomecareServiceDirectory from "./components/Information/Seniors/HomecareDirectory";
@@ -113,6 +120,29 @@ class App extends Component {
           </Action>
           <Action is="housingAcquisitionSelection">
             <HousingAcquisitionSelection {...this.props} />
+          </Action>
+          {/* HANDICAPPED */}
+          <Action is="handicappedSelection">
+            <HandicappedSelection {...this.props} />
+          </Action>
+          <Action is="handicappedRequest">
+            <HandicappedRequest {...this.props} />
+          </Action>
+          <Action is="handicappedTrackingRequest">
+            <HandicappedTrackingRequest {...this.props} />
+          </Action>
+          <Action is="handicappedTrackingRequestHelp">
+            <HandicappedTrackingRequestHelp {...this.props} />
+          </Action>
+          {/* INFO HANDICAPPED */}
+          <Action is="infoHandicappedInfos">
+            <InfoHandicappedInfos {...this.props} />
+          </Action>
+          <Action is="infoHandicappedRequestForm">
+            <InfoHandicappedRequestForm {...this.props} />
+          </Action>
+          <Action is="infoHandicappedRequestHelp">
+            <InfoHandicappedRequestHelp {...this.props} />
           </Action>
           {/* SENIORS */}
           <Action is="seniorsSelection">

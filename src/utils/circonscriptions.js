@@ -100,6 +100,112 @@ export const CIRCO = {
   }
 };
 
+export const CLIC = {
+  "Pays d'Auge Sud": {
+    dga: "",
+    title: "CLIC du Pays d'Auge Sud",
+    name: "",
+    address: "127 b, rue Roger Aini",
+    zipCode: "14100",
+    city: "Lisieux",
+    phone: "02 14 47 54 25"
+  },
+  "USDA Centre": {
+    dga: "",
+    title: "CLIC de Caen Couronne",
+    name: "Bât. F2 - 1er étage",
+    address: "17 avenue Pierre Mendès France",
+    bp: "BP 10519",
+    zipCode: "14035 Caen cedex 1",
+    city: "Caen",
+    phone: "02 50 22 40 20"
+  },
+  "Pays d'Auge Nord": {
+    dga: "",
+    title: "CLIC du Pays d'Auge Nord",
+    name: "",
+    address: "14 rue de la Chaussée Nival",
+    zipCode: "14130",
+    city: "Pont-l'Évêque",
+    phone: "02 31 65 38 71"
+  },
+  "USDA Nord": {
+    dga: "",
+    title: "CLIC de Caen Couronne",
+    name: "Bât. F2 - 1er étage",
+    address: "17 avenue Pierre Mendès France",
+    bp: "BP 10519",
+    zipCode: "14035 Caen cedex 1",
+    city: "Caen",
+    phone: "02 50 22 40 20"
+  },
+  "USDA Sud": {
+    dga: "",
+    title: "CLIC de Caen Couronne",
+    name: "Bât. F2 - 1er étage",
+    address: "17 avenue Pierre Mendès France",
+    bp: "BP 10519",
+    zipCode: "14035 Caen cedex 1",
+    city: "Caen",
+    phone: "02 50 22 40 20"
+  },
+  "Caen Ouest": {
+    dga: "",
+    title: "CLIC de Caen Ouest",
+    name: "Circonscription d'action sociale Caen-Ouest",
+    address: "Rue de l'Eglise",
+    bp: "BP 56",
+    zipCode: "14440",
+    city: "Douvres-la-Délivrande",
+    phone: "02 31 37 64 64"
+  },
+  Bocage: {
+    dga: "",
+    title: "CLIC du Bocage",
+    name: "",
+    address: "1 avenue du Général de Gaulle",
+    zipCode: "14500",
+    city: "Vire",
+    phone: "02 31 66 26 20"
+  },
+  "Pré-Bocage": {
+    dga: "DGA Solidarité",
+    title: "Circonscription d'action sociale du Pré-Bocage",
+    name: "Pôle Accueil",
+    address: "18 rue Henry Chéron",
+    zipCode: "14210",
+    city: "Evrecy",
+    phone: "02 31 08 32 70"
+  },
+  Falaise: {
+    dga: "",
+    title: "CLIC de Falaise",
+    name: "",
+    address: "4 rue de la résistance, bât. B",
+    zipCode: "14700",
+    city: "Falaise",
+    phone: "02 31 41 41 91"
+  },
+  Bessin: {
+    dga: "",
+    title: "CLIC du Bessin",
+    name: "",
+    address: "3 rue François Coulet",
+    zipCode: "14400",
+    city: "Bayeux",
+    phone: "02 31 51 10 72"
+  },
+  "Caen Est": {
+    dga: "DGA Solidarité",
+    title: "Circonscription d'action sociale du Caen Est",
+    name: "Pôle Accueil",
+    address: "Rue Jules Guesde",
+    zipCode: "14460",
+    city: "Colombelles",
+    phone: "02 31 35 15 51"
+  }
+};
+
 export const CIRCO_PHONE = {
   "Pays d'Auge Sud": "02 31 57 17 81",
   "USDA Centre": "02 31 57 17 81",

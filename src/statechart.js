@@ -5,6 +5,7 @@ const statechart = {
       on: {
         RSA: "rsa",
         HOUSING: "housingSelection",
+        HANDICAPPED: "handicappedSelection",
         SENIORS: "seniorsSelection"
       },
       onEntry: "start"
@@ -106,6 +107,84 @@ const statechart = {
         INFO_HOUSING_ACQUISITION_HELP: "infoHousingAcquisitionHelp"
       },
       onEntry: "housingAcquisitionSelection"
+    },
+    // HANDICAPPED
+    handicappedSelection: {
+      on: {
+        BACK: "start",
+        INFO_HANDICAPPED_INFOS: "infoHandicappedInfos",
+        HANDICAPPED_REQUEST: "handicappedRequest",
+        HANDICAPPED_TRACKING_REQUEST: "handicappedTrackingRequest",
+        HANDICAPPED_PAYMENT: "infoSeniorsHomeHelp",
+        HANDICAPPED_FAMILY_HOME: "infoSeniorsTeleassistance",
+        HANDICAPPED_TRANSPORT: "infoSeniorsSuccession",
+        HANDICAPPED_FINANCIAL: "infoSeniorsMaintenanceObligation"
+      },
+      onEntry: "handicappedSelection"
+    },
+    handicappedRequest: {
+      on: {
+        BACK: "handicappedSelection",
+        INFO_HANDICAPPED_REQUEST_FORM: "infoHandicappedRequestForm",
+        INFO_HANDICAPPED_REQUEST_HELP: "infoHandicappedRequestHelp"
+      },
+      onEntry: "handicappedRequest"
+    },
+    handicappedTrackingRequest: {
+      on: {
+        BACK: "handicappedSelection",
+        INFO_HANDICAPPED_TRACKING_REQUEST_RECEIVE:
+          "infoHandicappedTrackingRequestReceive",
+        INFO_HANDICAPPED_TRACKING_REQUEST_COMPLETE:
+          "infoHandicappedTrackingRequestComplete",
+        HANDICAPPED_TRACKING_REQUEST_HELP: "handicappedTrackingRequestHelp",
+        INFO_HANDICAPPED_TRACKING_REQUEST_FINANCIAL:
+          "infoHandicappedTrackingRequestFinancial"
+      },
+      onEntry: "handicappedTrackingRequest"
+    },
+    handicappedTrackingRequestHelp: {
+      on: {
+        BACK: "handicappedTrackingRequest",
+        INFO_HANDICAPPED_TRACKING_REQUEST_HELP_FILE:
+          "infoHandicappedTrackingRequestHelpFile",
+        INFO_HANDICAPPED_TRACKING_REQUEST_HELP_ONLINE:
+          "infoHandicappedTrackingRequestHelpOnline"
+      },
+      onEntry: "handicappedTrackingRequestHelp"
+    },
+    // FINAL HANDICAPPED
+    infoHandicappedInfos: {
+      on: { BACK: "handicappedSelection" },
+      onEntry: "infoHandicappedInfos"
+    },
+    infoHandicappedRequestForm: {
+      on: { BACK: "handicappedRequest" },
+      onEntry: "infoHandicappedRequestForm"
+    },
+    infoHandicappedRequestHelp: {
+      on: { BACK: "handicappedRequest" },
+      onEntry: "infoHandicappedRequestHelp"
+    },
+    infoHandicappedTrackingRequestReceive: {
+      on: { BACK: "handicappedTrackingRequest" },
+      onEntry: "infoHandicappedTrackingRequestReceive"
+    },
+    infoHandicappedTrackingRequestComplete: {
+      on: { BACK: "handicappedTrackingRequest" },
+      onEntry: "infoHandicappedTrackingRequestComplete"
+    },
+    infoHandicappedTrackingRequestFinancial: {
+      on: { BACK: "handicappedTrackingRequest" },
+      onEntry: "infoHandicappedTrackingRequestFinancial"
+    },
+    infoHandicappedTrackingRequestHelpFile: {
+      on: { BACK: "handicappedTrackingRequestHelp" },
+      onEntry: "infoHandicappedTrackingRequestHelpFile"
+    },
+    infoHandicappedTrackingRequestHelpOnline: {
+      on: { BACK: "handicappedTrackingRequestHelp" },
+      onEntry: "infoHandicappedTrackingRequestHelpOnline"
     },
     // SENIORS
     seniorsSelection: {
