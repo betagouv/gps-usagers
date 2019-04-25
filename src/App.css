@@ -32,6 +32,10 @@
   padding: 2rem 3.2rem;
 }
 
+.content p {
+  line-height: 3rem;
+}
+
 .contentCard {
   display: flex;
   justify-content: flex-start;

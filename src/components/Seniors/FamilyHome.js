@@ -16,7 +16,7 @@ const SeniorsInstitutions = ({ transition, machineState }) => {
         <h3>VOTRE DEMANDE CONCERNE :</h3>
         <div className="contentCard">
           <Choice
-            label="Accueil familial ou en effectuer la demande (listing,contrat, changement d'adresse)"
+            label="Devenir Accueillant familial ou en effectuer la demande (listing,contrat, changement d'adresse)"
             onClick={() => transition("INFO_SENIORS_FAMILY_HOME_REQUEST")}
           />
           <Choice

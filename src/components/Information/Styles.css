@@ -34,6 +34,10 @@
   text-transform: uppercase;
 }
 
+.content p {
+  line-height: 3rem;
+}
+
 .phoneList {
   line-height: 1.5;
 }
