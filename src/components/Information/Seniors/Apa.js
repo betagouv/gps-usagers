@@ -14,7 +14,9 @@ const InfoSeniorApa = ({ transition, machineState }) => {
           breadCrumps={[SENIORS, SENIORS_AUTONOMY, INFO_SENIORS_APA]}
         />
       </div>
-      <div className="content final" />
+      <div className="content final">
+        <h1>Joindre le centre local d'information et de coordination (CLIC)</h1>
+      </div>
     </div>
   );
 };

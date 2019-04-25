@@ -120,7 +120,7 @@ const statechart = {
         SENIORS_MAINTENANCE_OBLIGATION: "infoSeniorsMaintenanceObligation",
         SENIORS_EHPAD: "seniorsEHPAD",
         SENIORS_REPORTING: "seniorsReporting",
-        SENIORS_FINANCIERS_MEETING: "seniorsFinanciersMeeting"
+        INFO_SENIORS_FINANCIERS_MEETING: "infoSeniorsFinanciersMeeting"
       },
       onEntry: "seniorsSelection"
     },
@@ -160,6 +160,23 @@ const statechart = {
         INFO_SENIORS_EHPAD_HELP_ONLINE: "infoSeniorsEhpadHelpOnline"
       },
       onEntry: "seniorsEHPAD"
+    },
+    seniorsReporting: {
+      on: {
+        BACK: "seniorsSelection",
+        INFO_SENIORS_REPORTING_INFO: "infoSeniorsReportingInfo",
+        SENIORS_REPORTING_REQUEST: "seniorsReportingRequest"
+      },
+      onEntry: "seniorsReporting"
+    },
+    seniorsReportingRequest: {
+      on: {
+        BACK: "seniorsReporting",
+        INFO_SENIORS_REPORTING_REQUEST_PERSONAL:
+          "infoSeniorsReportingRequestPersonal",
+        INFO_SENIORS_REPORTING_REQUEST_PRO: "infoSeniorsReportingRequestPro"
+      },
+      onEntry: "seniorsReportingRequest"
     },
     // FINAL SENIOR
     infoSeniorHomecareServiceAsk: {
@@ -225,6 +242,22 @@ const statechart = {
     infoSeniorsEhpadHelpOnline: {
       on: { BACK: "seniorsEHPAD" },
       onEntry: "infoSeniorsEhpadHelpOnline"
+    },
+    infoSeniorsReportingInfo: {
+      on: { BACK: "seniorsReporting" },
+      onEntry: "infoSeniorsReportingInfo"
+    },
+    infoSeniorsReportingRequestPersonal: {
+      on: { BACK: "seniorsReportingRequest" },
+      onEntry: "infoSeniorsReportingRequestPersonal"
+    },
+    infoSeniorsReportingRequestPro: {
+      on: { BACK: "seniorsReportingRequest" },
+      onEntry: "infoSeniorsReportingRequestPro"
+    },
+    infoSeniorsFinanciersMeeting: {
+      on: { BACK: "seniorsSelection" },
+      onEntry: "infoSeniorsFinanciersMeeting"
     },
     // FINAL HOUSING
     infoHousingSearch: {

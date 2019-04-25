@@ -53,7 +53,7 @@ const SeniorsSelection = ({ transition, machineState }) => {
           />
           <Choice
             label="Conférence des financeurs"
-            onClick={() => transition("SENIORS_FINANCIERS_MEETING")}
+            onClick={() => transition("INFO_SENIORS_FINANCIERS_MEETING")}
           />
         </div>
       </div>

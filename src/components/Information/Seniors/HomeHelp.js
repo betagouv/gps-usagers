@@ -14,7 +14,12 @@ const InfoSeniorHomeHelp = ({ transition, machineState }) => {
           breadCrumps={[SENIORS, INFO_SENIORS_HOME_HELP]}
         />
       </div>
-      <div className="content final" />
+      <div className="content final">
+        <h1>
+          Rechercher le service d'aide à domicile qui intervient dans votre
+          ville ou commune
+        </h1>
+      </div>
     </div>
   );
 };

@@ -22,7 +22,15 @@ const InfoSeniorHelpRequest = ({ transition, machineState }) => {
           ]}
         />
       </div>
-      <div className="content final" />
+      <div className="content final">
+        <h1>Vous pouvez formuler votre demande d'APA en ligne :</h1>
+        <p>
+          en cliquant sur le lien suivant :{" "}
+          <a href="https://teleservices.calvados.fr/" target="_top">
+            https://teleservices.calvados.fr/
+          </a>
+        </p>
+      </div>
     </div>
   );
 };

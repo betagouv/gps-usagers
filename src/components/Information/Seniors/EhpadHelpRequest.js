@@ -22,7 +22,11 @@ const InfoSeniorsEhpadHelpRequest = ({ transition, machineState }) => {
           ]}
         />
       </div>
-      <div className="content final" />
+      <div className="content final">
+        <h1>
+          Rendez-vous dans le point info ou EPN le plus proche de chez vous{" "}
+        </h1>
+      </div>
     </div>
   );
 };

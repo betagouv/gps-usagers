@@ -1,12 +1,9 @@
 import React from "react";
 import { Back, Feedback } from "../../../components";
 import "../Styles.css";
-import {
-  SENIORS,
-  INFO_SENIORS_MAINTENANCE_OBLIGATION
-} from "../../BreadCrumps";
+import { SENIORS, INFO_SENIOR_FINANCIERS_MEETING } from "../../BreadCrumps";
 
-const InfoSeniorMAintenaceObligation = ({ transition, machineState }) => {
+const InfoSeniorsFinanciersMeeting = ({ transition, machineState }) => {
   return (
     <div className="container">
       <Feedback />
@@ -14,7 +11,7 @@ const InfoSeniorMAintenaceObligation = ({ transition, machineState }) => {
         <Back
           transition={transition}
           machineState={machineState}
-          breadCrumps={[SENIORS, INFO_SENIORS_MAINTENANCE_OBLIGATION]}
+          breadCrumps={[SENIORS, INFO_SENIOR_FINANCIERS_MEETING]}
         />
       </div>
       <div className="content final">
@@ -23,8 +20,8 @@ const InfoSeniorMAintenaceObligation = ({ transition, machineState }) => {
         </h1>
         <p>
           <h2 className="phoneList">
-            <a href="tel:0231571718" target="_top">
-              02 31 57 17 18
+            <a href="tel:0231571427" target="_top">
+              02 31 57 14 27
             </a>
           </h2>
         </p>
@@ -33,4 +30,4 @@ const InfoSeniorMAintenaceObligation = ({ transition, machineState }) => {
   );
 };
 
-export default InfoSeniorMAintenaceObligation;
+export default InfoSeniorsFinanciersMeeting;

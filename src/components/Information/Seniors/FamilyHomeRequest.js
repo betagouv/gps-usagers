@@ -22,7 +22,16 @@ const InfoSeniorFamilyHomeRequest = ({ transition, machineState }) => {
           ]}
         />
       </div>
-      <div className="content final" />
+      <div className="content final">
+        <h1>Vous pouvez contacter le gestionnaire suivant :</h1>
+        <p>
+          <h2 className="phoneList">
+            <a href="tel:0231571635" target="_top">
+              02 31 57 16 35
+            </a>
+          </h2>
+        </p>
+      </div>
     </div>
   );
 };
