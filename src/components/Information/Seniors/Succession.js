@@ -19,6 +19,7 @@ const InfoSeniorSuccession = ({ transition, machineState }) => {
           Contactez le gestionnaire suivant pour obtenir un renseignement :
         </h1>
         <p>
+        Numéro de téléphone du gestionnaire de dossier
           <h2 className="phoneList">
             <a href="tel:0231571612" target="_top">
               02 31 57 16 12

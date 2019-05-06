@@ -15,7 +15,7 @@ class Start extends React.Component {
           <h2> </h2>
         </div>
         <div className="content">
-          <h3>QUEL EST L'OBJET DE VOTRE DEMANDE ?</h3>
+          <h3>QUEL EST L'OBJET DE VOTRE DEMANDE&nbsp;?</h3>
           <div className="contentCard">
             <Card
               label="RSA"
@@ -34,7 +34,7 @@ class Start extends React.Component {
             />
             <Card
               label="Personnes âgées"
-              icon="hearing"
+              icon="supervisor_account"
               onClick={() => transition("SENIORS")}
             />
             <Card

@@ -1,6 +1,6 @@
 import React from "react";
 import { Back, Choice } from "..";
-import { HANDICAPPED, HANDICAPPED_REQUEST } from "../BreadCrumps";
+import { HANDICAPPED, HANDICAPPED_PAYEMENT } from "../BreadCrumps";
 
 const HandicappedRequest = ({ transition, machineState }) => {
   return (
@@ -9,7 +9,7 @@ const HandicappedRequest = ({ transition, machineState }) => {
         <Back
           transition={transition}
           machineState={machineState}
-          breadCrumps={[HANDICAPPED, HANDICAPPED_REQUEST]}
+          breadCrumps={[HANDICAPPED, HANDICAPPED_PAYEMENT]}
         />
       </div>
       <div className="content">

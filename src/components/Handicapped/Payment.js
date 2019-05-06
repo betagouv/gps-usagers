@@ -2,7 +2,7 @@ import React from "react";
 import { Back, Choice } from "..";
 import { HANDICAPPED, HANDICAPPED_TRACKING_REQUEST } from "../BreadCrumps";
 
-const HandicappedTrackingRequest = ({ transition, machineState }) => {
+const HandicappedPayment = ({ transition, machineState }) => {
   return (
     <div className="container">
       <div className="header">
@@ -16,23 +16,23 @@ const HandicappedTrackingRequest = ({ transition, machineState }) => {
         <h3>Votre demande concerne :</h3>
         <div className="contentCard">
           <Choice
-            label="Je souhaite savoir si ma demande ou mes documents ont bien été réceptionnés"
+            label="Le paiement de la prestation de compensation du handicap (PCH) ou son arrêt"
             onClick={() =>
-              transition("INFO_HANDICAPPED_TRACKING_REQUEST_RECEIVE")
+              transition("HANDICAPPED_PAYMENT_PCH")
             }
           />
           <Choice
-            label="Je souhaite savoir si ma demande est bien complète ou l'évolution de celui-ci"
+            label="Le paiement de l'allocation compensatrice pour tierce personne ou son arrêt"
             onClick={() =>
-              transition("INFO_HANDICAPPED_TRACKING_REQUEST_COMPLETE")
+              transition("HANDICAPPED_PAYMENT_THIRD_PARTY")
             }
           />
           <Choice
-            label="Je rencontre des difficultés pour déposer ma demande"
+            label="Le paiement de l'allocation adulte handicapée (AAH) ou son arrêt"
             onClick={() => transition("HANDICAPPED_TRACKING_REQUEST_HELP")}
           />
           <Choice
-            label="Je rencontre des difficultés financières"
+            label="Le paiement de l’allocation d'éducation de l'enfant handicapé (AAEH) ou son arrêt"
             onClick={() =>
               transition("INFO_HANDICAPPED_TRACKING_REQUEST_FINANCIAL")
             }
@@ -43,4 +43,4 @@ const HandicappedTrackingRequest = ({ transition, machineState }) => {
   );
 };
 
-export default HandicappedTrackingRequest;
+export default HandicappedPayment;

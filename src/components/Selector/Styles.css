@@ -8,18 +8,6 @@
   color: black;
 }
 
-@media screen and (max-width: 640px) {
-  .choice {
-    padding: 0 0.5rem;
-    margin: 1rem 0;
-    width: auto;
-    border: 1px solid #979797;
-    background-color: #e7e3c8;
-    cursor: pointer;
-    color: black;
-  }
-}
-
 .choice:hover {
   background-color: #e7e3c8;
 }
@@ -33,7 +21,6 @@
   flex-direction: space-between;
   align-items: center;
   justify-content: flex-start;
-  text-align: center;
   height: 3rem;
   width: 12rem;
   padding: 1.5rem;
@@ -62,4 +49,22 @@
   color: black;
   margin-left: 1rem;
   text-align: left;
+}
+
+
+@media screen and (max-width: 640px) {
+  .card {
+    width: 100%;
+    margin-right: 0;
+  }
+  .choice {
+    padding: 0 0.5rem;
+    margin: 1rem 0;
+    width: 100%;
+    text-align:left;
+    border: 1px solid #979797;
+    background-color: #e7e3c8;
+    cursor: pointer;
+    color: black;
+  }
 }

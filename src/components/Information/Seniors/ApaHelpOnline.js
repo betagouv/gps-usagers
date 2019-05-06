@@ -25,6 +25,7 @@ const InfoSeniorApaHelpOnline = ({ transition, machineState }) => {
       <div className="content final">
         <h1>Contactez le gestionnaire</h1>
         <p>
+          Contacter le gestionnaire pour des renseignements :{" "}
           <a href="mailto:valerie.david-bellenger@calvados.fr">
             valerie.david-bellenger@calvados.fr
           </a>

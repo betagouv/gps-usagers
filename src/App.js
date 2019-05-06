@@ -25,6 +25,9 @@ import ModalRoot from "./components/Modal/ModalRoot";
 import HousingSelection from "./components/Housing/Selection";
 import HandicappedSelection from "./components/Handicapped/Selection";
 import HandicappedRequest from "./components/Handicapped/Request";
+import HandicappedPayment from "./components/Handicapped/Payment";
+import HandicappedPaymentPch from "./components/Handicapped/PaymentPch";
+import HandicappedPaymentThirdParty from "./components/Handicapped/PaymentThirdParty";
 import HandicappedTrackingRequest from "./components/Handicapped/TrackingRequest";
 import HandicappedTrackingRequestHelp from "./components/Handicapped/TrackingRequestHelp";
 import SeniorsSelection from "./components/Seniors/Selection";
@@ -133,6 +136,15 @@ class App extends Component {
           </Action>
           <Action is="handicappedTrackingRequestHelp">
             <HandicappedTrackingRequestHelp {...this.props} />
+          </Action>
+          <Action is="handicappedPayment">
+            <HandicappedPayment {...this.props} />
+          </Action>
+          <Action is="handicappedPaymentPch">
+            <HandicappedPaymentPch {...this.props} />
+          </Action>
+          <Action is="handicappedPaymentThirdParty">
+            <HandicappedPaymentThirdParty {...this.props} />
           </Action>
           {/* INFO HANDICAPPED */}
           <Action is="infoHandicappedInfos">

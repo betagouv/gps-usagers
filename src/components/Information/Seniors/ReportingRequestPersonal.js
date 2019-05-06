@@ -31,18 +31,13 @@ const InfoSeniorReportingRequestPersonal = ({ transition, machineState }) => {
         </p>
         <br />
         <p>
-          ou un courrier à l'adresse suivante :<br />
-          <br />
-          <address>
-            Direction générale adjointe de la solidarité
-            <br />
-            Direction de l'autonomie
-            <br />
-            service coordination animation et prévention
-            <br />
+          ou un courrier à l'adresse suivante :<br /><br />
+          <div style={{textAlign:'center'}}>
+            Direction générale adjointe de la solidarité<br/>
+            Direction de l'autonomie<br/>
+            service coordination animation et prévention<br/>
             BP10519
-          </address>
-          <br />
+          </div>
         </p>
         <br />
         <p>

@@ -25,6 +25,7 @@ const InfoSeniorFamilyHomeTracking = ({ transition, machineState }) => {
       <div className="content final">
         <h1>Vous pouvez contacter le gestionnaire suivant :</h1>
         <p>
+          Numéro de téléphone du gestionnaire de dossier
           <h2 className="phoneList">
             <a href="tel:0231571718" target="_top">
               02 31 57 17 18

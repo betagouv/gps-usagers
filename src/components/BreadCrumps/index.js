@@ -49,6 +49,8 @@ export const INFO_SENIOR_FINANCIERS_MEETING = "Conférence des financeurs";
 export const HANDICAPPED = "Personnes handicapées";
 export const HANDICAPPED_INFOS = "Informations générales";
 export const HANDICAPPED_REQUEST = "Déposer un dossier";
+export const HANDICAPPED_PAYEMENT =
+  "Informations sur le paiement suite à l’obtention d'un accord";
 export const HANDICAPPED_REQUEST_FORM =
   "L'obtention du formulaire pour en effectuer une demande";
 export const HANDICAPPED_REQUEST_HELP =

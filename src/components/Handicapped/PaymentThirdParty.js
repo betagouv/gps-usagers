@@ -2,7 +2,7 @@ import React from "react";
 import { Back, Choice } from "..";
 import { HANDICAPPED, HANDICAPPED_TRACKING_REQUEST } from "../BreadCrumps";
 
-const HandicappedTrackingRequest = ({ transition, machineState }) => {
+const HandicappedThirdParty = ({ transition, machineState }) => {
   return (
     <div className="container">
       <div className="header">
@@ -13,28 +13,18 @@ const HandicappedTrackingRequest = ({ transition, machineState }) => {
         />
       </div>
       <div className="content">
-        <h3>Votre demande concerne :</h3>
+        <h3>Il s'agit d'une demande d'aide sociale :</h3>
         <div className="contentCard">
           <Choice
-            label="Je souhaite savoir si ma demande ou mes documents ont bien été réceptionnés"
+            label="Maintien à domicile"
             onClick={() =>
               transition("INFO_HANDICAPPED_TRACKING_REQUEST_RECEIVE")
             }
           />
           <Choice
-            label="Je souhaite savoir si ma demande est bien complète ou l'évolution de celui-ci"
+            label="En établissement"
             onClick={() =>
               transition("INFO_HANDICAPPED_TRACKING_REQUEST_COMPLETE")
-            }
-          />
-          <Choice
-            label="Je rencontre des difficultés pour déposer ma demande"
-            onClick={() => transition("HANDICAPPED_TRACKING_REQUEST_HELP")}
-          />
-          <Choice
-            label="Je rencontre des difficultés financières"
-            onClick={() =>
-              transition("INFO_HANDICAPPED_TRACKING_REQUEST_FINANCIAL")
             }
           />
         </div>
@@ -43,4 +33,4 @@ const HandicappedTrackingRequest = ({ transition, machineState }) => {
   );
 };
 
-export default HandicappedTrackingRequest;
+export default HandicappedThirdParty;

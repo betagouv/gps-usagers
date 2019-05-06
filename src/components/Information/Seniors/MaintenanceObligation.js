@@ -22,6 +22,7 @@ const InfoSeniorMAintenaceObligation = ({ transition, machineState }) => {
           Contactez le gestionnaire suivant pour obtenir un renseignement :
         </h1>
         <p>
+          Numéro de téléphone du gestionnaire de dossier
           <h2 className="phoneList">
             <a href="tel:0231571718" target="_top">
               02 31 57 17 18
