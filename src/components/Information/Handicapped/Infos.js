@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactPiwik from "react-piwik";
 import { GeoJSON, Map, TileLayer } from "react-leaflet";
 import { getGeoJson } from "../../../assets/data";
 import { Back, Feedback } from "../../../components";
