@@ -49,6 +49,9 @@ import InfoHandicappedRequestForm from "./components/Information/Handicapped/Req
 import InfoHandicappedRequestHelp from "./components/Information/Handicapped/RequestHelp";
 import InfoHandicappedFinancial from "./components/Information/Handicapped/Financial";
 import InfoHandicappedTrackingRequest from "./components/Information/Handicapped/TrackingRequest";
+import InfoHandicappedTrackingRequestFinancial from "./components/Information/Handicapped/TrackingRequestFinancial";
+import InfoHandicappedTrackingRequestHelpFile from "./components/Information/Handicapped/TrackingRequestHelpFile";
+import InfoHandicappedTrackingRequestHelpOnline from "./components/Information/Handicapped/TrackingRequestHelpOnline";
 import InfoSeniorsReportingRequestPersonal from "./components/Information/Seniors/ReportingRequestPersonal";
 import InfoSeniorsReportingRequestPro from "./components/Information/Seniors/ReportingRequestPro";
 import InfoSeniorHomecareServiceDirectory from "./components/Information/Seniors/HomecareDirectory";
@@ -163,6 +166,15 @@ class App extends Component {
           </Action>
           <Action is="infoHandicappedTrackingRequest">
             <InfoHandicappedTrackingRequest {...this.props} />
+          </Action>
+          <Action is="infoHandicappedTrackingRequestHelpFile">
+            <InfoHandicappedTrackingRequestHelpFile {...this.props} />
+          </Action>
+          <Action is="infoHandicappedTrackingRequestHelpOnline">
+            <InfoHandicappedTrackingRequestHelpOnline {...this.props} />
+          </Action>
+          <Action is="infoHandicappedTrackingRequestFinancial">
+            <InfoHandicappedTrackingRequestFinancial {...this.props} />
           </Action>
           {/* SENIORS */}
           <Action is="seniorsSelection">

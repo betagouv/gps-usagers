@@ -61,3 +61,5 @@ export const HANDICAPPED_TRACKING_REQUEST =
   "Renseignements sur le dossier que j'ai déposé";
 export const HANDICAPPED_TRACKING_REQUEST_HELP =
   "Je rencontre des difficultés pour déposer ma demande";
+export const INFO_HANDICAPPED_TRACKING_REQUEST_HELP_ONLINE =
+  "Demande déposé en ligne";
