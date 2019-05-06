@@ -46,6 +46,7 @@ export const INFO_SENIORS_EHPAD_HELP_REQUEST =
 export const INFO_SENIORS_EHPAD_HELP_ONLINE =
   "Dysfonctionnement de Via trajectoire lors de ma saisie en ligne";
 export const INFO_SENIOR_FINANCIERS_MEETING = "Conférence des financeurs";
+export const INFO_HANDICAPPED_TRACKING_REQUEST = "Informations MDPH";
 export const HANDICAPPED = "Personnes handicapées";
 export const HANDICAPPED_INFOS = "Informations générales";
 export const HANDICAPPED_FINANCIAL = "Difficultés financières";

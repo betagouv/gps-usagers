@@ -133,10 +133,7 @@ const statechart = {
     handicappedTrackingRequest: {
       on: {
         BACK: "handicappedSelection",
-        INFO_HANDICAPPED_TRACKING_REQUEST_RECEIVE:
-          "infoHandicappedTrackingRequestReceive",
-        INFO_HANDICAPPED_TRACKING_REQUEST_COMPLETE:
-          "infoHandicappedTrackingRequestComplete",
+        INFO_HANDICAPPED_TRACKING_REQUEST: "infoHandicappedTrackingRequest",
         HANDICAPPED_TRACKING_REQUEST_HELP: "handicappedTrackingRequestHelp",
         INFO_HANDICAPPED_TRACKING_REQUEST_FINANCIAL:
           "infoHandicappedTrackingRequestFinancial"
@@ -156,34 +153,26 @@ const statechart = {
     handicappedPayment: {
       on: {
         BACK: "handicappedSelection",
-        HANDICAPPED_PAYMENT_PCH:
-          "handicappedPaymentPch",
-        HANDICAPPED_PAYMENT_THIRD_PARTY:
-          "handicappedPaymentThirdParty",
-        HANDICAPPED_PAYMENT_AAH:
-          "infoHandicappedTrackingRequestHelpFile",
-        HANDICAPPED_PAYMENT_AAEH:
-          "infoHandicappedTrackingRequestHelpFile"
+        HANDICAPPED_PAYMENT_PCH: "handicappedPaymentPch",
+        HANDICAPPED_PAYMENT_THIRD_PARTY: "handicappedPaymentThirdParty",
+        HANDICAPPED_PAYMENT_AAH: "infoHandicappedTrackingRequestHelpFile",
+        HANDICAPPED_PAYMENT_AAEH: "infoHandicappedTrackingRequestHelpFile"
       },
       onEntry: "handicappedPayment"
     },
     handicappedPaymentPch: {
       on: {
         BACK: "handicappedPayment",
-        HANDICAPPED_PAYMENT_AAH:
-          "infoHandicappedTrackingRequestHelpFile",
-        HANDICAPPED_PAYMENT_AAEH:
-          "infoHandicappedTrackingRequestHelpFile"
+        HANDICAPPED_PAYMENT_AAH: "infoHandicappedTrackingRequestHelpFile",
+        HANDICAPPED_PAYMENT_AAEH: "infoHandicappedTrackingRequestHelpFile"
       },
       onEntry: "handicappedPaymentPch"
     },
     handicappedPaymentThirdParty: {
       on: {
         BACK: "handicappedPayment",
-        HANDICAPPED_PAYMENT_AAH:
-          "infoHandicappedTrackingRequestHelpFile",
-        HANDICAPPED_PAYMENT_AAEH:
-          "infoHandicappedTrackingRequestHelpFile"
+        HANDICAPPED_PAYMENT_AAH: "infoHandicappedTrackingRequestHelpFile",
+        HANDICAPPED_PAYMENT_AAEH: "infoHandicappedTrackingRequestHelpFile"
       },
       onEntry: "handicappedPaymentThirdParty"
     },
@@ -223,6 +212,10 @@ const statechart = {
     infoHandicappedFinancial: {
       on: { BACK: "handicappedSelection" },
       onEntry: "infoHandicappedFinancial"
+    },
+    infoHandicappedTrackingRequest: {
+      on: { BACK: "handicappedTrackingRequest" },
+      onEntry: "infoHandicappedTrackingRequest"
     },
     // SENIORS
     seniorsSelection: {
