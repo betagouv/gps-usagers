@@ -41,7 +41,7 @@ const HandicappedSelection = ({ transition, machineState }) => {
           />
           <Choice
             label="Difficultés financières"
-            onClick={() => transition("HANDICAPPED_FINANCIAL")}
+            onClick={() => transition("INFO_HANDICAPPED_FINANCIAL")}
           />
         </div>
       </div>

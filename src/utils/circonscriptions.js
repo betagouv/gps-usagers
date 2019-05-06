@@ -475,3 +475,106 @@ export const CMS = {
     }
   ]
 };
+
+
+export const MDPH = {
+  "Pays d'Auge Sud": {
+    name: "Antenne Lisieux",
+    address: "127 B rue Roger Aini",
+    zipCode: 14100,
+    city: "Lisieux",
+    phone: "02 14 47 54 27",
+    mail: "sandrine.hebert@calvados.fr",
+    opening: "lundi, jeudi, vendredi\n le matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15"
+  },
+  "USDA Centre": {
+    name: "MDPH du Calvados",
+    address: "17 rue du 11 novembre",
+    zipCode: 14000,
+    city: "CAEN",
+    phone: "02.31.78.91.75,  0800 100 522 (numéro vert)",
+    mail: "mdph@calvados.fr",
+    opening: "Accueil téléphonique : le matin de 9 h 30 à 12 h (public et professionnels) \n Accueil physique : l'après-midi de 13 h 30 à 16 h 15\n une interprète en langue des signes\n est présente le deuxième vendredi après-midi de chaque mois\n de 14 h à 16 h sur le site de Caen."
+  },
+  "Pays d'Auge Nord": {
+    name: "Antenne Pont-L'Evêque",
+    address: "14, rue de la Chaussée Nival",
+    zipCode: 14130,
+    city: "Pont l'Evêque",
+    phone: "02 31 65 63 82",
+    mail: "laurent.ferrut@calvados.fr",
+    opening: "lundi, mercredi, jeudi, vendredi, fermé le mardi\nle matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15."
+  },
+  "USDA Nord": {
+    name: "MDPH du Calvados",
+    address: "17 rue du 11 novembre",
+    zipCode: 14000,
+    city: "CAEN",
+    phone: "02.31.78.91.75,  0800 100 522 (numéro vert)",
+    mail: "mdph@calvados.fr",
+    opening: "Accueil téléphonique : le matin de 9 h 30 à 12 h (public et professionnels) \n Accueil physique : l'après-midi de 13 h 30 à 16 h 15\n une interprète en langue des signes\n est présente le deuxième vendredi après-midi de chaque mois\n de 14 h à 16 h sur le site de Caen."
+  },
+  "USDA Sud": {
+    name: "MDPH du Calvados",
+    address: "17 rue du 11 novembre",
+    zipCode: 14000,
+    city: "CAEN",
+    phone: "02.31.78.91.75,  0800 100 522 (numéro vert)",
+    mail: "mdph@calvados.fr",
+    opening: "Accueil téléphonique : le matin de 9 h 30 à 12 h (public et professionnels) \n Accueil physique : l'après-midi de 13 h 30 à 16 h 15\n une interprète en langue des signes\n est présente le deuxième vendredi après-midi de chaque mois\n de 14 h à 16 h sur le site de Caen."
+  },
+  "Caen Ouest": {
+    name: "Antenne Douvres la Délivrande",
+    address: "4 rue de l'église BP 56",
+    zipCode: 14440,
+    city: "Douvres la Délivrande",
+    phone: "02 31 37 76 76",
+    mail: "myriam.nicolle@calvados.fr",
+    opening: "lundi, mercredi, jeudi, vendredi, fermé le mardi\n le matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15."
+  },
+  Bocage: {
+    name: "Antenne Vire",
+    address: "1 rue Général de Gaulle",
+    zipCode: 14500,
+    city: "Vire VIRE NORMANDIE",
+    phone: "02 31 66 26 23",
+    mail: "dominique.travert@calvados.fr",
+    opening: "lundi, jeudi, vendredi, fermé le mardi\nle matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15. "
+  },
+  "Pré-Bocage": {
+    name: "Antenne Evrecy",
+    address: "18 rue Henry Chéron",
+    zipCode: 14210,
+    city: "Evrecy",
+    phone: "02 31 08 32 81",
+    mail: "camille-himbert@calvados.fr.  dominique.travert@calvados.fr",
+    opening: "lundi, mercredi, fermé le mardi\nle matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15."
+  },
+  Falaise: {
+    name: "Antenne Falaise",
+    address: "4 rue de la Résistance",
+    zipCode: 14700,
+    city: "Falaise",
+    phone: "02 31 41 41 96",
+    mail: "camille.himbert@calvados.fr",
+    opening: "mercredi, jeudi, vendredi,fermé le mardi\nle matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15."
+  },
+  Bessin: {
+    name: "Antenne Bayeux",
+    address: "3, rue François Coulet",
+    zipCode: 14400,
+    city: "BAYEUX",
+    phone: "02 31 51 10 78",
+    mail: "valerie.cornieres@calvados.fr",
+    opening: "lundi, mercredi, jeudi, vendredi, fermé le mardi\nle matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15."
+  },
+  "Caen Est": {
+    name: "MDPH du Calvados",
+    address: "17 rue du 11 novembre",
+    zipCode: 14000,
+    city: "CAEN",
+    phone: "02.31.78.91.75,  0800 100 522 (numéro vert)",
+    mail: "mdph@calvados.fr",
+    opening: "Accueil téléphonique : le matin de 9 h 30 à 12 h (public et professionnels) \n Accueil physique : l'après-midi de 13 h 30 à 16 h 15\n une interprète en langue des signes\n est présente le deuxième vendredi après-midi de chaque mois\n de 14 h à 16 h sur le site de Caen."
+  }
+};

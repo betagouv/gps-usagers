@@ -118,7 +118,7 @@ const statechart = {
         HANDICAPPED_PAYMENT: "handicappedPayment",
         HANDICAPPED_FAMILY_HOME: "infoSeniorsTeleassistance",
         HANDICAPPED_TRANSPORT: "infoSeniorsSuccession",
-        HANDICAPPED_FINANCIAL: "infoSeniorsMaintenanceObligation"
+        INFO_HANDICAPPED_FINANCIAL: "infoHandicappedFinancial"
       },
       onEntry: "handicappedSelection"
     },
@@ -219,6 +219,10 @@ const statechart = {
     infoHandicappedTrackingRequestHelpOnline: {
       on: { BACK: "handicappedTrackingRequestHelp" },
       onEntry: "infoHandicappedTrackingRequestHelpOnline"
+    },
+    infoHandicappedFinancial: {
+      on: { BACK: "handicappedSelection" },
+      onEntry: "infoHandicappedFinancial"
     },
     // SENIORS
     seniorsSelection: {

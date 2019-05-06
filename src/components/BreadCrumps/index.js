@@ -48,6 +48,7 @@ export const INFO_SENIORS_EHPAD_HELP_ONLINE =
 export const INFO_SENIOR_FINANCIERS_MEETING = "Conférence des financeurs";
 export const HANDICAPPED = "Personnes handicapées";
 export const HANDICAPPED_INFOS = "Informations générales";
+export const HANDICAPPED_FINANCIAL = "Difficultés financières";
 export const HANDICAPPED_REQUEST = "Déposer un dossier";
 export const HANDICAPPED_PAYEMENT =
   "Informations sur le paiement suite à l’obtention d'un accord";

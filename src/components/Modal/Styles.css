@@ -92,6 +92,10 @@
   padding: 0 4rem;
 }
 
+.opening {
+  white-space: pre;
+}
+
 @media screen and (min-width: 780px) and (max-width: 1196px) {
   .modal {
     top: 47%;

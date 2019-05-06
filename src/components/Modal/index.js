@@ -86,3 +86,48 @@ export const GestionnaireModal = ({ onRequestClose, circo, cms, ...rest }) => (
     <div className="modalFooter" />
   </Modal>
 );
+
+export const MDPHModal = ({ onRequestClose, mdph, ...rest }) => (
+  <Modal
+    className="modal"
+    overlayClassName="overlay"
+    isOpen
+    onRequestClose={onRequestClose}
+    ariaHideApp={false}
+    {...rest}
+  >
+    <div className="modalHeader">
+      <div onClick={onRequestClose} className="modalClose" />
+    </div>
+    <div className="modalContainer">
+      <div className="modalContent">
+        <div>
+          <div className="modalText">
+            Vous pouvez joindre par téléphone ou vous déplacer dans la
+            maison départementale des personnes handicapées la plus proche de chez
+            vous :
+          </div>
+          <h3>{mdph.title}</h3>
+          <div className="address">
+            <div style={{ display: "block" }}>{mdph.name}</div>
+            {mdph.address}
+            <br />
+            {mdph.zipCode} {mdph.city}
+          </div>
+          <div>
+            {mdph.mail}
+          </div>
+          <div className="phone">
+            <a href={`tel:${mdph.phone}`} target="_top">
+              {mdph.phone}
+            </a>
+          </div><br/>
+          <div className="opening">
+            {mdph.opening}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="modalFooter" />
+  </Modal>
+);

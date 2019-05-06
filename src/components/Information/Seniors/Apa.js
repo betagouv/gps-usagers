@@ -110,8 +110,8 @@ export default class InfoSeniorApa extends Component {
           <h1>
             Joindre le centre local d'information et de coordination (CLIC)
           </h1>
-          {circoName && <div className="circoName">{circoName}</div>}
           <Map className="map" center={position} zoom={zoom}>
+          {circoName && <div className="circoName">{circoName}</div>}
             <TileLayer
               url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png"
               attribution='<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>'

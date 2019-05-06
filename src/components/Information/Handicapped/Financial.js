@@ -1,12 +1,16 @@
 import React, { Component } from "react";
 import ReactPiwik from "react-piwik";
 import { GeoJSON, Map, TileLayer } from "react-leaflet";
-import { getGeoJson } from "../../assets/data";
-import { Back, Feedback } from "../../components";
-import { ModalConsumer } from "../../components/Modal/ModalContext";
-import { GestionnaireModal } from "../../components/Modal";
-import { CIRCO_PHONE } from "../../utils/circonscriptions";
-import "./Styles.css";
+import { getGeoJson } from "../../../assets/data";
+import { Back, Feedback } from "../../../components";
+import { ModalConsumer } from "../../../components/Modal/ModalContext";
+import { CMSModal } from "../../../components/Modal";
+import { CIRCO, CMS } from "../../../utils/circonscriptions";
+import "../Styles.css";
+import {
+  HANDICAPPED,
+  HANDICAPPED_FINANCIAL
+} from "../../BreadCrumps";
 
 const ContexedMap = React.forwardRef((props, ref) => {
   return (
@@ -25,7 +29,8 @@ const ContexedMap = React.forwardRef((props, ref) => {
     </ModalConsumer>
   );
 });
-export default class InfoGestionnaire extends Component {
+
+export default class InfoHandicappedFinancial extends Component {
   state = {
     circoName: null,
     lat: 49.183333,
@@ -68,13 +73,13 @@ export default class InfoGestionnaire extends Component {
     const circoName = e.target.feature.properties.tags.cas;
     ReactPiwik.push([
       "trackEvent",
-      "infoGestionnaire",
+      "infoCms",
       "circonscription",
       e.target.feature.properties.tags.cas
     ]);
-    e.target.options.showModal(GestionnaireModal, {
-      circo: CIRCO_PHONE[circoName],
-      cms: CIRCO_PHONE[circoName]
+    e.target.options.showModal(CMSModal, {
+      circo: CIRCO[circoName],
+      cms: CMS[circoName]
     });
     this.setState(() => ({
       circoName: null
@@ -92,12 +97,17 @@ export default class InfoGestionnaire extends Component {
   render() {
     const position = [this.state.lat, this.state.lng];
     const { circoName, zoom } = this.state;
+    const { transition, machineState } = this.props;
 
     return (
       <div className="container">
         <Feedback />
         <div className="header">
-          <Back {...this.props} />
+        <Back
+          transition={transition}
+          machineState={machineState}
+          breadCrumps={[HANDICAPPED, HANDICAPPED_FINANCIAL]}
+        />
         </div>
         <div className="content final">
           <h3>
