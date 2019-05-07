@@ -16,11 +16,11 @@ const HandicappedTrackingRequest = ({ transition, machineState }) => {
         <h3>Votre demande concerne :</h3>
         <div className="contentCard">
           <Choice
-            label="Je souhaite savoir si ma demande ou mes documents ont bien été réceptionnés"
+            label="Ma demande ou mes documents ont-ils bien été réceptionnés?"
             onClick={() => transition("INFO_HANDICAPPED_TRACKING_REQUEST")}
           />
           <Choice
-            label="Je souhaite savoir si ma demande est bien complète ou l'évolution de celui-ci"
+            label="Ma demande est-elle bien complète ou qu'en est-il de son évolution ?"
             onClick={() => transition("INFO_HANDICAPPED_TRACKING_REQUEST")}
           />
           <Choice
