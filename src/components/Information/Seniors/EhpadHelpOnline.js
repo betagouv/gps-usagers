@@ -115,11 +115,18 @@ export default class InfoSeniorsEhpadOnline extends Component {
           />
         </div>
         <div className="content final">
-          <h1>
-            Joindre le centre local d'information et de coordination (CLIC)
-          </h1>
+          <h3>Contactez le gestionnaire pour obtenir un renseignement : </h3>
+          <p>
+            Numéro de téléphone du gestionnaire de dossier
+            <h2 className="phoneList">
+              <a href="tel:0250224022" target="_top">
+                02 50 22 40 22
+              </a>
+            </h2>
+          </p>
+          <h3>Ou rendez-vous votre CLIC ou CMS le plus proche de chez vous</h3>
           <Map className="map" center={position} zoom={zoom}>
-          {circoName && <div className="circoName">{circoName}</div>}
+            {circoName && <div className="circoName">{circoName}</div>}
             <TileLayer
               url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png"
               attribution='<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>'

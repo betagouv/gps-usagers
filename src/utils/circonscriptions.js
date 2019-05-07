@@ -2,7 +2,7 @@ export const CIRCO = {
   "Pays d'Auge Sud": {
     dga: "DGA Solidarité",
     title: "Circonscription d'action sociale du Pays de Lisieux",
-    name: "Pôle Accueil",
+    name: "",
     address: "127 b, rue Roger Aini",
     zipCode: "14100",
     city: "Lisieux",
@@ -11,7 +11,7 @@ export const CIRCO = {
   "USDA Centre": {
     dga: "DGA Solidarité",
     title: "Circonscription d'action sociale USDA Centre",
-    name: "Pôle Accueil",
+    name: "",
     address: "1 place du Canada",
     zipCode: "14000",
     city: "Caen",
@@ -20,7 +20,7 @@ export const CIRCO = {
   "Pays d'Auge Nord": {
     dga: "DGA Solidarité",
     title: "Circonscription d'action sociale du Pays d'Auge Nord",
-    name: "Pôle Accueil",
+    name: "",
     address: "14 rue de la Chaussée Nival",
     zipCode: "14130",
     city: "Pont-l'Évêque",
@@ -29,7 +29,7 @@ export const CIRCO = {
   "USDA Nord": {
     dga: "DGA Solidarité",
     title: "Circonscription d'action sociale USDA Nord",
-    name: "Pôle Accueil",
+    name: "",
     address: "26 avenue de la Grande Cavée",
     zipCode: "14200",
     city: "Hérouville-Saint-Clair",
@@ -38,7 +38,7 @@ export const CIRCO = {
   "USDA Sud": {
     dga: "DGA Solidarité",
     title: "Circonscription d'action sociale USDA Sud",
-    name: "Pôle Accueil",
+    name: "",
     address: "3 rue Jean Le Hir",
     zipCode: "14000",
     city: "Caen",
@@ -47,7 +47,7 @@ export const CIRCO = {
   "Caen Ouest": {
     dga: "DGA Solidarité",
     title: "Circonscription d'action sociale du Caen Ouest",
-    name: "Pôle Accueil",
+    name: "",
     address: "1, rue de l'Eglise",
     zipCode: "14440",
     city: "Douvres-la-Délivrande",
@@ -56,7 +56,7 @@ export const CIRCO = {
   Bocage: {
     dga: "DGA Solidarité",
     circo: "Circonscription d'action sociale du Bocage",
-    name: "Pôle accueil de Vire",
+    name: " de Vire",
     address: "Rue Alfred Le Nouvel",
     zipCode: "14500",
     city: "Vire-Normandie",
@@ -65,7 +65,7 @@ export const CIRCO = {
   "Pré-Bocage": {
     dga: "DGA Solidarité",
     title: "Circonscription d'action sociale du Pré-Bocage",
-    name: "Pôle Accueil",
+    name: "",
     address: "18 rue Henry Chéron",
     zipCode: "14210",
     city: "Evrecy",
@@ -74,7 +74,7 @@ export const CIRCO = {
   Falaise: {
     dga: "DGA Solidarité",
     title: "Circonscription d'action sociale de Falaise",
-    name: "Pôle Accueil",
+    name: "",
     address: "4 rue de la résistance",
     zipCode: "14700",
     city: "Falaise",
@@ -83,7 +83,7 @@ export const CIRCO = {
   Bessin: {
     dga: "DGA Solidarité",
     title: "Circonscription d'action sociale du Bessin",
-    name: "Pôle Accueil de Bayeux",
+    name: "",
     address: "1 rue de Verdun",
     zipCode: "14400",
     city: "Bayeux",
@@ -92,7 +92,7 @@ export const CIRCO = {
   "Caen Est": {
     dga: "DGA Solidarité",
     title: "Circonscription d'action sociale du Caen Est",
-    name: "Pôle Accueil",
+    name: "",
     address: "Rue Jules Guesde",
     zipCode: "14460",
     city: "Colombelles",
