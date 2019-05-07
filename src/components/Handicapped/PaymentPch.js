@@ -1,6 +1,10 @@
 import React from "react";
 import { Back, Choice } from "..";
-import { HANDICAPPED, HANDICAPPED_TRACKING_REQUEST } from "../BreadCrumps";
+import {
+  HANDICAPPED,
+  HANDICAPPED_PAYMENT,
+  HANDICAPPED_PAYMENT_PCH
+} from "../BreadCrumps";
 
 const HandicappedPch = ({ transition, machineState }) => {
   return (
@@ -9,7 +13,11 @@ const HandicappedPch = ({ transition, machineState }) => {
         <Back
           transition={transition}
           machineState={machineState}
-          breadCrumps={[HANDICAPPED, HANDICAPPED_TRACKING_REQUEST]}
+          breadCrumps={[
+            HANDICAPPED,
+            HANDICAPPED_PAYMENT,
+            HANDICAPPED_PAYMENT_PCH
+          ]}
         />
       </div>
       <div className="content">
@@ -17,14 +25,12 @@ const HandicappedPch = ({ transition, machineState }) => {
         <div className="contentCard">
           <Choice
             label="Maintien à domicile"
-            onClick={() =>
-              transition("INFO_HANDICAPPED_TRACKING_REQUEST_RECEIVE")
-            }
+            onClick={() => transition("INFO_HANDICAPPED_PAYMENT_PCH_HOME")}
           />
           <Choice
             label="En établissement"
             onClick={() =>
-              transition("INFO_HANDICAPPED_TRACKING_REQUEST_COMPLETE")
+              transition("INFO_HANDICAPPED_PAYMENT_PCH_ESTABLISHMENT")
             }
           />
         </div>

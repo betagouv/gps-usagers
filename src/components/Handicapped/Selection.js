@@ -33,11 +33,11 @@ const HandicappedSelection = ({ transition, machineState }) => {
           />
           <Choice
             label="Accueil familial pour personnes handicapées"
-            onClick={() => transition("HANDICAPPED_FAMILY_HOME")}
+            onClick={() => transition("INFO_HANDICAPPED_FAMILY_HOME")}
           />
           <Choice
             label="Transports adaptés au bénéfice des élèves handicapés"
-            onClick={() => transition("HANDICAPPED_TRANSPORT")}
+            onClick={() => transition("INFO_HANDICAPPED_TRANSPORT")}
           />
           <Choice
             label="Difficultés financières"

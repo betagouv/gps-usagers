@@ -166,7 +166,7 @@ export const CLIC = {
     address: "1 avenue du Général de Gaulle",
     zipCode: "14500",
     city: "Vire",
-    phone: "02 31 66 26 20"
+    phone: "02 31 66 26 20 - 02 31 66 26 24"
   },
   "Pré-Bocage": {
     dga: "DGA Solidarité",
@@ -476,7 +476,6 @@ export const CMS = {
   ]
 };
 
-
 export const MDPH = {
   "Pays d'Auge Sud": {
     name: "Antenne Lisieux",
@@ -485,7 +484,8 @@ export const MDPH = {
     city: "Lisieux",
     phone: "02 14 47 54 27",
     mail: "sandrine.hebert@calvados.fr",
-    opening: "lundi, jeudi, vendredi\n le matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15"
+    opening:
+      "lundi, jeudi, vendredi\n le matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15"
   },
   "USDA Centre": {
     name: "MDPH du Calvados",
@@ -494,7 +494,8 @@ export const MDPH = {
     city: "CAEN",
     phone: "02.31.78.91.75,  0800 100 522 (numéro vert)",
     mail: "mdph@calvados.fr",
-    opening: "Accueil téléphonique : le matin de 9 h 30 à 12 h (public et professionnels) \n Accueil physique : l'après-midi de 13 h 30 à 16 h 15\n une interprète en langue des signes\n est présente le deuxième vendredi après-midi de chaque mois\n de 14 h à 16 h sur le site de Caen."
+    opening:
+      "Accueil téléphonique : le matin de 9 h 30 à 12 h (public et professionnels) \n Accueil physique : l'après-midi de 13 h 30 à 16 h 15\n une interprète en langue des signes\n est présente le deuxième vendredi après-midi de chaque mois\n de 14 h à 16 h sur le site de Caen."
   },
   "Pays d'Auge Nord": {
     name: "Antenne Pont-L'Evêque",
@@ -503,7 +504,8 @@ export const MDPH = {
     city: "Pont l'Evêque",
     phone: "02 31 65 63 82",
     mail: "laurent.ferrut@calvados.fr",
-    opening: "lundi, mercredi, jeudi, vendredi, fermé le mardi\nle matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15."
+    opening:
+      "lundi, mercredi, jeudi, vendredi, fermé le mardi\nle matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15."
   },
   "USDA Nord": {
     name: "MDPH du Calvados",
@@ -512,7 +514,8 @@ export const MDPH = {
     city: "CAEN",
     phone: "02.31.78.91.75,  0800 100 522 (numéro vert)",
     mail: "mdph@calvados.fr",
-    opening: "Accueil téléphonique : le matin de 9 h 30 à 12 h (public et professionnels) \n Accueil physique : l'après-midi de 13 h 30 à 16 h 15\n une interprète en langue des signes\n est présente le deuxième vendredi après-midi de chaque mois\n de 14 h à 16 h sur le site de Caen."
+    opening:
+      "Accueil téléphonique : le matin de 9 h 30 à 12 h (public et professionnels) \n Accueil physique : l'après-midi de 13 h 30 à 16 h 15\n une interprète en langue des signes\n est présente le deuxième vendredi après-midi de chaque mois\n de 14 h à 16 h sur le site de Caen."
   },
   "USDA Sud": {
     name: "MDPH du Calvados",
@@ -521,7 +524,8 @@ export const MDPH = {
     city: "CAEN",
     phone: "02.31.78.91.75,  0800 100 522 (numéro vert)",
     mail: "mdph@calvados.fr",
-    opening: "Accueil téléphonique : le matin de 9 h 30 à 12 h (public et professionnels) \n Accueil physique : l'après-midi de 13 h 30 à 16 h 15\n une interprète en langue des signes\n est présente le deuxième vendredi après-midi de chaque mois\n de 14 h à 16 h sur le site de Caen."
+    opening:
+      "Accueil téléphonique : le matin de 9 h 30 à 12 h (public et professionnels) \n Accueil physique : l'après-midi de 13 h 30 à 16 h 15\n une interprète en langue des signes\n est présente le deuxième vendredi après-midi de chaque mois\n de 14 h à 16 h sur le site de Caen."
   },
   "Caen Ouest": {
     name: "Antenne Douvres la Délivrande",
@@ -530,7 +534,8 @@ export const MDPH = {
     city: "Douvres la Délivrande",
     phone: "02 31 37 76 76",
     mail: "myriam.nicolle@calvados.fr",
-    opening: "lundi, mercredi, jeudi, vendredi, fermé le mardi\n le matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15."
+    opening:
+      "lundi, mercredi, jeudi, vendredi, fermé le mardi\n le matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15."
   },
   Bocage: {
     name: "Antenne Vire",
@@ -539,7 +544,8 @@ export const MDPH = {
     city: "Vire VIRE NORMANDIE",
     phone: "02 31 66 26 23",
     mail: "dominique.travert@calvados.fr",
-    opening: "lundi, jeudi, vendredi, fermé le mardi\nle matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15. "
+    opening:
+      "lundi, jeudi, vendredi, fermé le mardi\nle matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15. "
   },
   "Pré-Bocage": {
     name: "Antenne Evrecy",
@@ -548,7 +554,8 @@ export const MDPH = {
     city: "Evrecy",
     phone: "02 31 08 32 81",
     mail: "camille-himbert@calvados.fr.  dominique.travert@calvados.fr",
-    opening: "lundi, mercredi, fermé le mardi\nle matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15."
+    opening:
+      "lundi, mercredi, fermé le mardi\nle matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15."
   },
   Falaise: {
     name: "Antenne Falaise",
@@ -557,7 +564,8 @@ export const MDPH = {
     city: "Falaise",
     phone: "02 31 41 41 96",
     mail: "camille.himbert@calvados.fr",
-    opening: "mercredi, jeudi, vendredi,fermé le mardi\nle matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15."
+    opening:
+      "mercredi, jeudi, vendredi,fermé le mardi\nle matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15."
   },
   Bessin: {
     name: "Antenne Bayeux",
@@ -566,7 +574,8 @@ export const MDPH = {
     city: "BAYEUX",
     phone: "02 31 51 10 78",
     mail: "valerie.cornieres@calvados.fr",
-    opening: "lundi, mercredi, jeudi, vendredi, fermé le mardi\nle matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15."
+    opening:
+      "lundi, mercredi, jeudi, vendredi, fermé le mardi\nle matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15."
   },
   "Caen Est": {
     name: "MDPH du Calvados",
@@ -575,6 +584,7 @@ export const MDPH = {
     city: "CAEN",
     phone: "02.31.78.91.75,  0800 100 522 (numéro vert)",
     mail: "mdph@calvados.fr",
-    opening: "Accueil téléphonique : le matin de 9 h 30 à 12 h (public et professionnels) \n Accueil physique : l'après-midi de 13 h 30 à 16 h 15\n une interprète en langue des signes\n est présente le deuxième vendredi après-midi de chaque mois\n de 14 h à 16 h sur le site de Caen."
+    opening:
+      "Accueil téléphonique : le matin de 9 h 30 à 12 h (public et professionnels) \n Accueil physique : l'après-midi de 13 h 30 à 16 h 15\n une interprète en langue des signes\n est présente le deuxième vendredi après-midi de chaque mois\n de 14 h à 16 h sur le site de Caen."
   }
 };

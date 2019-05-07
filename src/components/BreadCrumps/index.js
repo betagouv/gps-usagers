@@ -51,8 +51,6 @@ export const HANDICAPPED = "Personnes handicapées";
 export const HANDICAPPED_INFOS = "Informations générales";
 export const HANDICAPPED_FINANCIAL = "Difficultés financières";
 export const HANDICAPPED_REQUEST = "Déposer un dossier";
-export const HANDICAPPED_PAYEMENT =
-  "Informations sur le paiement suite à l’obtention d'un accord";
 export const HANDICAPPED_REQUEST_FORM =
   "L'obtention du formulaire pour en effectuer une demande";
 export const HANDICAPPED_REQUEST_HELP =
@@ -62,4 +60,18 @@ export const HANDICAPPED_TRACKING_REQUEST =
 export const HANDICAPPED_TRACKING_REQUEST_HELP =
   "Je rencontre des difficultés pour déposer ma demande";
 export const INFO_HANDICAPPED_TRACKING_REQUEST_HELP_ONLINE =
-  "Demande déposé en ligne";
+  "Demande déposée en ligne";
+export const HANDICAPPED_PAYMENT = "Informations sur le paiement";
+export const HANDICAPPED_PAYMENT_PCH = "Prestation de compensation du handicap";
+export const HANDICAPPED_PAYMENT_THIRD_PARTY =
+  "Allocation compensatrice pour tierce personne";
+export const INFO_HANDICAPPED_PAYMENT_PCH_HOME = "A domicile";
+export const INFO_HANDICAPPED_PAYMENT_PCH_ESTABLISHMENT = "En établissement";
+export const INFO_HANDICAPPED_PAYMENT_THIRD_PARTY_HOME = "A domicile";
+export const INFO_HANDICAPPED_PAYMENT_THIRD_PARTY_ESTABLISHMENT =
+  "En établissement";
+export const INFO_HANDICAPPED_PAYMENT_CAF = "CAF";
+export const INFO_HANDICAPPED_FAMILY_HOME =
+  "Accueil familial pour personnes handicapées";
+export const INFO_HANDICAPPED_TRANSPORT =
+  "Transports adaptés au bénéfice des élèves handicapés";

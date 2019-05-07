@@ -48,6 +48,13 @@ import InfoHandicappedInfos from "./components/Information/Handicapped/Infos";
 import InfoHandicappedRequestForm from "./components/Information/Handicapped/RequestForm";
 import InfoHandicappedRequestHelp from "./components/Information/Handicapped/RequestHelp";
 import InfoHandicappedFinancial from "./components/Information/Handicapped/Financial";
+import InfoHandicappedFamilyHome from "./components/Information/Handicapped/FamilyHome";
+import InfoHandicappedTransport from "./components/Information/Handicapped/Transport";
+import InfoHandicappedPaymentCaf from "./components/Information/Handicapped/PaymentCaf";
+import InfoHandicappedPaymentPchHome from "./components/Information/Handicapped/PaymentPchHome";
+import InfoHandicappedPaymentPchEstablishment from "./components/Information/Handicapped/PaymentPchEstablishment";
+import InfoHandicappedPaymentThirdPartyHome from "./components/Information/Handicapped/PaymentThirdPartyHome";
+import InfoHandicappedPaymentThirdPartyEstablishment from "./components/Information/Handicapped/PaymentThirdPartyEstablishment";
 import InfoHandicappedTrackingRequest from "./components/Information/Handicapped/TrackingRequest";
 import InfoHandicappedTrackingRequestFinancial from "./components/Information/Handicapped/TrackingRequestFinancial";
 import InfoHandicappedTrackingRequestHelpFile from "./components/Information/Handicapped/TrackingRequestHelpFile";
@@ -175,6 +182,27 @@ class App extends Component {
           </Action>
           <Action is="infoHandicappedTrackingRequestFinancial">
             <InfoHandicappedTrackingRequestFinancial {...this.props} />
+          </Action>
+          <Action is="infoHandicappedPaymentPchHome">
+            <InfoHandicappedPaymentPchHome {...this.props} />
+          </Action>
+          <Action is="infoHandicappedPaymentPchEstablishment">
+            <InfoHandicappedPaymentPchEstablishment {...this.props} />
+          </Action>
+          <Action is="infoHandicappedPaymentThirdPartyHome">
+            <InfoHandicappedPaymentThirdPartyHome {...this.props} />
+          </Action>
+          <Action is="infoHandicappedPaymentThirdPartyEstablishment">
+            <InfoHandicappedPaymentThirdPartyEstablishment {...this.props} />
+          </Action>
+          <Action is="infoHandicappedPaymentCaf">
+            <InfoHandicappedPaymentCaf {...this.props} />
+          </Action>
+          <Action is="infoHandicappedFamilyHome">
+            <InfoHandicappedFamilyHome {...this.props} />
+          </Action>
+          <Action is="infoHandicappedTransport">
+            <InfoHandicappedTransport {...this.props} />
           </Action>
           {/* SENIORS */}
           <Action is="seniorsSelection">

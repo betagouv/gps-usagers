@@ -116,8 +116,8 @@ const statechart = {
         HANDICAPPED_REQUEST: "handicappedRequest",
         HANDICAPPED_TRACKING_REQUEST: "handicappedTrackingRequest",
         HANDICAPPED_PAYMENT: "handicappedPayment",
-        HANDICAPPED_FAMILY_HOME: "infoSeniorsTeleassistance",
-        HANDICAPPED_TRANSPORT: "infoSeniorsSuccession",
+        INFO_HANDICAPPED_FAMILY_HOME: "infoHandicappedFamilyHome",
+        INFO_HANDICAPPED_TRANSPORT: "infoHandicappedTransport",
         INFO_HANDICAPPED_FINANCIAL: "infoHandicappedFinancial"
       },
       onEntry: "handicappedSelection"
@@ -155,24 +155,26 @@ const statechart = {
         BACK: "handicappedSelection",
         HANDICAPPED_PAYMENT_PCH: "handicappedPaymentPch",
         HANDICAPPED_PAYMENT_THIRD_PARTY: "handicappedPaymentThirdParty",
-        HANDICAPPED_PAYMENT_AAH: "infoHandicappedTrackingRequestHelpFile",
-        HANDICAPPED_PAYMENT_AAEH: "infoHandicappedTrackingRequestHelpFile"
+        INFO_HANDICAPPED_PAYMENT_CAF: "infoHandicappedPaymentCaf"
       },
       onEntry: "handicappedPayment"
     },
     handicappedPaymentPch: {
       on: {
         BACK: "handicappedPayment",
-        HANDICAPPED_PAYMENT_AAH: "infoHandicappedTrackingRequestHelpFile",
-        HANDICAPPED_PAYMENT_AAEH: "infoHandicappedTrackingRequestHelpFile"
+        INFO_HANDICAPPED_PAYMENT_PCH_HOME: "infoHandicappedPaymentPchHome",
+        INFO_HANDICAPPED_PAYMENT_PCH_ESTABLISHMENT:
+          "infoHandicappedPaymentPchEstablishment"
       },
       onEntry: "handicappedPaymentPch"
     },
     handicappedPaymentThirdParty: {
       on: {
         BACK: "handicappedPayment",
-        HANDICAPPED_PAYMENT_AAH: "infoHandicappedTrackingRequestHelpFile",
-        HANDICAPPED_PAYMENT_AAEH: "infoHandicappedTrackingRequestHelpFile"
+        INFO_HANDICAPPED_PAYMENT_THIRD_PARTY_HOME:
+          "infoHandicappedPaymentThirdPartyHome",
+        INFO_HANDICAPPED_PAYMENT_THIRD_PARTY_ESTABLISHMENT:
+          "infoHandicappedPaymentThirdPartyEstablishment"
       },
       onEntry: "handicappedPaymentThirdParty"
     },
@@ -216,6 +218,34 @@ const statechart = {
     infoHandicappedTrackingRequest: {
       on: { BACK: "handicappedTrackingRequest" },
       onEntry: "infoHandicappedTrackingRequest"
+    },
+    infoHandicappedPaymentPchHome: {
+      on: { BACK: "handicappedPaymentPch" },
+      onEntry: "infoHandicappedPaymentPchHome"
+    },
+    infoHandicappedPaymentPchEstablishment: {
+      on: { BACK: "handicappedPaymentPch" },
+      onEntry: "infoHandicappedPaymentPchEstablishment"
+    },
+    infoHandicappedPaymentThirdPartyHome: {
+      on: { BACK: "handicappedPaymentThirdParty" },
+      onEntry: "infoHandicappedPaymentThirdPartyHome"
+    },
+    infoHandicappedPaymentThirdPartyEstablishment: {
+      on: { BACK: "handicappedPaymentThirdParty" },
+      onEntry: "infoHandicappedPaymentThirdPartyEstablishment"
+    },
+    infoHandicappedPaymentCaf: {
+      on: { BACK: "handicappedPayment" },
+      onEntry: "infoHandicappedPaymentCaf"
+    },
+    infoHandicappedFamilyHome: {
+      on: { BACK: "handicappedSelection" },
+      onEntry: "infoHandicappedFamilyHome"
+    },
+    infoHandicappedTransport: {
+      on: { BACK: "handicappedSelection" },
+      onEntry: "infoHandicappedTransport"
     },
     // SENIORS
     seniorsSelection: {

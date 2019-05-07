@@ -30,7 +30,7 @@ const HandicappedRequest = ({ transition, machineState }) => {
             }
           />
           <Choice
-            label="Une demande déposé en ligne"
+            label="Une demande déposée en ligne"
             onClick={() =>
               transition("INFO_HANDICAPPED_TRACKING_REQUEST_HELP_ONLINE")
             }

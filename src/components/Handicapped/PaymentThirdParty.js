@@ -1,6 +1,10 @@
 import React from "react";
 import { Back, Choice } from "..";
-import { HANDICAPPED, HANDICAPPED_TRACKING_REQUEST } from "../BreadCrumps";
+import {
+  HANDICAPPED,
+  HANDICAPPED_PAYMENT,
+  HANDICAPPED_PAYMENT_THIRD_PARTY
+} from "../BreadCrumps";
 
 const HandicappedThirdParty = ({ transition, machineState }) => {
   return (
@@ -9,7 +13,11 @@ const HandicappedThirdParty = ({ transition, machineState }) => {
         <Back
           transition={transition}
           machineState={machineState}
-          breadCrumps={[HANDICAPPED, HANDICAPPED_TRACKING_REQUEST]}
+          breadCrumps={[
+            HANDICAPPED,
+            HANDICAPPED_PAYMENT,
+            HANDICAPPED_PAYMENT_THIRD_PARTY
+          ]}
         />
       </div>
       <div className="content">
@@ -18,13 +26,13 @@ const HandicappedThirdParty = ({ transition, machineState }) => {
           <Choice
             label="Maintien à domicile"
             onClick={() =>
-              transition("INFO_HANDICAPPED_TRACKING_REQUEST_RECEIVE")
+              transition("INFO_HANDICAPPED_PAYMENT_THIRD_PARTY_HOME")
             }
           />
           <Choice
             label="En établissement"
             onClick={() =>
-              transition("INFO_HANDICAPPED_TRACKING_REQUEST_COMPLETE")
+              transition("INFO_HANDICAPPED_PAYMENT_THIRD_PARTY_ESTABLISHMENT")
             }
           />
         </div>
