@@ -60,7 +60,7 @@ export const CIRCO = {
     address: "Rue Alfred Le Nouvel",
     zipCode: "14500",
     city: "Vire-Normandie",
-    phone: "02 31 66 27 38"
+    phone: "02 31 66 27 30"
   },
   "Pré-Bocage": {
     dga: "DGA Solidarité",
@@ -393,7 +393,7 @@ export const CMS = {
       address: "Rue Georges Brassens, le Bény Bocage ",
       zipCode: "14350",
       city: "Souleuvre en bocage",
-      phone: "02 31 68 69 79"
+      phone: "02 31 69 34 25"
     }
   ],
   "Pré-Bocage": [
