@@ -4,11 +4,16 @@ export const RECIPIENT_RSA = "Allocataire";
 export const NON_RECIPIENT_RSA = "Non allocataire";
 export const RSA_LETTER = "J'ai reçu un courrier";
 export const RSA_SITUATION = "Versement";
-export const INFO_CMS = "Aide financière";
+export const INFO_CMS = "CMS";
 export const INFO_CPAM = "CPAM";
 export const INFO_GESTIONNAIRE = "Bénéficier de la CMU";
+export const INFO_GESTIONNAIRE_CIRCO = "Le département du Calvados";
 export const INFO_CAF = "CAF";
+export const INFO_CAF_ONLINE = "CAF";
+export const INFO_ONLINE = "Site du Calvados";
 export const INFO_MSA = "MSA";
+export const INFO_PE = "Pôle emploi";
+export const INFO_EPN = "Points info";
 
 // SENIORS
 export const SENIORS = "Personnes âgées";

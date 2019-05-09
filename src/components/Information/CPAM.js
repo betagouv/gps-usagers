@@ -1,5 +1,6 @@
 import React from "react";
 import { Back, Feedback } from "../../components";
+import { RSA, RECIPIENT_RSA, INFO_CPAM } from "../BreadCrumps";
 import "./Styles.css";
 
 const InfoCPAM = ({ transition, machineState }) => {
@@ -7,7 +8,11 @@ const InfoCPAM = ({ transition, machineState }) => {
     <div className="container">
       <Feedback />
       <div className="header">
-        <Back transition={transition} machineState={machineState} />
+        <Back
+          transition={transition}
+          machineState={machineState}
+          breadCrumps={[RSA, RECIPIENT_RSA, INFO_CPAM]}
+        />
       </div>
       <div className="content final">
         <h1>Contactez l'Assurance Maladie</h1>

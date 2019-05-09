@@ -1,11 +1,16 @@
 import React from "react";
 import { Back, Choice } from "../../components";
+import { RSA, NON_RECIPIENT_RSA } from "../BreadCrumps";
 
 const RSAOther = ({ transition, machineState }) => {
   return (
     <div className="container">
       <div className="header">
-        <Back transition={transition} machineState={machineState} />
+        <Back
+          transition={transition}
+          machineState={machineState}
+          breadCrumps={[RSA, NON_RECIPIENT_RSA]}
+        />
       </div>
       <div className="content">
         <h3>Quel est l’objet de votre demande ?</h3>

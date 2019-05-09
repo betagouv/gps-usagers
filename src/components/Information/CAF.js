@@ -1,9 +1,26 @@
 import React from "react";
 import { Back, Feedback } from "../../components";
-import { RSA, RECIPIENT_RSA, RSA_LETTER, INFO_CAF } from "../BreadCrumps";
+import {
+  RSA,
+  RECIPIENT_RSA,
+  RSA_LETTER,
+  RSA_SITUATION,
+  INFO_CAF
+} from "../BreadCrumps";
 import "./Styles.css";
 
 const InfoCAF = ({ transition, machineState }) => {
+  const {
+    history: { value }
+  } = machineState;
+  let breadCrumps;
+  if (value === "rsaLetter") {
+    breadCrumps = [RSA, RECIPIENT_RSA, RSA_LETTER, INFO_CAF];
+  } else if (value === "rsaSituation") {
+    breadCrumps = [RSA, RECIPIENT_RSA, RSA_SITUATION, INFO_CAF];
+  } else {
+    breadCrumps = [RSA, RECIPIENT_RSA, INFO_CAF];
+  }
   return (
     <div className="container">
       <Feedback />
@@ -11,7 +28,7 @@ const InfoCAF = ({ transition, machineState }) => {
         <Back
           transition={transition}
           machineState={machineState}
-          breadCrumps={[RSA, RECIPIENT_RSA, RSA_LETTER, INFO_CAF]}
+          breadCrumps={breadCrumps}
         />
       </div>
       <div className="content final">

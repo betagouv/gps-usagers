@@ -7,6 +7,7 @@ import epnData from "../../assets/epn";
 import pointInfo from "../../assets/pointInfo";
 import { Back, Feedback } from "../../components";
 import "./Styles.css";
+import { RSA, NON_RECIPIENT_RSA, INFO_EPN } from "../BreadCrumps";
 
 class InfoEpn extends Component {
   state = {
@@ -47,6 +48,7 @@ class InfoEpn extends Component {
 
   render() {
     const { value, suggestions } = this.state;
+    const { transition, machineState } = this.props;
 
     const inputProps = {
       placeholder: "Veuillez renseigner votre adresse",
@@ -58,7 +60,11 @@ class InfoEpn extends Component {
       <div className="container">
         <Feedback />
         <div className="header">
-          <Back {...this.props} />
+          <Back
+            transition={transition}
+            machineState={machineState}
+            breadCrumps={[RSA, NON_RECIPIENT_RSA, INFO_EPN]}
+          />
         </div>
         <div className="content final">
           <h3>Rendez-vous dans l‘EPN ou le Point Info 14 le plus proche</h3>

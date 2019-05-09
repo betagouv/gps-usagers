@@ -1,13 +1,27 @@
 import React from "react";
 import { Back, Feedback } from "../../components";
+import { RSA, RECIPIENT_RSA, RSA_LETTER, INFO_MSA } from "../BreadCrumps";
 import "./Styles.css";
 
 const InfoMSA = ({ transition, machineState }) => {
+  const {
+    history: { value }
+  } = machineState;
+  let breadCrumps;
+  if (value === "rsaLetter") {
+    breadCrumps = [RSA, RECIPIENT_RSA, RSA_LETTER, INFO_MSA];
+  } else {
+    breadCrumps = [RSA, RECIPIENT_RSA, INFO_MSA];
+  }
   return (
     <div className="container">
       <Feedback />
       <div className="header">
-        <Back transition={transition} machineState={machineState} />
+        <Back
+          transition={transition}
+          machineState={machineState}
+          breadCrumps={breadCrumps}
+        />
       </div>
       <div className="content final">
         <h1>Contactez la Mutualité sociale agricole (MSA)</h1>
