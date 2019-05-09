@@ -15,6 +15,20 @@ export const INFO_MSA = "MSA";
 export const INFO_PE = "Pôle emploi";
 export const INFO_EPN = "Points info";
 
+// HOUSING
+export const HOUSING = "Logement";
+export const HOUSING_ASSISTANCE = "Assistance";
+export const HOUSING_RENT = "Loyer";
+export const HOUSING_ACQUISITION = "Acquisition, construction, amélioration";
+export const HOUSING_ACQUISITION_SELECTION = "Situation";
+export const INFO_HOUSING_SEARCH = "Maison de l'habitat";
+export const INFO_HOUSING_ASSISTANCE = "Contact gestionnaire";
+export const INFO_HOUSING_ASSISTANCE_REQUEST = "Formulaire de demande";
+export const INFO_HOUSING_RENT = "Contact gestionnaire";
+export const INFO_HOUSING_RENT_REQUEST = "Formulaire de demande";
+export const INFO_HOUSING_ACQUISITION_INFOS = "Contact gestionnaire";
+export const INFO_HOUSING_ACQUISITION_HELP = "Formulaire de demande";
+
 // SENIORS
 export const SENIORS = "Personnes âgées";
 export const SENIORS_HOMECARE_SERVICES = "Aide ménagère";

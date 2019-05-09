@@ -1,13 +1,28 @@
 import React from "react";
 import { Back, Feedback } from "../../../components";
 import "../Styles.css";
+import {
+  HOUSING,
+  HOUSING_ACQUISITION,
+  HOUSING_ACQUISITION_SELECTION,
+  INFO_HOUSING_ACQUISITION_INFOS
+} from "../../BreadCrumps";
 
 const InfoHousingAcquisitionInfos = ({ transition, machineState }) => {
   return (
     <div className="container">
       <Feedback />
       <div className="header">
-        <Back transition={transition} machineState={machineState} />
+        <Back
+          transition={transition}
+          machineState={machineState}
+          breadCrumps={[
+            HOUSING,
+            HOUSING_ACQUISITION,
+            HOUSING_ACQUISITION_SELECTION,
+            INFO_HOUSING_ACQUISITION_INFOS
+          ]}
+        />
       </div>
       <div className="content final">
         <h1>

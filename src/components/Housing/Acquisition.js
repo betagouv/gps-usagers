@@ -1,11 +1,16 @@
 import React from "react";
 import { Back, Choice } from "../../components";
+import { HOUSING, HOUSING_ACQUISITION } from "../BreadCrumps";
 
 const HousingAcquisition = ({ transition, machineState }) => {
   return (
     <div className="container">
       <div className="header">
-        <Back transition={transition} machineState={machineState} />
+        <Back
+          transition={transition}
+          machineState={machineState}
+          breadCrumps={[HOUSING, HOUSING_ACQUISITION]}
+        />
       </div>
       <div className="content">
         <h3>Quelle est votre situation ?</h3>

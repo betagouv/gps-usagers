@@ -1,13 +1,18 @@
 import React from "react";
 import { Back, Feedback } from "../../../components";
 import "../Styles.css";
+import { HOUSING, INFO_HOUSING_SEARCH } from "../../BreadCrumps";
 
 const InfoHousingSearch = ({ transition, machineState }) => {
   return (
     <div className="container">
       <Feedback />
       <div className="header">
-        <Back transition={transition} machineState={machineState} />
+        <Back
+          transition={transition}
+          machineState={machineState}
+          breadCrumps={[HOUSING, INFO_HOUSING_SEARCH]}
+        />
       </div>
       <div className="content final">
         <h1>Contactez la maison de l'habitat</h1>
