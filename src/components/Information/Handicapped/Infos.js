@@ -102,8 +102,8 @@ export default class InfoHandicappedInfos extends Component {
         <h1>Des informations générales sont à votre disposition sur le site</h1>
         <p>
           en cliquant sur le lien suivant :{" "}
-          <a href="https://www.calvados.fr/mdph" target="_top">
-            https://www.calvados.fr/mdph
+          <a href="https://www.calvados.fr/mdph#fichemdph" target="_top">
+            https://www.calvados.fr/mdph#fichemdph
           </a>
         </p>
         <p>
