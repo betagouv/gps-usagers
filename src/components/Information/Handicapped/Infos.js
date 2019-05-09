@@ -92,23 +92,25 @@ export default class InfoHandicappedInfos extends Component {
       <div className="container">
         <Feedback />
         <div className="header">
-        <Back
-          transition={transition}
-          machineState={machineState}
-          breadCrumps={[HANDICAPPED, HANDICAPPED_INFOS]}
-        />
+          <Back
+            transition={transition}
+            machineState={machineState}
+            breadCrumps={[HANDICAPPED, HANDICAPPED_INFOS]}
+          />
         </div>
         <div className="content final">
-        <h1>Des informations générales sont à votre disposition sur le site</h1>
-        <p>
-          en cliquant sur le lien suivant :{" "}
-          <a href="https://www.calvados.fr/mdph#fichemdph" target="_top">
-            https://www.calvados.fr/mdph#fichemdph
-          </a>
-        </p>
-        <p>
-          Vous pouvez contacter l'accueillant-instructeur de votre dossier :
-        </p>
+          <h1>
+            Des informations générales sont à votre disposition sur le site
+          </h1>
+          <p>
+            en cliquant sur le lien suivant :{" "}
+            <a href="https://www.calvados.fr/mdph#fichemdph" target="_top">
+              https://www.calvados.fr/mdph#fichemdph
+            </a>
+          </p>
+          <p>
+            Vous pouvez contacter l'accueillant-instructeur de votre dossier :
+          </p>
           <Map className="map" center={position} zoom={zoom}>
             {circoName && <div className="circoName">{circoName}</div>}
             <TileLayer
