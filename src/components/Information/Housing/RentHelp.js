@@ -15,7 +15,10 @@ const InfoHousingRentHelp = ({ transition, machineState }) => {
           breadCrumps={[HOUSING, HOUSING_RENT, INFO_CMS]}
         />
       </div>
-      <MapCms />
+      <div className="content final">
+      <MapCms /><br/>
+          <h3>Ou rendez-vous dans l'un des CCAS (centre communaux d'action sociale) de votre mairie</h3>
+      </div>
     </div>
   );
 };

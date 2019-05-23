@@ -15,7 +15,9 @@ const InfoHousingRentRequestCms = ({ transition, machineState }) => {
           breadCrumps={[HOUSING, INFO_CMS]}
         />
       </div>
+      <div className="content final">
       <MapCms />
+      </div>
     </div>
   );
 };

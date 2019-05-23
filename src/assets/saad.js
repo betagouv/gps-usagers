@@ -1,5 +1,37 @@
 export const saadData = [
   {
+    name: "Proxim Houlgate",
+    address: "place général de Gaulle 14510 HOULGATE",
+    phone: "02 31 28 70 48",
+    mail: "agence.houlgate@proximpaysdauge.fr",
+    latitude: 49.1801405,
+    longitude: -0.3682319
+  },
+  {
+    name: "Proxim Trouville-sur-mer",
+    address: "11 rue Sylvestre Lasserre 14360 Trouville-sur-Mer",
+    phone: "02 31 14 98 32",
+    mail: "agence.trouville@proximpaysdauge.fr",
+    latitude: 49.362513,
+    longitude: 0.0879508
+  },
+  {
+    name: "Proxim Honfleur",
+    address: "44 Place Saint-Léonard, 14600 Honfleur",
+    phone: "02 31 98 83 19",
+    mail: "agence.honfleur@proximpaysdauge.fr",
+    latitude: 49.4176896,
+    longitude: 0.2341584
+  },
+  {
+    name: "UNA TOUQUES",
+    address: "38 avenue Aristide Briand 14800 TOUQUES",
+    phone: "02 31 14 93 72",
+    mail: "contact@unaducalvados.org",
+    latitude: 49.3498488,
+    longitude: 0.097747
+  },
+  {
     name: "DOMALIANCE",
     address: "17 rue au Char 14100 LISIEUX",
     phone: "02 31 61 16 17",

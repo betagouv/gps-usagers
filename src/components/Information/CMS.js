@@ -108,7 +108,7 @@ export default class InfoCMS extends Component {
         <div className="content final">
           <h3>
             Sélectionnez votre circonscription afin d'être orienté vers le bon
-            interlocuteur
+            interlocuteur...
           </h3>
           <Map className="map" center={position} zoom={zoom}>
             {circoName && <div className="circoName">{circoName}</div>}
@@ -121,7 +121,8 @@ export default class InfoCMS extends Component {
               onEachFeature={this.onEachFeature}
               style={this.getStyle}
             />
-          </Map>
+          </Map><br/>
+          <h3>Ou rendez-vous dans l'un des CCAS (centre communaux d'action sociale) de votre mairie</h3>
         </div>
       </div>
     );

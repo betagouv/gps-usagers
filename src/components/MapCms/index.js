@@ -94,7 +94,7 @@ export default class MapCms extends Component {
     const { circoName, zoom } = this.state;
 
     return (
-      <div className="content final">
+    <>
         <h3>
           Sélectionnez votre circonscription afin d'être orienté vers le bon
           interlocuteur
@@ -111,7 +111,7 @@ export default class MapCms extends Component {
             style={this.getStyle}
           />
         </Map>
-      </div>
+    </>
     );
   }
 }
