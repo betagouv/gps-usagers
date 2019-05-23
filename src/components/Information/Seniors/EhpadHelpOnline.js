@@ -124,7 +124,9 @@ export default class InfoSeniorsEhpadOnline extends Component {
               </a>
             </h2>
           </p>
-          <h3>Ou rendez-vous votre CLIC ou CMS le plus proche de chez vous</h3>
+          <h3>
+            Ou rendez-vous dans votre CLIC ou CMS le plus proche de chez vous
+          </h3>
           <Map className="map" center={position} zoom={zoom}>
             {circoName && <div className="circoName">{circoName}</div>}
             <TileLayer

@@ -24,11 +24,11 @@ const InfoHousingRentRequest = ({ transition, machineState }) => {
         <p>
           - Sur le site du Département :{" "}
           <a
-            href="https://www.calvados.fr/contents/ﬁche/ﬁches-aide--services/aides-ﬁnancieres-a-lacces-a-un.html"
+            href="https://www.calvados.fr/contents/fiche/fiches-aide--services/aides-financieres-a-lacces-a-un.html?fs=1"
             rel="noopener noreferrer"
             target="_blank"
           >
-            https://www.calvados.fr/contents/ﬁche/ﬁches-aide--services/aides-ﬁnancieres-a-lacces-a-un.html
+            https://www.calvados.fr/contents/fiche/fiches-aide--services/aides-financieres-a-lacces-a-un.html?fs=1
           </a>
         </p>
 
@@ -36,7 +36,7 @@ const InfoHousingRentRequest = ({ transition, machineState }) => {
           - En format papier à l'une des adresses suivantes :
           <div className="infoAddress">
             <h4>
-              Direction générale adjointe de la solidarité Fond de solidarité
+              Direction générale adjointe de la solidarité Fonds de solidarité
               logement
             </h4>
             17 avenue Pierre Mendès France

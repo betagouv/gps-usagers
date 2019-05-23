@@ -23,7 +23,7 @@ const HousingRent = ({ transition, machineState }) => {
           onClick={() => transition("INFO_HOUSING_RENT_REQUEST")}
         />
         <Choice
-          label="La sollicitation d'un accompagnement pour remplir le formulaire"
+          label="Un accompagnement pour remplir le formulaire"
           onClick={() => transition("INFO_HOUSING_RENT_HELP")}
         />
       </div>

@@ -24,7 +24,7 @@ const SeniorsInstitutions = ({ transition, machineState }) => {
             onClick={() => transition("INFO_SENIORS_APA_REQUEST")}
           />
           <Choice
-            label="Demande accompagnement pour mes démarches en ligne"
+            label="Demande d'accompagnement pour mes démarches en ligne"
             onClick={() => transition("INFO_SENIORS_APA_HELP_REQUEST")}
           />
           <Choice

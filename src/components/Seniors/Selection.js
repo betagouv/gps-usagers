@@ -20,7 +20,7 @@ const SeniorsSelection = ({ transition, machineState }) => {
             onClick={() => transition("SENIORS_HOMECARE_SERVICES")}
           />
           <Choice
-            label="Allocation personnalisé à l'autonomie (APA)"
+            label="Allocation personnalisée à l'autonomie (APA)"
             onClick={() => transition("SENIORS_AUTONOMY")}
           />
           <Choice
@@ -42,6 +42,10 @@ const SeniorsSelection = ({ transition, machineState }) => {
           <Choice
             label="Obligation alimentaire"
             onClick={() => transition("SENIORS_MAINTENANCE_OBLIGATION")}
+          />
+          <Choice
+            label="Informations et prévention personnes âgées"
+            onClick={() => transition("INFO_SENIORS_INFORMATIONS")}
           />
           <Choice
             label="Etablissements pour personnes âgées dépendantes (EHPAD)"

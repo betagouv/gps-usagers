@@ -28,8 +28,8 @@ const InfoHousingAcquisitionHelp = ({ transition, machineState }) => {
         <h1>Remplissez le formulaire de demande</h1>
         <p> Vous pouvez obtenir le formulaire : </p>
         <p>
-          - A domicile par voie postale en sollicitant auprès d'un des
-          gestionnaires aux numéros suivants :
+          - A votre domicile en le demandant à l'un des gestionnaires à l'un des
+          numéros suivantstion :
           <h2 className="phoneList">
             <a href="tel:0231571274" target="_top">
               02 31 57 12 74
@@ -48,7 +48,7 @@ const InfoHousingAcquisitionHelp = ({ transition, machineState }) => {
           - En format papier à l'adresse suivante :
           <div className="infoAddress">
             <h4>
-              Direction générale adjointe de la solidarité Fond de solidarité
+              Direction générale adjointe de la solidarité Fonds de solidarité
               logement
             </h4>
             17 avenue Pierre Mendès France

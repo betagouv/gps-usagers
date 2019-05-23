@@ -1,17 +1,17 @@
 import React, { Component } from "react";
+import ReactPiwik from "react-piwik";
 import { GeoJSON, Map, TileLayer } from "react-leaflet";
 import { getGeoJson } from "../../../assets/data";
 import { Back, Feedback } from "../../../components";
 import { ModalConsumer } from "../../../components/Modal/ModalContext";
-import { MDPHModal } from "../../../components/Modal";
-import { MDPH } from "../../../utils/circonscriptions";
-import {
-  HANDICAPPED,
-  HANDICAPPED_REQUEST,
-  HANDICAPPED_REQUEST_FORM
-} from "../../BreadCrumps";
-
+import { CMSModal } from "../../../components/Modal";
+import { CLIC, CMS } from "../../../utils/circonscriptions";
 import "../Styles.css";
+import {
+  SENIORS,
+  SENIORS_EHPAD,
+  INFO_SENIORS_EHPAD_HELP_ONLINE
+} from "../../BreadCrumps";
 
 const ContexedMap = React.forwardRef((props, ref) => {
   return (
@@ -31,7 +31,7 @@ const ContexedMap = React.forwardRef((props, ref) => {
   );
 });
 
-export default class InfoHandicappedRequestForm extends Component {
+export default class InfoSeniorsInformations extends Component {
   state = {
     circoName: null,
     lat: 49.183333,
@@ -72,8 +72,15 @@ export default class InfoHandicappedRequestForm extends Component {
 
   onClick = e => {
     const circoName = e.target.feature.properties.tags.cas;
-    e.target.options.showModal(MDPHModal, {
-      mdph: MDPH[circoName]
+    ReactPiwik.push([
+      "trackEvent",
+      "infoCms",
+      "circonscription",
+      e.target.feature.properties.tags.cas
+    ]);
+    e.target.options.showModal(CMSModal, {
+      circo: CLIC[circoName],
+      cms: CMS[circoName]
     });
     this.setState(() => ({
       circoName: null
@@ -101,60 +108,16 @@ export default class InfoHandicappedRequestForm extends Component {
             transition={transition}
             machineState={machineState}
             breadCrumps={[
-              HANDICAPPED,
-              HANDICAPPED_REQUEST,
-              HANDICAPPED_REQUEST_FORM
+              SENIORS,
+              SENIORS_EHPAD,
+              INFO_SENIORS_EHPAD_HELP_ONLINE
             ]}
           />
         </div>
         <div className="content final">
-          <h1>Vous pouvez compléter le formulaire :</h1>
-          <p>
-            En le téléchargeant sur le site du Département du Calvados :{" "}
-            <a
-              href="https://www.calvados.fr/files/live/sites/calvados/files/documents/Le%20D%C3%A9partement/Solidarit%C3%A9%20%26%20famille/Autonomie%20%26%20Handicap/MDPH_certificat_m%C3%A9dical.pdf"
-              target="_top"
-            >
-              Certificat médical MDPH
-            </a>
-            <br />
-            <a
-              href="https://www.calvados.fr/files/live/sites/calvados/files/documents/Le%20D%C3%A9partement/Solidarit%C3%A9%20%26%20famille/Autonomie%20%26%20Handicap/Comprendre-et-bien-remplir-le-certificat-medical-MDPH.pdf"
-              target="_top"
-            >
-              Comprendre et bien remplir le certificat médical de la MDPH
-            </a>
-            <br />
-            <a
-              href="https://www.calvados.fr/files/live/sites/calvados/files/documents/Le%20D%C3%A9partement/Solidarit%C3%A9%20%26%20famille/Autonomie%20%26%20Handicap/annexe-certificat-medical-MDPH-volet-1-bilan-auditif.pdf"
-              target="_top"
-            >
-              Annexe certificat médical volet 1 - Bilan auditif
-            </a>
-            <br />
-            <a
-              href="https://www.calvados.fr/files/live/sites/calvados/files/documents/Le%20D%C3%A9partement/Solidarit%C3%A9%20%26%20famille/Autonomie%20%26%20Handicap/annexe-certificat-medical-MDPH-volet-2-bilan-ophtalmologique.pdf"
-              target="_top"
-            >
-              Annexe certificat médical - volet 2 - Bilan ophtalomologique
-            </a>
-            <br />
-            <a
-              href="https://www.calvados.fr/files/live/sites/calvados/files/documents/Le%20D%C3%A9partement/Solidarit%C3%A9%20%26%20famille/Autonomie%20%26%20Handicap/MDPH-en-ligne-Manuel-utilisateur-a-destination-des-usagers.pdf"
-              target="_top"
-            >
-              MDPH en ligne - Manuel utilisateur à destination des usagers
-            </a>
-          </p>
-          <p>
-            En ligne :{" "}
-            <a href="https://mdphenligne.cnsa.fr/" target="_top">
-              https://mdphenligne.cnsa.fr/
-            </a>
-          </p>
-          <p>
-            En sollicitant un envoi papier du formulaire ou venant le chercher :
-          </p>
+          <h3>
+            Rendez-vous dans votre CLIC ou CMS le plus proche de chez vous
+          </h3>
           <Map className="map" center={position} zoom={zoom}>
             {circoName && <div className="circoName">{circoName}</div>}
             <TileLayer

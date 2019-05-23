@@ -28,7 +28,7 @@ const HandicappedPayment = ({ transition, machineState }) => {
             onClick={() => transition("INFO_HANDICAPPED_PAYMENT_CAF")}
           />
           <Choice
-            label="Le paiement de l’allocation d'éducation de l'enfant handicapé (AAEH) ou son arrêt"
+            label="Le paiement de l’allocation d'éducation de l'enfant handicapé (AEEH) ou son arrêt"
             onClick={() => transition("INFO_HANDICAPPED_PAYMENT_CAF")}
           />
         </div>

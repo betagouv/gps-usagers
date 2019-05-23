@@ -104,14 +104,6 @@ export const saadData = [
     longitude: -0.418723
   },
   {
-    name: "DOMITIL",
-    address: "11 place de lé rapublique 14160 Dives sur Mer",
-    phone: "02 31 08 84 54 /  06 73 59 78 95   ",
-    mail: "f.tillier@aquarelle-service.fr ",
-    latitude: 49.286484,
-    longitude: -0.097399
-  },
-  {
     name: "ARCAD",
     address: "23 rue de la Gare Saint Sever 14380 Noues de Sienne",
     phone: "02 31 68 60 08",
@@ -473,14 +465,6 @@ export const saadData = [
     longitude: -0.355346
   },
   {
-    name: "O2 Pont Audemer",
-    address: "O2 Pays d'Auge 14bis Rue Georges Clemenceau 14130 Pont-l'Évêque",
-    phone: "06 15 61 65 67 / 02 43 72 02 02 ",
-    mail: "nicolas.lefloch@o2.fr  ",
-    latitude: 49.289894,
-    longitude: 0.192285
-  },
-  {
     name: "O2 CAEN",
     address: "24 rue Jean Eudes 14000 Caen",
     phone: "06 70 68 28 14  ",
@@ -519,14 +503,6 @@ export const saadData = [
     mail: "f.vaillard@lesessentielles.eu",
     latitude: 49.178229,
     longitude: -0.369508
-  },
-  {
-    name: "Résidence senior services VILLA BEAU SOLEIL - MONDANA",
-    address: "7 Route des Créacteurs, 14800 Deauville",
-    phone: "02 31 88 40 00",
-    mail: "",
-    latitude: 49.355801,
-    longitude: 0.086521
   },
   {
     name: "FACILADOM",

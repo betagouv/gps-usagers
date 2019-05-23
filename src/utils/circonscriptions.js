@@ -299,18 +299,11 @@ export const CMS = {
   ],
   "USDA Nord": [
     {
-      name: "Pierre Heuzé",
-      address: "49, Boulevard Général Vanier",
-      zipCode: "14000",
-      city: "Caen",
-      phone: "02 31 44 25 89"
-    },
-    {
       name: "Hérouville Saint Clair",
-      address: "Esplanade Rabelais, avenue de la Grande Cavée",
+      address: "Avenue de la grande cavée",
       zipCode: "14200",
       city: "Hérouville Saint Clair",
-      phone: "02 31 47 46 22"
+      phone: "02 14 47 51 00"
     },
     {
       name: "Folie Couvrechef",
@@ -334,6 +327,13 @@ export const CMS = {
       zipCode: "14000",
       city: "Caen",
       phone: "02 31 52 17 54"
+    },
+    {
+      name: "Guérinière",
+      address: "3 rue Jean le Hir",
+      zipCode: "14000",
+      city: "Caen",
+      phone: "02 31 35 28 40"
     }
   ],
   "Caen Ouest": [

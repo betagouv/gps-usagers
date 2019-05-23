@@ -255,6 +255,7 @@ const statechart = {
         SENIORS_AUTONOMY: "seniorsAutonomy",
         SENIORS_FAMILY_HOME: "seniorsFamilyHome",
         INFO_SENIORS_HOME_HELP: "infoSeniorsHomeHelp",
+        INFO_SENIORS_INFORMATIONS: "infoSeniorsInformations",
         SENIORS_TELEASSISTANCE: "infoSeniorsTeleassistance",
         SENIORS_SUCCESSION: "infoSeniorsSuccession",
         SENIORS_MAINTENANCE_OBLIGATION: "infoSeniorsMaintenanceObligation",
@@ -354,6 +355,10 @@ const statechart = {
     infoSeniorsHomeHelp: {
       on: { BACK: "seniorsSelection" },
       onEntry: "infoSeniorsHomeHelp"
+    },
+    infoSeniorsInformations: {
+      on: { BACK: "seniorsSelection" },
+      onEntry: "infoSeniorsInformations"
     },
     infoSeniorsTeleassistance: {
       on: { BACK: "seniorsSelection" },

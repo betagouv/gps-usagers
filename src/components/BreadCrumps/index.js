@@ -32,7 +32,7 @@ export const INFO_HOUSING_ACQUISITION_HELP = "Formulaire de demande";
 // SENIORS
 export const SENIORS = "Personnes âgées";
 export const SENIORS_HOMECARE_SERVICES = "Aide ménagère";
-export const SENIORS_AUTONOMY = "Allocation personnalisé à l'autonomie (APA)";
+export const SENIORS_AUTONOMY = "Allocation personnalisée à l'autonomie (APA)";
 export const SENIORS_FAMILY_HOME = "Accueil familial pour les personnes âgées";
 export const SENIORS_EHPAD = "EHPAD";
 export const SENIORS_REPORTING = "Signalement et réclamation";
@@ -51,7 +51,7 @@ export const INFO_REPORTING_INFO = "Informations";
 export const INFO_SENIORS_APA = "Informations générales";
 export const INFO_SENIORS_APA_REQUEST = "Création d'une demande";
 export const INFO_SENIORS_APA_HELP_REQUEST =
-  "Demande accompagnement pour mes démarches en ligne";
+  "Accompagnement pour mes démarches en ligne";
 export const INFO_SENIORS_APA_HELP_ONLINE =
   "Dysfonctionnement lors de ma saisie en ligne";
 export const INFO_SENIORS_FAMILY_HOME_REQUEST =
@@ -61,7 +61,7 @@ export const INFO_SENIORS_FAMILY_HOME_TRACKING =
 export const INFO_SENIORS_EHPAD_LIST = "Liste";
 export const INFO_SENIORS_EHPAD_REQUEST = "Demande d'hébergement";
 export const INFO_SENIORS_EHPAD_HELP_REQUEST =
-  "Demande accompagnement pour mes démarches en ligne";
+  "Accompagnement pour mes démarches en ligne";
 export const INFO_SENIORS_EHPAD_HELP_ONLINE =
   "Dysfonctionnement de Via trajectoire lors de ma saisie en ligne";
 export const INFO_SENIOR_FINANCIERS_MEETING = "Conférence des financeurs";
@@ -73,7 +73,7 @@ export const HANDICAPPED_REQUEST = "Déposer un dossier";
 export const HANDICAPPED_REQUEST_FORM =
   "L'obtention du formulaire pour en effectuer une demande";
 export const HANDICAPPED_REQUEST_HELP =
-  "La sollicitation d'un accompagnement pour remplir le formulaire";
+  "Un accompagnement pour remplir le formulaire";
 export const HANDICAPPED_TRACKING_REQUEST =
   "Renseignements sur le dossier que j'ai déposé";
 export const HANDICAPPED_TRACKING_REQUEST_HELP =

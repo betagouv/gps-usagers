@@ -24,7 +24,7 @@ const SeniorsEPHAD = ({ transition, machineState }) => {
             onClick={() => transition("INFO_SENIORS_EHPAD_REQUEST")}
           />
           <Choice
-            label="Demande accompagnement pour mes démarches en ligne"
+            label="Demande d'accompagnement pour mes démarches en ligne"
             onClick={() => transition("INFO_SENIORS_EHPAD_HELP_REQUEST")}
           />
           <Choice

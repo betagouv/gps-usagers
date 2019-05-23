@@ -44,6 +44,7 @@ import HousingAcquisitionSelection from "./components/Housing/AcquisitionSelecti
 import InfoSeniorHomecareServiceAsk from "./components/Information/Seniors/HomecareAsk";
 import InfoSeniorsFinanciersMeeting from "./components/Information/Seniors/FinanciersMeeting";
 import InfoSeniorsReportingInfo from "./components/Information/Seniors/ReportingInfo";
+import InfoSeniorsInformations from "./components/Information/Seniors/Informations";
 import InfoHandicappedInfos from "./components/Information/Handicapped/Infos";
 import InfoHandicappedRequestForm from "./components/Information/Handicapped/RequestForm";
 import InfoHandicappedRequestHelp from "./components/Information/Handicapped/RequestHelp";
@@ -229,6 +230,9 @@ class App extends Component {
           {/* INFO SENIORS */}
           <Action is="infoSeniorHomecareServiceAsk">
             <InfoSeniorHomecareServiceAsk {...this.props} />
+          </Action>
+          <Action is="infoSeniorsInformations">
+            <InfoSeniorsInformations {...this.props} />
           </Action>
           <Action is="infoSeniorHomecareServiceDirectory">
             <InfoSeniorHomecareServiceDirectory {...this.props} />

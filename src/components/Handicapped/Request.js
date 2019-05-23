@@ -20,7 +20,7 @@ const HandicappedRequest = ({ transition, machineState }) => {
             onClick={() => transition("INFO_HANDICAPPED_REQUEST_FORM")}
           />
           <Choice
-            label="La sollicitation d'un accompagnement pour remplir le formulaire"
+            label="Un accompagnement pour remplir le formulaire"
             onClick={() => transition("INFO_HANDICAPPED_REQUEST_HELP")}
           />
         </div>
