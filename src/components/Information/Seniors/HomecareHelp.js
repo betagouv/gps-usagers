@@ -25,7 +25,7 @@ const InfoSeniorHomecareHelp = ({ transition, machineState }) => {
       <div className="content final">
         <h1>Remplissez le formulaire de demande</h1>
         Dans l'un des CCAS (centre communaux d'action sociale) : Rendez-vous
-        dans le CCAS de votre mairie
+        dans les CCAS de votre mairie
       </div>
     </div>
   );
