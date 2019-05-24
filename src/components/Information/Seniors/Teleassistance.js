@@ -16,18 +16,13 @@ const InfoSeniorTeleassistance = ({ transition, machineState }) => {
       </div>
       <div className="content final">
         <h1>
-          Contactez l'un des gestionnaires suivants pour avoir des
-          renseignements :
+          Contactez le gestionnaire du dossier pour avoir des renseignements :
         </h1>
         <p>
-          Numéros de téléphone direct des gestionnaires de dossier :
+          Numéros de téléphone direct du gestionnaire de dossier :
           <h2 className="phoneList">
-            <a href="tel:0231571635" target="_top">
-              02 31 57 16 35
-            </a>
-            <br />
-            <a href="tel:0231571589" target="_top">
-              02 31 57 15 89
+            <a href="tel:0231571611" target="_top">
+              02 31 57 16 11
             </a>
           </h2>
         </p>
