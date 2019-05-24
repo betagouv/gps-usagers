@@ -67,7 +67,7 @@ class InfoEpn extends Component {
           />
         </div>
         <div className="content final">
-          <h3>Rendez-vous dans l‘EPN ou le Point Info 14 le plus proche</h3>
+          <h3>Rendez-vous dans le Point Info 14 le plus proche</h3>
           <Autosuggest
             suggestions={suggestions}
             onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
