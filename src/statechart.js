@@ -45,6 +45,7 @@ const statechart = {
         INFO_GESTIONNAIRE: "infoGestionnaire",
         INFO_CAF: "infoCaf",
         INFO_MSA: "infoMsa",
+        INFO_CCAS: "infoCcas",
         BACK: "rsaSelection"
       },
       onEntry: "rsaLetter"
@@ -494,6 +495,10 @@ const statechart = {
     infoMsa: {
       on: { BACK: "rsaLetter" },
       onEntry: "infoMsa"
+    },
+    infoCcas: {
+      on: { BACK: "rsaLetter" },
+      onEntry: "infoCcas"
     },
     infoCpam: {
       on: { BACK: "rsaSelection" },

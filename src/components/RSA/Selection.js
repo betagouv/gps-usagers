@@ -16,28 +16,27 @@ const RSASelection = ({ transition, machineState }) => {
         <h3>Votre demande concerne :</h3>
         <div className="contentCard">
           <Choice
-            label="J'ai reçu un courrier et j'ai une question"
+            label="Question suite à un courrier reçu"
             onClick={() => transition("RSA_LETTER")}
           />
           <Choice
-            label="J'ai besoin d'actualiser mon RSA"
+            label="Actualisation de mon RSA"
             onClick={() => transition("INFO_CAF")}
           />
           <Choice
-            label="Je n'ai pas reçu mon dernier versement ou mon dernier versement est
-          inférieur à mon allocation habituelle"
+            label="Problème dernier versement"
             onClick={() => transition("RSA_SITUATION")}
           />
           <Choice
-            label="Je souhaite avoir une aide financière supplémentaire"
+            label="Informations aides financières"
             onClick={() => transition("INFO_CMS")}
           />
           <Choice
-            label="J'ai besoin d'un suivi pour remplir des démarches administratives"
+            label="Problème pour remplir des démarches administratives"
             onClick={() => transition("INFO_CMS")}
           />
           <Choice
-            label="Je souhaite bénéficier de la CMU (Couverture Maladie Universelle)"
+            label="CMU (Couverture maladie universelle)"
             onClick={() => transition("INFO_CPAM")}
           />
         </div>

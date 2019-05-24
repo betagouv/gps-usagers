@@ -30,7 +30,7 @@ const InfoSeniorHomecareDirectory = ({ transition, machineState }) => {
           Numéro de téléphone du gestionnaires de dossier :
           <h2 className="phoneList">
             <a href="tel:0231571611" target="_top">
-              02.31.57.16.11
+              02 31 57 16 11
             </a>
           </h2>
         </p>

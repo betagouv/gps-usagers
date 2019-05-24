@@ -24,18 +24,7 @@ const InfoSeniorHomecareHelp = ({ transition, machineState }) => {
       </div>
       <div className="content final">
         <h1>Remplissez le formulaire de demande</h1>
-        <p> Vous pouvez obtenir le formulaire : </p>
-        <p>
-          - Sur le site du Département{" "}
-          <a
-            href="https://www.calvados.fr/files/live/sites/calvados/files/documents/Le%20D%C3%A9partement/Solidarit%C3%A9%20%26%20famille/Autonomie%20%26%20Handicap/formulaire-de-demande-daide-mena"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            en cliquant ici
-          </a>
-        </p>
-        - Dans l'un des CCAS (centre communaux d'action sociale) : Rendez-vous
+        Dans l'un des CCAS (centre communaux d'action sociale) : Rendez-vous
         dans le CCAS de votre mairie
       </div>
     </div>

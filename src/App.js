@@ -8,6 +8,7 @@ import InfoEPN from "./components/Information/EPN";
 import InfoGestionnaire from "./components/Information/Gestionnaire";
 import InfoCms from "./components/Information/CMS";
 import InfoMSA from "./components/Information/MSA";
+import InfoCCAS from "./components/Information/CCAS";
 import InfoOnline from "./components/Information/Online";
 import InfoPE from "./components/Information/PE";
 import RSACirconscription from "./components/RSA/Circonscription";
@@ -344,6 +345,9 @@ class App extends Component {
           </Action>
           <Action is="infoMsa">
             <InfoMSA {...this.props} />
+          </Action>
+          <Action is="infoCcas">
+            <InfoCCAS {...this.props} />
           </Action>
           <Action is="infoCpam">
             <InfoCPAM {...this.props} />

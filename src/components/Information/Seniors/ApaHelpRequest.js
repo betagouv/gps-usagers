@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import ReactPiwik from "react-piwik";
 import Autosuggest from "react-autosuggest";
 import { Map, Marker, Popup, TileLayer } from "react-leaflet";
-import epnData from "../../../assets/epn";
+// import epnData from "../../../assets/epn";
 import pointInfo from "../../../assets/pointInfo";
 import { Back, Feedback } from "../../../components";
 import "../Styles.css";
@@ -99,7 +99,7 @@ class InfoSeniorsApaHelpRequest extends Component {
               url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png"
               attribution='<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>'
             />
-            {epnData &&
+            {/* {epnData &&
               epnData.map(data => (
                 <Marker
                   key={data.name}
@@ -128,7 +128,7 @@ class InfoSeniorsApaHelpRequest extends Component {
                     </div>
                   </Popup>
                 </Marker>
-              ))}
+              ))} */}
             {pointInfo &&
               pointInfo.map(data => (
                 <Marker

@@ -12,6 +12,7 @@ export const INFO_CAF = "CAF";
 export const INFO_CAF_ONLINE = "CAF";
 export const INFO_ONLINE = "Site du Calvados";
 export const INFO_MSA = "MSA";
+export const INFO_CCAS = "CCAS";
 export const INFO_PE = "Pôle emploi";
 export const INFO_EPN = "Points info";
 

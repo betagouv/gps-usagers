@@ -21,6 +21,10 @@ const RSALetter = ({ transition, machineState }) => {
           />
           <Choice label="La CAF" onClick={() => transition("INFO_CAF")} />
           <Choice label="La MSA" onClick={() => transition("INFO_MSA")} />
+          <Choice
+            label="Les CCAS centre communaux d'action sociale"
+            onClick={() => transition("INFO_CCAS")}
+          />
         </div>
       </div>
     </div>
