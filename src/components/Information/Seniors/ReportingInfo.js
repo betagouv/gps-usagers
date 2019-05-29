@@ -19,17 +19,14 @@ const InfoSeniorReportingInfo = ({ transition, machineState }) => {
         />
       </div>
       <div className="content final">
-        <h1>
-          Une plaquette d'information est à votre disposition en cliquant sur le
-          lien suivant :
-        </h1>
+        <h1>Une plaquette d'information est à votre disposition :</h1>
         <p>
-          en cliquant sur le lien suivant :{" "}
+          En cliquant sur le lien suivant :{" "}
           <a
-            href="https://www.calvados.fr/accueil/le-departement/solidarite---familles/autonomie--handicap/maintien-a-domicile.html"
+            href="https://www.calvados.fr/files/live/sites/calvados/files/documents/Le%20D%C3%A9partement/Solidarit%C3%A9%20%26%20famille/Autonomie%20%26%20Handicap/Traitement-des-signalements-reclamations-et-evenements-indesirables-Plaquette-pour-professionnels.pdf"
             target="_top"
           >
-            https://www.calvados.fr/accueil/le-departement/solidarite---familles/autonomie--handicap/maintien-a-domicile.html
+            Télécharger la plaquette
           </a>
         </p>
       </div>

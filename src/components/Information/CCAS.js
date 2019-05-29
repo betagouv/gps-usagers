@@ -19,7 +19,7 @@ const InfoMSA = ({ transition, machineState }) => {
       </div>
       <div className="content final">
         <h1>
-          Rendez-vous dans l'un des CCAS (centre communaux d'action sociale) de
+          Rendez-vous dans l'un des CCAS (centres communaux d'action sociale) de
           votre mairie
         </h1>
       </div>

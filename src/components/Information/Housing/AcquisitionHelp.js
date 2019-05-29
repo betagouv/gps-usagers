@@ -28,8 +28,7 @@ const InfoHousingAcquisitionHelp = ({ transition, machineState }) => {
         <h1>Remplissez le formulaire de demande</h1>
         <p> Vous pouvez obtenir le formulaire : </p>
         <p>
-          - A votre domicile en le demandant à l'un des gestionnaires à l'un des
-          numéros suivantstion :
+          - Contacts pour envoi formulaire :
           <h2 className="phoneList">
             <a href="tel:0231571274" target="_top">
               02 31 57 12 74

@@ -15,7 +15,7 @@ class Start extends React.Component {
           <h2> </h2>
         </div>
         <div className="content">
-          <h3>QUEL EST L'OBJET DE VOTRE DEMANDE&nbsp;?</h3>
+          <h3>QUELLE EST VOTRE DEMANDE&nbsp;?</h3>
           <div className="contentCard">
             <Card
               label="RSA"

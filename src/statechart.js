@@ -288,6 +288,7 @@ const statechart = {
     seniorsFamilyHome: {
       on: {
         BACK: "seniorsSelection",
+        INFO_SENIORS_FAMILY_HOME_INFOS: "infoSeniorsFamilyHomeInfos",
         INFO_SENIORS_FAMILY_HOME_REQUEST: "infoSeniorsFamilyHomeRequest",
         INFO_SENIORS_FAMILY_HOME_TRACKING: "infoSeniorsFamilyHomeTracking"
       },
@@ -340,6 +341,10 @@ const statechart = {
     infoSeniorsApaHelpOnline: {
       on: { BACK: "seniorsAutonomy" },
       onEntry: "infoSeniorsApaHelpOnline"
+    },
+    infoSeniorsFamilyHomeInfos: {
+      on: { BACK: "seniorsFamilyHome" },
+      onEntry: "infoSeniorsFamilyHomeInfos"
     },
     infoSeniorsFamilyHomeRequest: {
       on: { BACK: "seniorsFamilyHome" },

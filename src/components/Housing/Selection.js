@@ -13,25 +13,25 @@ const HousingSelection = ({ transition, machineState }) => {
         />
       </div>
       <div className="content">
-        <h3>Quel est l’objet de votre demande ?</h3>
+        <h3>Quelle est de votre demande ?</h3>
         <Choice
-          label="Je suis à la recherche d'un logement social ou d'un logement privé"
+          label="Rechercher un logement social ou un logement privé"
           onClick={() => transition("INFO_HOUSING_SEARCH")}
         />
         <Choice
-          label="Je souhaite avoir des renseignements sur une aide ﬁnancière pour l'accès à un logement ou en effectuer la demande d'aide financière."
+          label="Informations sur une aide financière pour l'accès à un logement ou en effectuer la demande d'aide financière"
           onClick={() => transition("HOUSING_ASSISTANCE")}
         />
         <Choice
-          label="Je rencontre des difﬁcultés pour régler mon loyer"
+          label="Difficultés pour régler mon loyer"
           onClick={() => transition("HOUSING_RENT")}
         />
         <Choice
-          label="Je souhaite bénéﬁcier d'une aide pour l'acquisition, la construction ou l’amélioration de mon logement"
+          label="Aide pour l’acquisition, la construction, ou l'amélioration de mon logement"
           onClick={() => transition("HOUSING_ACQUISITION")}
         />
         <Choice
-          label="Je souhaite bénéﬁcier d'une aide pour régler mes factures d'énergie"
+          label="Aide pour régler mes factures d'énergie"
           onClick={() => transition("INFO_HOUSING_ENERGY_BILLS")}
         />
       </div>

@@ -55,6 +55,7 @@ export const INFO_SENIORS_APA_HELP_REQUEST =
   "Accompagnement pour mes démarches en ligne";
 export const INFO_SENIORS_APA_HELP_ONLINE =
   "Dysfonctionnement lors de ma saisie en ligne";
+export const INFO_SENIORS_FAMILY_HOME_INFOS = "Informations générales";
 export const INFO_SENIORS_FAMILY_HOME_REQUEST =
   "Accueil familial ou en effectuer la demande";
 export const INFO_SENIORS_FAMILY_HOME_TRACKING =

@@ -125,7 +125,9 @@ export default class InfoSeniorsEhpadOnline extends Component {
             </h2>
           </p>
           <h3>
-            Ou rendez-vous dans votre CLIC ou CMS le plus proche de chez vous
+            Ou rendez-vous dans votre centre local d'information et de
+            coordination (CLIC) ou centre médico-social (CMS) le plus proche de
+            chez vous
           </h3>
           <Map className="map" center={position} zoom={zoom}>
             {circoName && <div className="circoName">{circoName}</div>}

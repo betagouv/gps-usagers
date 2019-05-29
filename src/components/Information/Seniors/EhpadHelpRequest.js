@@ -76,7 +76,7 @@ class InfoSeniorsEhpadHelpRequest extends Component {
         </div>
         <div className="content final">
           <h1>
-            Rendez-vous dans le point info ou EPN le plus proche de chez vous{" "}
+            Rendez-vous dans le point info le plus proche de chez vous{" "}
           </h1>
           <Autosuggest
             suggestions={suggestions}

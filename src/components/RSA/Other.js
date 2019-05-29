@@ -13,22 +13,22 @@ const RSAOther = ({ transition, machineState }) => {
         />
       </div>
       <div className="content">
-        <h3>Quel est l’objet de votre demande ?</h3>
+        <h3>Quelle est votre demande ?</h3>
         <div className="contentCard">
           <Choice
-            label="Je cherche un emploi"
+            label="Rechercher un emploi"
             onClick={() => transition("INFO_PE")}
           />
           <Choice
-            label="J'ai besoin d'aide pour remplir ma demande de RSA"
+            label="Aide pour actualiser mon RSA"
             onClick={() => transition("INFO_EPN")}
           />
           <Choice
-            label="Je veux savoir si je suis éligible et combien je toucherais"
+            label="Suis-je éligible et combien je toucherais"
             onClick={() => transition("INFO_CAF_ONLINE")}
           />
           <Choice
-            label="Je veux avoir des informations générales sur le RSA"
+            label="Obtenir des informations générales sur le RSA"
             onClick={() => transition("INFO_ONLINE")}
           />
         </div>

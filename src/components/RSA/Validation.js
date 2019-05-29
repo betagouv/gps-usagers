@@ -13,7 +13,7 @@ const RSASelection = ({ transition, machineState }) => {
         />
       </div>
       <div className="content">
-        <h3>Êtes vous déjà allocataire du RSA ?</h3>
+        <h3>Êtes vous allocataire du RSA ?</h3>
         <div className="contentCard">
           <Card
             label="OUI"

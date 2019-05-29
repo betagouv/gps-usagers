@@ -16,20 +16,20 @@ const HandicappedPayment = ({ transition, machineState }) => {
         <h3>Votre demande concerne :</h3>
         <div className="contentCard">
           <Choice
-            label="Le paiement de la prestation de compensation du handicap (PCH) ou son arrêt"
-            onClick={() => transition("HANDICAPPED_PAYMENT_PCH")}
-          />
-          <Choice
-            label="Le paiement de l'allocation compensatrice pour tierce personne ou son arrêt"
-            onClick={() => transition("HANDICAPPED_PAYMENT_THIRD_PARTY")}
-          />
-          <Choice
             label="Le paiement de l'allocation adulte handicapée (AAH) ou son arrêt"
             onClick={() => transition("INFO_HANDICAPPED_PAYMENT_CAF")}
           />
           <Choice
             label="Le paiement de l’allocation d'éducation de l'enfant handicapé (AEEH) ou son arrêt"
             onClick={() => transition("INFO_HANDICAPPED_PAYMENT_CAF")}
+          />
+          <Choice
+            label="Le paiement de la prestation de compensation du handicap (PCH) ou son arrêt"
+            onClick={() => transition("HANDICAPPED_PAYMENT_PCH")}
+          />
+          <Choice
+            label="Le paiement de l'allocation compensatrice pour tierce personne (ACTP) ou son arrêt"
+            onClick={() => transition("HANDICAPPED_PAYMENT_THIRD_PARTY")}
           />
         </div>
       </div>

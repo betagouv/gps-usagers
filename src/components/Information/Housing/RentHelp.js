@@ -16,8 +16,12 @@ const InfoHousingRentHelp = ({ transition, machineState }) => {
         />
       </div>
       <div className="content final">
-      <MapCms /><br/>
-          <h3>Ou rendez-vous dans l'un des CCAS (centre communaux d'action sociale) de votre mairie</h3>
+        <MapCms />
+        <br />
+        <h3>
+          Ou rendez-vous dans l'un des CCAS (centres communaux d'action sociale)
+          de votre mairie
+        </h3>
       </div>
     </div>
   );

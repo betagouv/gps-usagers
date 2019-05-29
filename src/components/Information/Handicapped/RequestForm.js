@@ -110,7 +110,14 @@ export default class InfoHandicappedRequestForm extends Component {
         <div className="content final">
           <h1>Vous pouvez compléter le formulaire :</h1>
           <p>
-            En le téléchargeant sur le site du Département du Calvados :{" "}
+            En le téléchargeant sur le site du Département du Calvados : <br />
+            <a
+              href="https://www.calvados.fr/files/live/sites/calvados/files/documents/Le%20D%C3%A9partement/Solidarit%C3%A9%20%26%20famille/Autonomie%20%26%20Handicap/MDPH-formulaire-demande.pdf"
+              target="_top"
+            >
+              Formulaire de demande MDPH
+            </a>
+            <br />
             <a
               href="https://www.calvados.fr/files/live/sites/calvados/files/documents/Le%20D%C3%A9partement/Solidarit%C3%A9%20%26%20famille/Autonomie%20%26%20Handicap/MDPH_certificat_m%C3%A9dical.pdf"
               target="_top"
@@ -138,18 +145,18 @@ export default class InfoHandicappedRequestForm extends Component {
             >
               Annexe certificat médical - volet 2 - Bilan ophtalomologique
             </a>
+          </p>
+          <p>
+            En ligne :{" "}
+            <a href="https://mdphenligne.cnsa.fr/" target="_top">
+              https://mdphenligne.cnsa.fr/
+            </a>
             <br />
             <a
               href="https://www.calvados.fr/files/live/sites/calvados/files/documents/Le%20D%C3%A9partement/Solidarit%C3%A9%20%26%20famille/Autonomie%20%26%20Handicap/MDPH-en-ligne-Manuel-utilisateur-a-destination-des-usagers.pdf"
               target="_top"
             >
               MDPH en ligne - Manuel utilisateur à destination des usagers
-            </a>
-          </p>
-          <p>
-            En ligne :{" "}
-            <a href="https://mdphenligne.cnsa.fr/" target="_top">
-              https://mdphenligne.cnsa.fr/
             </a>
           </p>
           <p>

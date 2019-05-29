@@ -15,15 +15,15 @@ const HousingAssistance = ({ transition, machineState }) => {
       <div className="content">
         <h3>Votre demande concerne :</h3>
         <Choice
-          label="Je souhaite avoir des informations générales sur les aides ﬁnancières"
+          label="Informations générales sur les aides financières"
           onClick={() => transition("INFO_HOUSING_ASSISTANCE")}
         />
         <Choice
-          label="Je souhaite formuler une demande d'aide ﬁnancière"
+          label="Demande d'aide financière"
           onClick={() => transition("INFO_HOUSING_ASSISTANCE_REQUEST")}
         />
         <Choice
-          label="Je souhaite être accompagné pour remplir le formulaire"
+          label="Accompagnement pour remplir le formulaire"
           onClick={() => transition("INFO_HOUSING_ASSISTANCE_HELP")}
         />
       </div>

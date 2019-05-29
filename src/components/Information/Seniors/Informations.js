@@ -116,7 +116,8 @@ export default class InfoSeniorsInformations extends Component {
         </div>
         <div className="content final">
           <h3>
-            Rendez-vous dans votre CLIC ou CMS le plus proche de chez vous
+            Rendez-vous dans votre centre local d'information et de coordination
+            (CLIC) ou centre médico-social (CMS) le plus proche de chez vous
           </h3>
           <Map className="map" center={position} zoom={zoom}>
             {circoName && <div className="circoName">{circoName}</div>}

@@ -102,6 +102,7 @@ class InfoSeniorHomeHelp extends Component {
                     ])
                   }
                 >
+                  {console.log("WOONIES LOG: render -> data", data)}
                   <Popup>
                     <div className="heading1">{data.name}</div>
                     <div className="address">{data.address}</div>
