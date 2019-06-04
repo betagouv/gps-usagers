@@ -15,25 +15,9 @@ const InfoPE = ({ transition, machineState }) => {
         />
       </div>
       <div className="content final">
-        <h1>Consulter les offres d'emploi :</h1>
+        <h1>Contactez Pôle emploi :</h1>
         <br />
         <p>
-          Sur le site du Département :{" "}
-          <a href="https://www.calvados.fr/espace-emploi" target="_top">
-            https://www.calvados.fr/espace-emploi
-          </a>
-        </p>
-        <br />
-        <p>
-          Sur cap territorial :{" "}
-          <a href="https://www.cap-territorial.fr/" target="_top">
-            https://www.cap-territorial.fr/
-          </a>
-        </p>
-        <br />
-        <p>
-          Contactez pôle emploi
-          <br />
           <br /> Pour joindre Pôle Emploi par téléphone, appelez le numéro
           suivant :
           <h2 className="Phone">
