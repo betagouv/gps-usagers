@@ -23,11 +23,11 @@ const HousingAcquisitionSelection = ({ transition, machineState }) => {
       <div className="content">
         <h3>Quelle est votre situation ?</h3>
         <Choice
-          label="Je souhaite obtenir des informations générales sur les aides ﬁnancières"
+          label="Informations générales sur les aides financières"
           onClick={() => transition("INFO_HOUSING_ACQUISITION_INFOS")}
         />
         <Choice
-          label="Je souhaite formuler une demande d'aide ﬁnancière"
+          label="Demander une aide financiere financière"
           onClick={() => transition("INFO_HOUSING_ACQUISITION_HELP")}
         />
       </div>
