@@ -24,7 +24,7 @@ const RSAOther = ({ transition, machineState }) => {
             onClick={() => transition("INFO_EPN")}
           />
           <Choice
-            label="Suis-je éligible et combien je toucherais"
+            label="Suis-je éligible et combien je toucherais ?"
             onClick={() => transition("INFO_CAF_ONLINE")}
           />
           <Choice

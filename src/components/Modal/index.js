@@ -36,24 +36,28 @@ export const CMSModal = ({ onRequestClose, circo, cms, ...rest }) => (
             </a>
           </div>
         </div>
-        <br />
-        <h3>Centre médico-social</h3>
-        <div className="flex">
-          {cms.map(c => (
-            <div key={c.name} className="cms">
-              <div className="heading2">{c.name}</div>
-              <div className="address">
-                {c.address} <br />
-                {c.zipCode} {c.city}
-              </div>
-              <div className="phone">
-                <a href={`tel:${c.phone}`} target="_top">
-                  {c.phone}
-                </a>
-              </div>
+        {cms && (
+          <>
+            <br />
+            <h3>Centre médico-social</h3>
+            <div className="flex">
+              {cms.map(c => (
+                <div key={c.name} className="cms">
+                  <div className="heading2">{c.name}</div>
+                  <div className="address">
+                    {c.address} <br />
+                    {c.zipCode} {c.city}
+                  </div>
+                  <div className="phone">
+                    <a href={`tel:${c.phone}`} target="_top">
+                      {c.phone}
+                    </a>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </>
+        )}
       </div>
     </div>
     <div className="modalFooter" />
@@ -103,9 +107,9 @@ export const MDPHModal = ({ onRequestClose, mdph, ...rest }) => (
       <div className="modalContent">
         <div>
           <div className="modalText">
-            Vous pouvez joindre par téléphone ou vous déplacer dans la
-            maison départementale des personnes handicapées la plus proche de chez
-            vous :
+            Vous pouvez joindre par téléphone ou vous déplacer dans la maison
+            départementale des personnes handicapées la plus proche de chez vous
+            :
           </div>
           <h3>{mdph.title}</h3>
           <div className="address">
@@ -114,17 +118,14 @@ export const MDPHModal = ({ onRequestClose, mdph, ...rest }) => (
             <br />
             {mdph.zipCode} {mdph.city}
           </div>
-          <div>
-            {mdph.mail}
-          </div>
+          <div>{mdph.mail}</div>
           <div className="phone">
             <a href={`tel:${mdph.phone}`} target="_top">
               {mdph.phone}
             </a>
-          </div><br/>
-          <div className="opening">
-            {mdph.opening}
           </div>
+          <br />
+          <div className="opening">{mdph.opening}</div>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ import { getGeoJson } from "../../../assets/data";
 import { Back, Feedback } from "../../../components";
 import { ModalConsumer } from "../../../components/Modal/ModalContext";
 import { CMSModal } from "../../../components/Modal";
-import { CLIC, CMS } from "../../../utils/circonscriptions";
+import { CLIC } from "../../../utils/circonscriptions";
 import "../Styles.css";
 import {
   SENIORS,
@@ -79,8 +79,7 @@ export default class InfoSeniorsEhpadOnline extends Component {
       e.target.feature.properties.tags.cas
     ]);
     e.target.options.showModal(CMSModal, {
-      circo: CLIC[circoName],
-      cms: CMS[circoName]
+      circo: CLIC[circoName]
     });
     this.setState(() => ({
       circoName: null
