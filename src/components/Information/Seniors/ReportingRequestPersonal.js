@@ -27,7 +27,9 @@ const InfoSeniorReportingRequestPersonal = ({ transition, machineState }) => {
         Merci d'envoyer :
         <p>
           un mail à l'adresse suivante{" "}
-          <a href="mailto:signalements@calvados.fr">signalements@calvados.fr</a>
+          <a href="mailto:da.signalements@calvados.fr">
+            da.signalements@calvados.fr
+          </a>
         </p>
         <br />
         <p>
@@ -42,13 +44,6 @@ const InfoSeniorReportingRequestPersonal = ({ transition, machineState }) => {
             <br />
             BP10519 BP 14035 Caen Cedex 1
           </div>
-        </p>
-        <br />
-        <p>
-          Vous pouvez également joindre le numéro suivant{" "}
-          <a href="tel:0231571725" target="_top">
-            02 31 57 17 25
-          </a>
         </p>
       </div>
     </div>

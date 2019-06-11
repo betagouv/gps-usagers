@@ -457,14 +457,6 @@ export const saadData = [
     longitude: -0.360594
   },
   {
-    name: "JS2L",
-    address: "35 rue Fournet 14100 Lisieux",
-    phone: "02 31 62 43 58",
-    mail: "juniorsenior.lisieux@gmail.com ",
-    latitude: 49.137353,
-    longitude: 0.227286
-  },
-  {
     name: "JUST'IN HOME",
     address: "ZA Estuaire entreprise 14310 Villers Bocage",
     phone: "06 36 58 38 25",

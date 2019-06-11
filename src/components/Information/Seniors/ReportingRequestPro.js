@@ -34,9 +34,9 @@ const InfoSeniorReportingRequestPro = ({ transition, machineState }) => {
         <p />
         <br />
         <p>
-          Vous pouvez également joindre le numéro suivant{" "}
-          <a href="tel:0231571725" target="_top">
-            02 31 57 17 25
+          Ou d'envoyer un mail à l'adresse suivante :
+          <a href="mailto:da.signalements@calvados.fr">
+            da.signalements@calvados.fr
           </a>
         </p>
       </div>
