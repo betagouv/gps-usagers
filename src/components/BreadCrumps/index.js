@@ -39,8 +39,8 @@ export const SENIORS_EHPAD = "EHPAD";
 export const SENIORS_REPORTING = "Signalement et réclamation";
 export const SENIORS_REPORTING_REQUEST =
   "Effectuer un signalement/ une réclamation";
-export const SENIORS_REPORTING_REQUEST_PERSONAL = "En tant que particulier";
-export const SENIORS_REPORTING_REQUEST_PRO = "En tant que professionnel";
+export const SENIORS_REPORTING_REQUEST_PERSONAL = "Particulier-Professionnal";
+export const SENIORS_REPORTING_REQUEST_PRO = "Particulier-Professionnal";
 export const INFO_SENIORS_HOMECARE_SERVICES_ASK = "Demande d'aide";
 export const INFO_SENIORS_HOMECARE_SERVICES_DIRECTORY =
   "Avancement de mon dossier";

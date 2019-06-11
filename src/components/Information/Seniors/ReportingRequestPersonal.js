@@ -26,7 +26,7 @@ const InfoSeniorReportingRequestPersonal = ({ transition, machineState }) => {
         <h1>Vous souhaitez signaler un événement indésirable :</h1>
         Merci d'envoyer :
         <p>
-          un mail à l'adresse suivante{" "}
+          un mail à l'adresse suivante :{" "}
           <a href="mailto:da.signalements@calvados.fr">
             da.signalements@calvados.fr
           </a>
