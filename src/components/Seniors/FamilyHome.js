@@ -24,7 +24,7 @@ const SeniorsInstitutions = ({ transition, machineState }) => {
             onClick={() => transition("INFO_SENIORS_FAMILY_HOME_REQUEST")}
           />
           <Choice
-            label="Avancement de ma demande d'aide sociale en établissement"
+            label="Avancement de mon dossier"
             onClick={() => transition("INFO_SENIORS_FAMILY_HOME_TRACKING")}
           />
         </div>

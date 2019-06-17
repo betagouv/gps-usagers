@@ -18,7 +18,7 @@ export const INFO_EPN = "Points info";
 
 // HOUSING
 export const HOUSING = "Logement";
-export const HOUSING_ASSISTANCE = "Assistance";
+export const HOUSING_ASSISTANCE = "Informations sur une aide financière";
 export const HOUSING_RENT = "Loyer";
 export const HOUSING_ACQUISITION = "Acquisition, construction, amélioration";
 export const HOUSING_ACQUISITION_SELECTION = "Situation";
@@ -58,8 +58,7 @@ export const INFO_SENIORS_APA_HELP_ONLINE =
 export const INFO_SENIORS_FAMILY_HOME_INFOS = "Informations générales";
 export const INFO_SENIORS_FAMILY_HOME_REQUEST =
   "Accueil familial ou en effectuer la demande";
-export const INFO_SENIORS_FAMILY_HOME_TRACKING =
-  "Avancement de ma demande d'aide sociale en établissement";
+export const INFO_SENIORS_FAMILY_HOME_TRACKING = "Avancement de mon dossier";
 export const INFO_SENIORS_EHPAD_LIST = "Liste";
 export const INFO_SENIORS_EHPAD_REQUEST = "Demande d'hébergement";
 export const INFO_SENIORS_EHPAD_HELP_REQUEST =
