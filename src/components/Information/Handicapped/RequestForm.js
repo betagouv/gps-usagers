@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import { GeoJSON, Map, TileLayer } from "react-leaflet";
-import { getGeoJson } from "../../../assets/data";
+import { Map, TileLayer } from "react-leaflet";
 import { Back, Feedback } from "../../../components";
-import { ModalConsumer } from "../../../components/Modal/ModalContext";
 import { MDPHModal } from "../../../components/Modal";
 import { MDPH } from "../../../utils/circonscriptions";
 import {
@@ -10,26 +8,9 @@ import {
   HANDICAPPED_REQUEST,
   HANDICAPPED_REQUEST_FORM
 } from "../../BreadCrumps";
+import { ContexedMap } from "../../MapCirconscription";
 
 import "../Styles.css";
-
-const ContexedMap = React.forwardRef((props, ref) => {
-  return (
-    <ModalConsumer>
-      {({ showModal }) => (
-        <GeoJSON
-          ref={ref}
-          key={Math.random()
-            .toString(36)
-            .substr(2, 9)}
-          data={getGeoJson()}
-          showModal={showModal}
-          {...props}
-        />
-      )}
-    </ModalConsumer>
-  );
-});
 
 export default class InfoHandicappedRequestForm extends Component {
   state = {

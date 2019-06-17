@@ -1,31 +1,12 @@
 import React, { Component } from "react";
 import ReactPiwik from "react-piwik";
-import { GeoJSON, Map, TileLayer } from "react-leaflet";
-import { getGeoJson } from "../../../assets/data";
+import { Map, TileLayer } from "react-leaflet";
 import { Back, Feedback } from "../../../components";
-import { ModalConsumer } from "../../../components/Modal/ModalContext";
 import { CMSModal } from "../../../components/Modal";
 import { CIRCO, CMS } from "../../../utils/circonscriptions";
 import "../Styles.css";
 import { HANDICAPPED, HANDICAPPED_FINANCIAL } from "../../BreadCrumps";
-
-const ContexedMap = React.forwardRef((props, ref) => {
-  return (
-    <ModalConsumer>
-      {({ showModal }) => (
-        <GeoJSON
-          ref={ref}
-          key={Math.random()
-            .toString(36)
-            .substr(2, 9)}
-          data={getGeoJson()}
-          showModal={showModal}
-          {...props}
-        />
-      )}
-    </ModalConsumer>
-  );
-});
+import { ContexedMap } from "../../MapCirconscription";
 
 export default class InfoHandicappedTrackingRequestFinancial extends Component {
   state = {

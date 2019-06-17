@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import { GeoJSON, Map, TileLayer } from "react-leaflet";
-import { getGeoJson } from "../../../assets/data";
+import { Map, TileLayer } from "react-leaflet";
 import { Back, Feedback } from "../../../components";
-import { ModalConsumer } from "../../../components/Modal/ModalContext";
 import { MDPHModal } from "../../../components/Modal";
 import { MDPH } from "../../../utils/circonscriptions";
 import {
@@ -10,26 +8,9 @@ import {
   HANDICAPPED_REQUEST,
   HANDICAPPED_REQUEST_FORM
 } from "../../BreadCrumps";
+import { ContexedMap } from "../../MapCirconscription";
 
 import "../Styles.css";
-
-const ContexedMap = React.forwardRef((props, ref) => {
-  return (
-    <ModalConsumer>
-      {({ showModal }) => (
-        <GeoJSON
-          ref={ref}
-          key={Math.random()
-            .toString(36)
-            .substr(2, 9)}
-          data={getGeoJson()}
-          showModal={showModal}
-          {...props}
-        />
-      )}
-    </ModalConsumer>
-  );
-});
 
 export default class InfoHandicappedRequestHelp extends Component {
   state = {
@@ -97,18 +78,21 @@ export default class InfoHandicappedRequestHelp extends Component {
       <div className="container">
         <Feedback />
         <div className="header">
-        <Back
-          transition={transition}
-          machineState={machineState}
-          breadCrumps={[
-            HANDICAPPED,
-            HANDICAPPED_REQUEST,
-            HANDICAPPED_REQUEST_FORM
-          ]}
-        />
+          <Back
+            transition={transition}
+            machineState={machineState}
+            breadCrumps={[
+              HANDICAPPED,
+              HANDICAPPED_REQUEST,
+              HANDICAPPED_REQUEST_FORM
+            ]}
+          />
         </div>
         <div className="content final">
-        <h1>Sélectionnez votre MDPH ou antenne afin d'être orienté vers le bon interlocuteur</h1>
+          <h1>
+            Sélectionnez votre MDPH ou antenne afin d'être orienté vers le bon
+            interlocuteur
+          </h1>
           <Map className="map" center={position} zoom={zoom}>
             {circoName && <div className="circoName">{circoName}</div>}
             <TileLayer
@@ -126,4 +110,3 @@ export default class InfoHandicappedRequestHelp extends Component {
     );
   }
 }
-

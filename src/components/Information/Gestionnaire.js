@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import ReactPiwik from "react-piwik";
-import { GeoJSON, Map, TileLayer } from "react-leaflet";
-import { getGeoJson } from "../../assets/data";
+import { Map, TileLayer } from "react-leaflet";
 import { Back, Feedback } from "../../components";
-import { ModalConsumer } from "../../components/Modal/ModalContext";
 import { GestionnaireModal } from "../../components/Modal";
 import { CIRCO_PHONE } from "../../utils/circonscriptions";
 import {
@@ -15,24 +13,8 @@ import {
   INFO_GESTIONNAIRE_CIRCO
 } from "../BreadCrumps";
 import "./Styles.css";
+import { ContexedMap } from "../MapCirconscription";
 
-const ContexedMap = React.forwardRef((props, ref) => {
-  return (
-    <ModalConsumer>
-      {({ showModal }) => (
-        <GeoJSON
-          ref={ref}
-          key={Math.random()
-            .toString(36)
-            .substr(2, 9)}
-          data={getGeoJson()}
-          showModal={showModal}
-          {...props}
-        />
-      )}
-    </ModalConsumer>
-  );
-});
 export default class InfoGestionnaire extends Component {
   state = {
     circoName: null,

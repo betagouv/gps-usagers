@@ -1,34 +1,12 @@
 import React, { Component } from "react";
 import ReactPiwik from "react-piwik";
-import { GeoJSON, Map, TileLayer } from "react-leaflet";
-import { getGeoJson } from "../../../assets/data";
+import { Map, TileLayer } from "react-leaflet";
 import { Back, Feedback } from "../../../components";
-import { ModalConsumer } from "../../../components/Modal/ModalContext";
 import { CMSModal } from "../../../components/Modal";
 import { CIRCO, CMS } from "../../../utils/circonscriptions";
 import "../Styles.css";
-import {
-  HANDICAPPED,
-  HANDICAPPED_FINANCIAL
-} from "../../BreadCrumps";
-
-const ContexedMap = React.forwardRef((props, ref) => {
-  return (
-    <ModalConsumer>
-      {({ showModal }) => (
-        <GeoJSON
-          ref={ref}
-          key={Math.random()
-            .toString(36)
-            .substr(2, 9)}
-          data={getGeoJson()}
-          showModal={showModal}
-          {...props}
-        />
-      )}
-    </ModalConsumer>
-  );
-});
+import { HANDICAPPED, HANDICAPPED_FINANCIAL } from "../../BreadCrumps";
+import { ContexedMap } from "../../MapCirconscription";
 
 export default class InfoHandicappedFinancial extends Component {
   state = {
@@ -103,11 +81,11 @@ export default class InfoHandicappedFinancial extends Component {
       <div className="container">
         <Feedback />
         <div className="header">
-        <Back
-          transition={transition}
-          machineState={machineState}
-          breadCrumps={[HANDICAPPED, HANDICAPPED_FINANCIAL]}
-        />
+          <Back
+            transition={transition}
+            machineState={machineState}
+            breadCrumps={[HANDICAPPED, HANDICAPPED_FINANCIAL]}
+          />
         </div>
         <div className="content final">
           <h3>
@@ -115,7 +93,7 @@ export default class InfoHandicappedFinancial extends Component {
             interlocuteur
           </h3>
           <Map className="map" center={position} zoom={zoom}>
-          {circoName && <div className="circoName">{circoName}</div>}
+            {circoName && <div className="circoName">{circoName}</div>}
             <TileLayer
               url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png"
               attribution='<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>'

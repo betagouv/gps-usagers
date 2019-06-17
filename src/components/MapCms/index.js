@@ -1,29 +1,10 @@
 import React, { Component } from "react";
 import ReactPiwik from "react-piwik";
-import { GeoJSON, Map, TileLayer } from "react-leaflet";
-import { getGeoJson } from "../../assets/data";
-import { ModalConsumer } from "../../components/Modal/ModalContext";
+import { Map, TileLayer } from "react-leaflet";
 import { CMSModal } from "../../components/Modal";
 import { CIRCO, CMS } from "../../utils/circonscriptions";
+import { ContexedMap } from "../MapCirconscription";
 import "./Styles.css";
-
-const ContexedMap = React.forwardRef((props, ref) => {
-  return (
-    <ModalConsumer>
-      {({ showModal }) => (
-        <GeoJSON
-          ref={ref}
-          key={Math.random()
-            .toString(36)
-            .substr(2, 9)}
-          data={getGeoJson()}
-          showModal={showModal}
-          {...props}
-        />
-      )}
-    </ModalConsumer>
-  );
-});
 
 export default class MapCms extends Component {
   state = {
@@ -94,13 +75,13 @@ export default class MapCms extends Component {
     const { circoName, zoom } = this.state;
 
     return (
-    <>
+      <>
         <h3>
           Sélectionnez votre circonscription afin d'être orienté vers le bon
           interlocuteur
         </h3>
         <Map className="map" center={position} zoom={zoom}>
-        {circoName && <div className="circoName">{circoName}</div>}
+          {circoName && <div className="circoName">{circoName}</div>}
           <TileLayer
             url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png"
             attribution='<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>'
@@ -111,7 +92,7 @@ export default class MapCms extends Component {
             style={this.getStyle}
           />
         </Map>
-    </>
+      </>
     );
   }
 }
