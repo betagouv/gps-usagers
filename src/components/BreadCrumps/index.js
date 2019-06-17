@@ -32,6 +32,7 @@ export const INFO_HOUSING_ACQUISITION_HELP = "Formulaire de demande";
 
 // SENIORS
 export const SENIORS = "Personnes âgées";
+export const SENIORS_HOME_HELP = "Aides à domicile";
 export const SENIORS_HOMECARE_SERVICES = "Aide ménagère";
 export const SENIORS_AUTONOMY = "Allocation personnalisée à l'autonomie (APA)";
 export const SENIORS_FAMILY_HOME = "Accueil familial pour les personnes âgées";

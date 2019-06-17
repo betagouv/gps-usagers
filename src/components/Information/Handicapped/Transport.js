@@ -15,7 +15,7 @@ const InfoHandicappedTransport = ({ transition, machineState }) => {
         />
       </div>
       <div className="content final">
-        <h1>Contactez le gestionnaire pour obtenir un renseignement : </h1>
+        <h1>Contactez le gestionnaire pour obtenir un renseignement </h1>
         <p>
           Numéro de téléphone du gestionnaire de dossier
           <h2 className="phoneList">

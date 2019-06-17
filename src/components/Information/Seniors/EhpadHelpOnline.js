@@ -95,7 +95,7 @@ export default class InfoSeniorsEhpadOnline extends Component {
           />
         </div>
         <div className="content final">
-          <h3>Contactez le gestionnaire pour obtenir un renseignement : </h3>
+          <h3>Contactez le gestionnaire pour obtenir un renseignement </h3>
           <p>
             Numéro de téléphone du gestionnaire de dossier
             <h2 className="phoneList">

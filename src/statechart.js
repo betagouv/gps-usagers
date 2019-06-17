@@ -252,8 +252,7 @@ const statechart = {
     seniorsSelection: {
       on: {
         BACK: "start",
-        SENIORS_HOMECARE_SERVICES: "seniorsHomecareServices",
-        SENIORS_AUTONOMY: "seniorsAutonomy",
+        SENIORS_HOME_HELP: "seniorsHomeHelp",
         SENIORS_FAMILY_HOME: "seniorsFamilyHome",
         INFO_SENIORS_HOME_HELP: "infoSeniorsHomeHelp",
         INFO_SENIORS_INFORMATIONS: "infoSeniorsInformations",
@@ -266,9 +265,17 @@ const statechart = {
       },
       onEntry: "seniorsSelection"
     },
-    seniorsHomecareServices: {
+    seniorsHomeHelp: {
       on: {
         BACK: "seniorsSelection",
+        SENIORS_HOMECARE_SERVICES: "seniorsHomecareServices",
+        SENIORS_AUTONOMY: "seniorsAutonomy"
+      },
+      onEntry: "seniorsHomeHelp"
+    },
+    seniorsHomecareServices: {
+      on: {
+        BACK: "seniorsHomeHelp",
         INFO_SENIORS_HOMECARE_SERVICES_ASK: "infoSeniorHomecareServiceAsk",
         INFO_SENIORS_HOMECARE_SERVICES_DIRECTORY:
           "infoSeniorHomecareServiceDirectory"
@@ -277,7 +284,7 @@ const statechart = {
     },
     seniorsAutonomy: {
       on: {
-        BACK: "seniorsSelection",
+        BACK: "seniorsHomeHelp",
         INFO_SENIORS_APA: "infoSeniorsApa",
         INFO_SENIORS_APA_REQUEST: "infoSeniorsApaRequest",
         INFO_SENIORS_APA_HELP_REQUEST: "infoSeniorsApaHelpRequest",

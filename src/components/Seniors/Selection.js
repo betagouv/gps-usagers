@@ -16,12 +16,8 @@ const SeniorsSelection = ({ transition, machineState }) => {
         <h3>VOTRE DEMANDE CONCERNE :</h3>
         <div className="contentCard">
           <Choice
-            label="Aide ménagère"
-            onClick={() => transition("SENIORS_HOMECARE_SERVICES")}
-          />
-          <Choice
-            label="Allocation personnalisée à l'autonomie (APA)"
-            onClick={() => transition("SENIORS_AUTONOMY")}
+            label="Aides à domicile"
+            onClick={() => transition("SENIORS_HOME_HELP")}
           />
           <Choice
             label="Accueil familial pour les personnes âgées"

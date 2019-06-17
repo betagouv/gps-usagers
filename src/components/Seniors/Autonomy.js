@@ -1,6 +1,6 @@
 import React from "react";
 import { Back, Choice } from "..";
-import { SENIORS, SENIORS_AUTONOMY } from "../BreadCrumps";
+import { SENIORS, SENIORS_HOME_HELP, SENIORS_AUTONOMY } from "../BreadCrumps";
 
 const SeniorsInstitutions = ({ transition, machineState }) => {
   return (
@@ -9,7 +9,7 @@ const SeniorsInstitutions = ({ transition, machineState }) => {
         <Back
           transition={transition}
           machineState={machineState}
-          breadCrumps={[SENIORS, SENIORS_AUTONOMY]}
+          breadCrumps={[SENIORS, SENIORS_HOME_HELP, SENIORS_AUTONOMY]}
         />
       </div>
       <div className="content">

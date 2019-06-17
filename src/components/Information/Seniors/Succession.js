@@ -16,7 +16,7 @@ const InfoSeniorSuccession = ({ transition, machineState }) => {
       </div>
       <div className="content final">
         <h1>
-          Contactez le gestionnaire suivant pour obtenir un renseignement :
+          Contactez le gestionnaire suivant pour obtenir un renseignement
         </h1>
         <p>
         Numéro de téléphone du gestionnaire de dossier

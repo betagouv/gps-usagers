@@ -27,7 +27,7 @@ const InfoSeniorHomecareDirectory = ({ transition, machineState }) => {
           Contactez le gestionnaire de dossier pour avoir des renseignements
         </h1>
         <p>
-          Numéro de téléphone du gestionnaires de dossier :
+          Numéro de téléphone du gestionnaire de dossier :
           <h2 className="phoneList">
             <a href="tel:0231571611" target="_top">
               02 31 57 16 11

@@ -33,6 +33,7 @@ import HandicappedTrackingRequest from "./components/Handicapped/TrackingRequest
 import HandicappedTrackingRequestHelp from "./components/Handicapped/TrackingRequestHelp";
 import SeniorsSelection from "./components/Seniors/Selection";
 import SeniorsHomecareServices from "./components/Seniors/HomecareServices";
+import SeniorsHomeHelps from "./components/Seniors/HomeHelps";
 import SeniorsAutonomy from "./components/Seniors/Autonomy";
 import SeniorsFamilyHome from "./components/Seniors/FamilyHome";
 import SeniorsEHPAD from "./components/Seniors/EPHAD";
@@ -210,6 +211,9 @@ class App extends Component {
           {/* SENIORS */}
           <Action is="seniorsSelection">
             <SeniorsSelection {...this.props} />
+          </Action>
+          <Action is="seniorsHomeHelp">
+            <SeniorsHomeHelps {...this.props} />
           </Action>
           <Action is="seniorsHomecareServices">
             <SeniorsHomecareServices {...this.props} />
