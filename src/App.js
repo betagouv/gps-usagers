@@ -23,6 +23,8 @@ import statechart from "./statechart";
 import { ModalProvider } from "./components/Modal/ModalContext";
 import ModalRoot from "./components/Modal/ModalRoot";
 
+import FamilySelection from "./components/Family/Selection";
+import FamilyAdoption from "./components/Family/Adoption";
 import HousingSelection from "./components/Housing/Selection";
 import HandicappedSelection from "./components/Handicapped/Selection";
 import HandicappedRequest from "./components/Handicapped/Request";
@@ -43,6 +45,21 @@ import HousingAssistance from "./components/Housing/Assistance";
 import HousingRent from "./components/Housing/Rent";
 import HousingAcquisition from "./components/Housing/Acquisition";
 import HousingAcquisitionSelection from "./components/Housing/AcquisitionSelection";
+
+import InfoFamilyAdoption from "./components/Information/Family/Adoption";
+import InfoFamilySponsorship from "./components/Information/Family/Sponsorship";
+import InfoFamilyChildcare from "./components/Information/Family/Childcare";
+import InfoFamilyChildminder from "./components/Information/Family/Childminder";
+import InfoFamilyChildsStructure from "./components/Information/Family/ChildsStructure";
+import InfoFamilyCoupleLife from "./components/Information/Family/CoupleLife";
+import InfoFamilyEducation from "./components/Information/Family/Education";
+import InfoFamilyHealthRecord from "./components/Information/Family/HealthRecord";
+import InfoFamilyMedical from "./components/Information/Family/Medical";
+import InfoFamilyPlacementChild from "./components/Information/Family/PlacementChild";
+import InfoFamilyPregnancy from "./components/Information/Family/Pregnancy";
+import InfoFamilySecretChildbirth from "./components/Information/Family/SecretChildbirth";
+import InfoFamilyWelfare from "./components/Information/Family/Welfare";
+
 import InfoSeniorHomecareServiceAsk from "./components/Information/Seniors/HomecareAsk";
 import InfoSeniorsFinanciersMeeting from "./components/Information/Seniors/FinanciersMeeting";
 import InfoSeniorsReportingInfo from "./components/Information/Seniors/ReportingInfo";
@@ -139,6 +156,53 @@ class App extends Component {
           </Action>
           <Action is="housingAcquisitionSelection">
             <HousingAcquisitionSelection {...this.props} />
+          </Action>
+          {/* FAMILY */}
+          <Action is="familySelection">
+            <FamilySelection {...this.props} />
+          </Action>
+          <Action is="familyAdoption">
+            <FamilyAdoption {...this.props} />
+          </Action>
+          {/* INFO FAMILY */}
+          <Action is="infoFamilyAdoption">
+            <InfoFamilyAdoption {...this.props} />
+          </Action>
+          <Action is="infoFamilySponsorship">
+            <InfoFamilySponsorship {...this.props} />
+          </Action>
+          <Action is="infoFamilyChildcare">
+            <InfoFamilyChildcare {...this.props} />
+          </Action>
+          <Action is="infoFamilyChildminder">
+            <InfoFamilyChildminder {...this.props} />
+          </Action>
+          <Action is="infoFamilyChildsStructure">
+            <InfoFamilyChildsStructure {...this.props} />
+          </Action>
+          <Action is="infoFamilyCoupleLife">
+            <InfoFamilyCoupleLife {...this.props} />
+          </Action>
+          <Action is="infoFamilyEducation">
+            <InfoFamilyEducation {...this.props} />
+          </Action>
+          <Action is="infoFamilyHealthRecord">
+            <InfoFamilyHealthRecord {...this.props} />
+          </Action>
+          <Action is="infoFamilyMedical">
+            <InfoFamilyMedical {...this.props} />
+          </Action>
+          <Action is="infoFamilyPlacementChild">
+            <InfoFamilyPlacementChild {...this.props} />
+          </Action>
+          <Action is="infoFamilyPregnancy">
+            <InfoFamilyPregnancy {...this.props} />
+          </Action>
+          <Action is="infoFamilySecretChildbirth">
+            <InfoFamilySecretChildbirth {...this.props} />
+          </Action>
+          <Action is="infoFamilyWelfare">
+            <InfoFamilyWelfare {...this.props} />
           </Action>
           {/* HANDICAPPED */}
           <Action is="handicappedSelection">

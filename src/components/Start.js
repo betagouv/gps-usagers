@@ -34,8 +34,23 @@ class Start extends React.Component {
             />
             <Card
               label="Personnes âgées"
-              icon="supervisor_account"
+              icon="people"
               onClick={() => transition("SENIORS")}
+            />
+            <Card
+              label="Famille, enfance et jeunesse"
+              icon="supervisor_account"
+              onClick={() => transition("FAMILY")}
+            />
+            <Card
+              label="Signalement"
+              icon="warning"
+              onClick={() => transition("REPORTING")}
+            />
+            <Card
+              label="Mineurs isolés étrangers"
+              icon="sentiment_dissatisfied"
+              onClick={() => transition("FOREIGNER_CHILDREN")}
             />
             <Card
               label="Autre"

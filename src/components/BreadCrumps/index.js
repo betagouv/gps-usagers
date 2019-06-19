@@ -16,6 +16,24 @@ export const INFO_CCAS = "CCAS";
 export const INFO_PE = "Pôle emploi";
 export const INFO_EPN = "Points info";
 
+// FAMILY
+export const FAMILY = "Famille, enfance et jeunesse";
+export const FAMILY_CHILDMINDER = "Devenir assistant familial ou maternel";
+export const FAMILY_CHILDCARE = "Trouver un mode de garde";
+export const FAMILY_COUPLE_LIFE = "Contraception, sexualité, vie de couple ...";
+export const FAMILY_EDUCATION = "Difficultés éducatives";
+export const FAMILY_MEDICAL = "Consultation/ suivi médical enfant";
+export const FAMILY_PREGNANCY = "Conseils grossesse";
+export const FAMILY_SECRET_CHILDBIRTH = "Accouchement sous le secret";
+export const FAMILY_WELFARE = "Dossier aide sociale à l'enfance";
+export const FAMILY_CHILDS_STRUCTURE = "Création structure de petite enfance";
+export const FAMILY_ADOPTION = "Adopter ou parrainer un enfant";
+export const FAMILY_ADOPTION_ADOPTION = "Adoption";
+export const FAMILY_ADOPTION_SPONSORSHIP = "Parrainage";
+export const FAMILY_PLACEMENT_CHILD =
+  "Information sur le placement d'un enfant";
+export const INFO_FAMILY_HEALTH_RECORD = "Carnet de santé";
+
 // HOUSING
 export const HOUSING = "Logement";
 export const HOUSING_ASSISTANCE = "Informations sur une aide financière";

@@ -6,7 +6,8 @@ const statechart = {
         RSA: "rsa",
         HOUSING: "housingSelection",
         HANDICAPPED: "handicappedSelection",
-        SENIORS: "seniorsSelection"
+        SENIORS: "seniorsSelection",
+        FAMILY: "familySelection"
       },
       onEntry: "start"
     },
@@ -178,6 +179,86 @@ const statechart = {
           "infoHandicappedPaymentThirdPartyEstablishment"
       },
       onEntry: "handicappedPaymentThirdParty"
+    },
+    // FAMILY
+    familySelection: {
+      on: {
+        BACK: "start",
+        INFO_FAMILY_CHILDMINDER: "infoFamilyChildminder",
+        INFO_FAMILY_CHILDCARE: "infoFamilyChildcare",
+        INFO_FAMILY_PREGNANCY: "infoFamilyPregnancy",
+        INFO_FAMILY_MEDICAL: "infoFamilyMedical",
+        FAMILY_ADOPTION: "familyAdoption",
+        INFO_FAMILY_COUPLE_LIFE: "infoFamilyCoupleLife",
+        INFO_FAMILY_EDUCATION: "infoFamilyEducation",
+        INFO_FAMILY_SECRET_CHILDBIRTH: "infoFamilySecretChildbirth",
+        INFO_FAMILY_WELFARE: "infoFamilyWelfare",
+        INFO_FAMILY_CHILDS_STRUCTURE: "infoFamilyChildsStructure",
+        INFO_FAMILY_PLACEMENT_CHILD: "infoFamilyPlacementChild",
+        INFO_FAMILY_HEALTH_RECORD: "infoFamilyHealthRecord"
+      },
+      onEntry: "familySelection"
+    },
+    familyAdoption: {
+      on: {
+        BACK: "familySelection",
+        INFO_FAMILY_ADOPTION_ADOPTION: "infoFamilyAdoption",
+        INFO_FAMILY_ADOPTION_SPONSORSHIP: "infoFamilySponsorship"
+      },
+      onEntry: "familyAdoption"
+    },
+    // FINAL FAMILY
+    infoFamilyChildminder: {
+      on: { BACK: "familySelection" },
+      onEntry: "infoFamilyChildminder"
+    },
+    infoFamilyChildcare: {
+      on: { BACK: "familySelection" },
+      onEntry: "infoFamilyChildcare"
+    },
+    infoFamilyPregnancy: {
+      on: { BACK: "familySelection" },
+      onEntry: "infoFamilyPregnancy"
+    },
+    infoFamilyMedical: {
+      on: { BACK: "familySelection" },
+      onEntry: "infoFamilyMedical"
+    },
+    infoFamilyAdoption: {
+      on: { BACK: "familyAdoption" },
+      onEntry: "infoFamilyAdoption"
+    },
+    infoFamilySponsorship: {
+      on: { BACK: "familyAdoption" },
+      onEntry: "infoFamilySponsorship"
+    },
+    infoFamilyCoupleLife: {
+      on: { BACK: "familySelection" },
+      onEntry: "infoFamilyCoupleLife"
+    },
+    infoFamilyEducation: {
+      on: { BACK: "familySelection" },
+      onEntry: "infoFamilyEducation"
+    },
+    infoFamilySecretChildbirth: {
+      on: { BACK: "familySelection" },
+      onEntry: "infoFamilySecretChildbirth"
+    },
+    infoFamilyWelfare: {
+      on: { BACK: "familySelection" },
+      onEntry: "infoFamilyWelfare"
+    },
+    infoFamilyChildsStructure: {
+      on: { BACK: "familySelection" },
+      onEntry: "infoFamilyChildsStructure"
+    },
+    infoFamilyPlacementChild: {
+      on: { BACK: "familySelection" },
+      onEntry: "infoFamilyPlacementChild"
+    },
+    infoFamilyHealthRecord: {
+      on: { BACK: "familySelection" },
+      onEntry: "infoFamilyHealthRecord"
     },
     // FINAL HANDICAPPED
     infoHandicappedInfos: {
