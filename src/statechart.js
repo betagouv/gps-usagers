@@ -7,7 +7,8 @@ const statechart = {
         HOUSING: "housingSelection",
         HANDICAPPED: "handicappedSelection",
         SENIORS: "seniorsSelection",
-        FAMILY: "familySelection"
+        FAMILY: "familySelection",
+        REPORTING: "reportingSelection"
       },
       onEntry: "start"
     },
@@ -206,6 +207,51 @@ const statechart = {
         INFO_FAMILY_ADOPTION_SPONSORSHIP: "infoFamilySponsorship"
       },
       onEntry: "familyAdoption"
+    },
+    // REPORTING
+    reportingSelection: {
+      on: {
+        BACK: "start",
+        INFO_REPORTING_MINOR: "infoReportingMinor",
+        REPORTING_ADULT: "reportingAdult",
+        INFO_REPORTING_MINOR_SINGLE: "infoReportingMinorSingle"
+      },
+      onEntry: "reportingSelection"
+    },
+    reportingAdult: {
+      on: {
+        BACK: "reportingSelection",
+        INFO_REPORTING_ADULT_DANGER: "infoReportingAdultDanger",
+        REPORTING_ADULT_DIFFICULTIES: "reportingAdultDifficulties"
+      },
+      onEntry: "reportingAdult"
+    },
+    reportingAdultDifficulties: {
+      on: {
+        BACK: "reportingAdult",
+        INFO_REPORTING_ADULT_DIFFICULTIES_PERSONAL:
+          "infoReportingAdultDifficultiesPersonal",
+        INFO_REPORTING_ADULT_DIFFICULTIES_PRO:
+          "infoReportingAdultDifficultiesPro"
+      },
+      onEntry: "reportingAdultDifficulties"
+    },
+    // FINAL REPORTING
+    infoReportingMinor: {
+      on: { BACK: "reportingSelection" },
+      onEntry: "infoReportingMinor"
+    },
+    infoReportingAdultDanger: {
+      on: { BACK: "reportingSelection" },
+      onEntry: "infoReportingAdultDanger"
+    },
+    infoReportingAdultDifficultiesPersonal: {
+      on: { BACK: "reportingAdultDifficulties" },
+      onEntry: "infoReportingAdultDifficultiesPersonal"
+    },
+    infoReportingAdultDifficultiesPro: {
+      on: { BACK: "reportingAdultDifficulties" },
+      onEntry: "infoReportingAdultDifficultiesPro"
     },
     // FINAL FAMILY
     infoFamilyChildminder: {

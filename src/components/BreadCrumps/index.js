@@ -34,6 +34,13 @@ export const FAMILY_PLACEMENT_CHILD =
   "Information sur le placement d'un enfant";
 export const INFO_FAMILY_HEALTH_RECORD = "Carnet de santé";
 
+// REPORTING
+export const REPORTING = "Signalements";
+export const REPORTING_ADULT = "Personne majeure";
+export const REPORTING_ADULT_DIFFICULTIES =
+  "Mécontentements/difficultés avec un établissement ou service";
+export const REPORTING_MINOR = "Mineure";
+
 // HOUSING
 export const HOUSING = "Logement";
 export const HOUSING_ASSISTANCE = "Informations sur une aide financière";

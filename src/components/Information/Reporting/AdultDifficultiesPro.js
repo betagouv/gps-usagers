@@ -2,12 +2,12 @@ import React from "react";
 import { Back, Feedback } from "../../../components";
 import "../Styles.css";
 import {
-  SENIORS,
-  SENIORS_REPORTING,
-  SENIORS_REPORTING_REQUEST_PERSONAL
+  REPORTING,
+  REPORTING_ADULT,
+  REPORTING_ADULT_DIFFICULTIES
 } from "../../BreadCrumps";
 
-const InfoSeniorReportingRequestPersonal = ({ transition, machineState }) => {
+const InfoSeniorReportingRequestPro = ({ transition, machineState }) => {
   return (
     <div className="container">
       <Feedback />
@@ -16,22 +16,30 @@ const InfoSeniorReportingRequestPersonal = ({ transition, machineState }) => {
           transition={transition}
           machineState={machineState}
           breadCrumps={[
-            SENIORS,
-            SENIORS_REPORTING,
-            SENIORS_REPORTING_REQUEST_PERSONAL
+            REPORTING,
+            REPORTING_ADULT,
+            REPORTING_ADULT_DIFFICULTIES
           ]}
         />
       </div>
       <div className="content final">
         <h1>Vous souhaitez signaler un événement indésirable :</h1>
-        Merci d'envoyer :
+        <br />
         <p>
-          un mail à l'adresse suivante :{" "}
+          Informations générales en cliquant sur le lien :{" "}
+          <a
+            href="https://www.calvados.fr/files/live/sites/calvados/files/documents/Le%20D%C3%A9partement/Solidarit%C3%A9%20%26%20famille/Autonomie%20%26%20Handicap/Formulaire-de-signalement-a-destination-du-Departement-du-Calvados.pdf"
+            target="_top"
+          >
+            Télécharger la plaquette
+          </a>
+        </p>
+        <p>
+          Merci d'envoyer un mail à l'adresse suivante :{" "}
           <a href="mailto:da.signalements@calvados.fr">
             da.signalements@calvados.fr
           </a>
         </p>
-        <br />
         <p>
           ou un courrier à l'adresse suivante :<br />
           <br />
@@ -50,4 +58,4 @@ const InfoSeniorReportingRequestPersonal = ({ transition, machineState }) => {
   );
 };
 
-export default InfoSeniorReportingRequestPersonal;
+export default InfoSeniorReportingRequestPro;

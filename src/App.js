@@ -25,6 +25,9 @@ import ModalRoot from "./components/Modal/ModalRoot";
 
 import FamilySelection from "./components/Family/Selection";
 import FamilyAdoption from "./components/Family/Adoption";
+import ReportingSelection from "./components/Reporting/Selection";
+import ReportingAdult from "./components/Reporting/Adult";
+import ReportingAdultDifficulties from "./components/Reporting/AdultDifficulties";
 import HousingSelection from "./components/Housing/Selection";
 import HandicappedSelection from "./components/Handicapped/Selection";
 import HandicappedRequest from "./components/Handicapped/Request";
@@ -45,6 +48,9 @@ import HousingAssistance from "./components/Housing/Assistance";
 import HousingRent from "./components/Housing/Rent";
 import HousingAcquisition from "./components/Housing/Acquisition";
 import HousingAcquisitionSelection from "./components/Housing/AcquisitionSelection";
+
+import InfoReportingMinor from "./components/Information/Reporting/Minor";
+import InfoReportingAdultDanger from "./components/Information/Reporting/AdultDanger";
 
 import InfoFamilyAdoption from "./components/Information/Family/Adoption";
 import InfoFamilySponsorship from "./components/Information/Family/Sponsorship";
@@ -79,8 +85,8 @@ import InfoHandicappedTrackingRequest from "./components/Information/Handicapped
 import InfoHandicappedTrackingRequestFinancial from "./components/Information/Handicapped/TrackingRequestFinancial";
 import InfoHandicappedTrackingRequestHelpFile from "./components/Information/Handicapped/TrackingRequestHelpFile";
 import InfoHandicappedTrackingRequestHelpOnline from "./components/Information/Handicapped/TrackingRequestHelpOnline";
-import InfoSeniorsReportingRequestPersonal from "./components/Information/Seniors/ReportingRequestPersonal";
-import InfoSeniorsReportingRequestPro from "./components/Information/Seniors/ReportingRequestPro";
+import InfoReportingAdultDifficultiesPersonal from "./components/Information/Reporting/AdultDifficultiesPersonal";
+import InfoReportingAdultDifficultiesPro from "./components/Information/Reporting/AdultDifficultiesPro";
 import InfoSeniorHomecareServiceDirectory from "./components/Information/Seniors/HomecareDirectory";
 import InfoSeniorsHomeHelp from "./components/Information/Seniors/HomeHelp";
 import InfoSeniorsFamilyHomeInfos from "./components/Information/Seniors/FamilyHomeInfos";
@@ -203,6 +209,29 @@ class App extends Component {
           </Action>
           <Action is="infoFamilyWelfare">
             <InfoFamilyWelfare {...this.props} />
+          </Action>
+          {/* REPORTING */}
+          <Action is="reportingSelection">
+            <ReportingSelection {...this.props} />
+          </Action>
+          <Action is="reportingAdult">
+            <ReportingAdult {...this.props} />
+          </Action>
+          <Action is="reportingAdultDifficulties">
+            <ReportingAdultDifficulties {...this.props} />
+          </Action>
+          {/* INFO REPORTING */}
+          <Action is="infoReportingMinor">
+            <InfoReportingMinor {...this.props} />
+          </Action>
+          <Action is="infoReportingAdultDanger">
+            <InfoReportingAdultDanger {...this.props} />
+          </Action>
+          <Action is="infoReportingAdultDifficultiesPersonal">
+            <InfoReportingAdultDifficultiesPersonal {...this.props} />
+          </Action>
+          <Action is="infoReportingAdultDifficultiesPro">
+            <InfoReportingAdultDifficultiesPro {...this.props} />
           </Action>
           {/* HANDICAPPED */}
           <Action is="handicappedSelection">
@@ -354,12 +383,6 @@ class App extends Component {
           </Action>
           <Action is="infoSeniorsReportingInfo">
             <InfoSeniorsReportingInfo {...this.props} />
-          </Action>
-          <Action is="infoSeniorsReportingRequestPersonal">
-            <InfoSeniorsReportingRequestPersonal {...this.props} />
-          </Action>
-          <Action is="infoSeniorsReportingRequestPro">
-            <InfoSeniorsReportingRequestPro {...this.props} />
           </Action>
           <Action is="infoSeniorsFinanciersMeeting">
             <InfoSeniorsFinanciersMeeting {...this.props} />
