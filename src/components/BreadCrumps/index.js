@@ -40,6 +40,8 @@ export const REPORTING_ADULT = "Personne majeure";
 export const REPORTING_ADULT_DIFFICULTIES =
   "Mécontentements/difficultés avec un établissement ou service";
 export const REPORTING_MINOR = "Mineure";
+export const REPORTING_ADULT_DIFFICULTIES_PERSONAL = "Particulier";
+export const REPORTING_ADULT_DIFFICULTIES_PRO = "Professionel";
 
 // HOUSING
 export const HOUSING = "Logement";
@@ -70,7 +72,7 @@ export const SENIORS_REPORTING_REQUEST_PRO = "Particulier-Professionnal";
 export const INFO_SENIORS_HOMECARE_SERVICES_ASK = "Demande d'aide";
 export const INFO_SENIORS_HOMECARE_SERVICES_DIRECTORY =
   "Avancement de mon dossier";
-export const INFO_SENIORS_HOME_HELP = "Service d'aide à domicile (SAD)";
+export const INFO_SENIORS_HOME_HELP = "Services d'aide à domicile (SAD)";
 export const INFO_SENIORS_TELEASSISTANCE = "Téléassistance";
 export const INFO_SENIORS_SUCCESSION = "Successions";
 export const INFO_SENIORS_MAINTENANCE_OBLIGATION = "Obligation alimentaire";

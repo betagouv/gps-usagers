@@ -242,7 +242,7 @@ const statechart = {
       onEntry: "infoReportingMinor"
     },
     infoReportingAdultDanger: {
-      on: { BACK: "reportingSelection" },
+      on: { BACK: "reportingAdult" },
       onEntry: "infoReportingAdultDanger"
     },
     infoReportingAdultDifficultiesPersonal: {

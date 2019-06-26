@@ -4,7 +4,8 @@ import "../Styles.css";
 import {
   REPORTING,
   REPORTING_ADULT,
-  REPORTING_ADULT_DIFFICULTIES
+  REPORTING_ADULT_DIFFICULTIES,
+  REPORTING_ADULT_DIFFICULTIES_PERSONAL
 } from "../../BreadCrumps";
 
 const InfoSeniorReportingRequestPersonal = ({ transition, machineState }) => {
@@ -18,7 +19,8 @@ const InfoSeniorReportingRequestPersonal = ({ transition, machineState }) => {
           breadCrumps={[
             REPORTING,
             REPORTING_ADULT,
-            REPORTING_ADULT_DIFFICULTIES
+            REPORTING_ADULT_DIFFICULTIES,
+            REPORTING_ADULT_DIFFICULTIES_PERSONAL
           ]}
         />
       </div>
@@ -31,8 +33,9 @@ const InfoSeniorReportingRequestPersonal = ({ transition, machineState }) => {
             da.signalements@calvados.fr
           </a>
         </p>
+        <p>ou</p>
         <p>
-          ou un courrier à l'adresse suivante :<br />
+          un courrier à l'adresse suivante :<br />
           <br />
           <div style={{ textAlign: "center" }}>
             Direction générale adjointe de la solidarité

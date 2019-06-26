@@ -24,7 +24,7 @@ const SeniorsSelection = ({ transition, machineState }) => {
             onClick={() => transition("SENIORS_FAMILY_HOME")}
           />
           <Choice
-            label="Service d'aide à domicile (SAD)"
+            label="Services d'aide à domicile (SAD)"
             onClick={() => transition("INFO_SENIORS_HOME_HELP")}
           />
           <Choice

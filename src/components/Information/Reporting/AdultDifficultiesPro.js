@@ -4,7 +4,8 @@ import "../Styles.css";
 import {
   REPORTING,
   REPORTING_ADULT,
-  REPORTING_ADULT_DIFFICULTIES
+  REPORTING_ADULT_DIFFICULTIES,
+  REPORTING_ADULT_DIFFICULTIES_PRO
 } from "../../BreadCrumps";
 
 const InfoSeniorReportingRequestPro = ({ transition, machineState }) => {
@@ -18,7 +19,8 @@ const InfoSeniorReportingRequestPro = ({ transition, machineState }) => {
           breadCrumps={[
             REPORTING,
             REPORTING_ADULT,
-            REPORTING_ADULT_DIFFICULTIES
+            REPORTING_ADULT_DIFFICULTIES,
+            REPORTING_ADULT_DIFFICULTIES_PRO
           ]}
         />
       </div>
@@ -34,14 +36,16 @@ const InfoSeniorReportingRequestPro = ({ transition, machineState }) => {
             Télécharger la plaquette
           </a>
         </p>
+        <br />
         <p>
           Merci d'envoyer un mail à l'adresse suivante :{" "}
           <a href="mailto:da.signalements@calvados.fr">
             da.signalements@calvados.fr
           </a>
         </p>
+        <p>ou</p>
         <p>
-          ou un courrier à l'adresse suivante :<br />
+          un courrier à l'adresse suivante :<br />
           <br />
           <div style={{ textAlign: "center" }}>
             Direction générale adjointe de la solidarité
