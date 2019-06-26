@@ -48,11 +48,6 @@ class Start extends React.Component {
               onClick={() => transition("REPORTING")}
             />
             <Card
-              label="Mineurs isolés étrangers"
-              icon="sentiment_dissatisfied"
-              onClick={() => transition("FOREIGNER_CHILDREN")}
-            />
-            <Card
               label="Autre"
               icon="help_outline"
               onClick={() =>
