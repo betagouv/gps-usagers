@@ -11,7 +11,7 @@ class GeoJsonComponent extends Component {
       "Content-Type": "application/json"
     });
 
-    await fetch("http://localhost:3000/", { header: header })
+    await fetch("http://localhost:3001/", { header: header })
       .then(response => response.json())
       .then(response => {
         this.setState({

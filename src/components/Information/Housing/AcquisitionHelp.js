@@ -25,8 +25,7 @@ const InfoHousingAcquisitionHelp = ({ transition, machineState }) => {
         />
       </div>
       <div className="content final">
-        <h1>Remplissez le formulaire de demande</h1>
-        <p> Vous pouvez obtenir le formulaire : </p>
+        <h1>Faire une demande de formulaire</h1>
         <p>
           - Contacts pour envoi formulaire :
           <h2 className="phoneList">

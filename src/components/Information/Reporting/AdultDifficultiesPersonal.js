@@ -44,7 +44,7 @@ const InfoSeniorReportingRequestPersonal = ({ transition, machineState }) => {
             <br />
             service coordination animation et prévention
             <br />
-            BP10519 BP 14035 Caen Cedex 1
+            BP10519 14035 Caen Cedex 1
           </div>
         </p>
       </div>

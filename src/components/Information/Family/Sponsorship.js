@@ -19,8 +19,20 @@ const InfoFamilySponsorship = ({ transition, machineState }) => {
         />
       </div>
       <div className="content final">
-        <h1> </h1>
-        <p />
+        <h1>Contactez le gestionnaire du dossier</h1>
+        <p>
+          <a href="https://www.calvados.fr/accueil/le-departement/solidarite---familles/enfance--familles/parrainage-14.html">
+            Informations générales sur le parrainage
+          </a>
+        </p>
+        <p>
+          Numéro de téléphone du gestionnaire de dossier :
+          <h2 className="phoneList">
+            <a href="tel:0231571657" target="_top">
+              02 31 57 16 57
+            </a>
+          </h2>
+        </p>
       </div>
     </div>
   );

@@ -18,8 +18,10 @@ const InfoFamilyPlacementChild = ({ transition, machineState }) => {
         <h1>Obtenir une information</h1>
         <p>
           Vous avez reçu un courrier ?<br />
-          Référer vous aux coordonnées mentionnés sur le courrier reçu en haut à
-          gauche (afficher un exemple de courrier)
+          <span>
+            Référer vous aux coordonnées mentionnés sur le courrier reçu en haut
+            à gauche
+          </span>
         </p>
         <p>
           Vous n'avez pas reçu de courrier ?<br />

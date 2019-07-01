@@ -42,7 +42,7 @@ const InfoReportingMinor = ({ transition, machineState }) => {
             </h4>
             BP 10519
             <br />
-            14035 Caen Cedex
+            14035 Caen Cedex 1
           </div>
         </p>
         <h1>Informez sur la présence d'un mineur isolé étranger :</h1>

@@ -20,7 +20,21 @@ const ReportingAdult = ({ transition, machineState }) => {
             onClick={() => transition("INFO_REPORTING_ADULT_DANGER")}
           />
           <Choice
-            label="Mécontentements/difficultés avec un établissement ou service (EHPAD/SAD)"
+            label={[
+              "Mécontentements/difficultés avec un établissement ou service (",
+              <div class="tooltip">
+                EHPAD
+                <span class="tooltiptext">
+                  Établissement d'hébergement pour personnes âgées
+                </span>
+              </div>,
+              " / ",
+              <div class="tooltip">
+                SAD
+                <span class="tooltiptext">Service d'aide à domicile</span>
+              </div>,
+              ")"
+            ]}
             onClick={() => transition("REPORTING_ADULT_DIFFICULTIES")}
           />
         </div>
