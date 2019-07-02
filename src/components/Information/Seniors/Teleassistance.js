@@ -1,5 +1,6 @@
 import React from "react";
 import { Back, Feedback } from "../../../components";
+import MapsClic from "../../../components/Maps/Clic";
 import "../Styles.css";
 import { SENIORS, INFO_SENIORS_TELEASSISTANCE } from "../../BreadCrumps";
 
@@ -18,14 +19,7 @@ const InfoSeniorTeleassistance = ({ transition, machineState }) => {
         <h1>
           Contactez le gestionnaire du dossier pour avoir des renseignements :
         </h1>
-        <p>
-          Numéros de téléphone direct du gestionnaire de dossier :
-          <h2 className="phoneList">
-            <a href="tel:0231571611" target="_top">
-              02 31 57 16 11
-            </a>
-          </h2>
-        </p>
+        <MapsClic />
       </div>
     </div>
   );

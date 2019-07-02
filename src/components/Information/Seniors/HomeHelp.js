@@ -55,6 +55,8 @@ class InfoSeniorHomeHelp extends Component {
       onChange: this.onChange
     };
 
+    console.log(saadData);
+
     return (
       <div className="container">
         <Feedback />

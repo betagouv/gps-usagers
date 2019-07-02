@@ -4,8 +4,8 @@ export const saadData = [
     address: "place général de Gaulle 14510 HOULGATE",
     phone: "02 31 28 70 48",
     mail: "agence.houlgate@proximpaysdauge.fr",
-    latitude: 49.1801405,
-    longitude: -0.3682319
+    latitude: 49.299,
+    longitude: -0.0815
   },
   {
     name: "Proxim Trouville-sur-mer",

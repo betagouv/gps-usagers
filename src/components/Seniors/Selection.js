@@ -48,10 +48,6 @@ const SeniorsSelection = ({ transition, machineState }) => {
             onClick={() => transition("SENIORS_EHPAD")}
           />
           <Choice
-            label="Signalement et réclamation"
-            onClick={() => transition("SENIORS_REPORTING")}
-          />
-          <Choice
             label="Conférence des financeurs"
             onClick={() => transition("INFO_SENIORS_FINANCIERS_MEETING")}
           />
