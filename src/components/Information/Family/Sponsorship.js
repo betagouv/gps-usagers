@@ -21,10 +21,19 @@ const InfoFamilySponsorship = ({ transition, machineState }) => {
       <div className="content final">
         <h1>Contactez le gestionnaire du dossier</h1>
         <p>
-          <a href="https://www.calvados.fr/accueil/le-departement/solidarite---familles/enfance--familles/parrainage-14.html">
-            Informations générales sur le parrainage
-          </a>
-        </p>
+        Informations générales sur le parrainage : <br/><br/>
+          <button
+            className="button"
+            onClick={() =>
+              window.open(
+                "https://www.calvados.fr/accueil/le-departement/solidarite---familles/enfance--familles/parrainage-14.html",
+                "_blank"
+              )
+            }
+          >
+            Accèder au site
+          </button>
+        </p><br/> 
         <p>
           Numéro de téléphone du gestionnaire de dossier :
           <h2 className="phoneList">
