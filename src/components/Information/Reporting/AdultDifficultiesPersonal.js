@@ -28,6 +28,16 @@ const InfoSeniorReportingRequestPersonal = ({ transition, machineState }) => {
         <h1>Vous souhaitez signaler un événement indésirable :</h1>
         <br />
         <p>
+          Informations générales en cliquant sur le lien :{" "}
+          <a
+            href="https://www.calvados.fr/files/live/sites/calvados/files/documents/Le%20D%C3%A9partement/Solidarit%C3%A9%20%26%20famille/Autonomie%20%26%20Handicap/Traitement-des-signalements-reclamations-et-evenements-indesirables-Plaquette-pour-professionnels.pdf"
+            target="_top"
+          >
+            Télécharger la plaquette
+          </a>
+        </p>
+        <br />
+        <p>
           Merci d'envoyer un mail à l'adresse suivante :{" "}
           <a href="mailto:da.signalements@calvados.fr">
             da.signalements@calvados.fr

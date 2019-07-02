@@ -46,27 +46,6 @@ const InfoSeniorReportingRequestPro = ({ transition, machineState }) => {
             Formulaire de signalement
           </a>
         </p>
-        <br />
-        <p>
-          Merci d'envoyer un mail à l'adresse suivante :{" "}
-          <a href="mailto:da.signalements@calvados.fr">
-            da.signalements@calvados.fr
-          </a>
-        </p>
-        <p>ou</p>
-        <p>
-          un courrier à l'adresse suivante :<br />
-          <br />
-          <div style={{ textAlign: "center" }}>
-            Direction générale adjointe de la solidarité
-            <br />
-            Direction de l'autonomie
-            <br />
-            service coordination animation et prévention
-            <br />
-            BP10519 14035 Caen Cedex 1
-          </div>
-        </p>
       </div>
     </div>
   );
