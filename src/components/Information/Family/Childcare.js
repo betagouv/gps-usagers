@@ -15,8 +15,38 @@ const InfoFamilyChildcare = ({ transition, machineState }) => {
         />
       </div>
       <div className="content final">
-        <h1> </h1>
-        <p />
+        <h1>Rechercher un mode de garde</h1>
+        <p>
+          - Contactez une assistante maternelle :<br />
+          <br />
+          <button
+            className="button"
+            onClick={() =>
+              window.open(
+                "https://www.calvados.fr/contents/fiche/fiches-aide--services/trouver-une-assistante-maternell.html",
+                "_blank"
+              )
+            }
+          >
+            Trouver une Assistante Maternelle
+          </button>
+        </p>
+        <br />
+        <p>
+          - Trouver un mode d'accueil sur le site de la Caf :<br />
+          <br />
+          <button
+            className="button"
+            onClick={() =>
+              window.open(
+                "https://mon-enfant.fr/trouver-un-mode-d-accueil",
+                "_blank"
+              )
+            }
+          >
+            Accèder au site
+          </button>
+        </p>
       </div>
     </div>
   );
