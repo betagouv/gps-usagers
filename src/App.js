@@ -59,10 +59,14 @@ import InfoFamilyChildminder from "./components/Information/Family/Childminder";
 import InfoFamilyChildsStructure from "./components/Information/Family/ChildsStructure";
 import InfoFamilyCoupleLife from "./components/Information/Family/CoupleLife";
 import InfoFamilyEducation from "./components/Information/Family/Education";
+import InfoFamilyEducationCms from "./components/Information/Family/EducationCms";
 import InfoFamilyHealthRecord from "./components/Information/Family/HealthRecord";
 import InfoFamilyMedical from "./components/Information/Family/Medical";
+import InfoFamilyMedicalCms from "./components/Information/Family/MedicalCms";
 import InfoFamilyPlacementChild from "./components/Information/Family/PlacementChild";
+import InfoFamilyPlacementChildCms from "./components/Information/Family/PlacementChildCms";
 import InfoFamilyPregnancy from "./components/Information/Family/Pregnancy";
+import InfoFamilyPregnancyCms from "./components/Information/Family/PregnancyCms";
 import InfoFamilySecretChildbirth from "./components/Information/Family/SecretChildbirth";
 import InfoFamilyWelfare from "./components/Information/Family/Welfare";
 
@@ -192,17 +196,29 @@ class App extends Component {
           <Action is="infoFamilyEducation">
             <InfoFamilyEducation {...this.props} />
           </Action>
+          <Action is="infoFamilyEducationCms">
+            <InfoFamilyEducationCms {...this.props} />
+          </Action>
           <Action is="infoFamilyHealthRecord">
             <InfoFamilyHealthRecord {...this.props} />
           </Action>
           <Action is="infoFamilyMedical">
             <InfoFamilyMedical {...this.props} />
           </Action>
+          <Action is="infoFamilyMedicalCms">
+            <InfoFamilyMedicalCms {...this.props} />
+          </Action>
           <Action is="infoFamilyPlacementChild">
             <InfoFamilyPlacementChild {...this.props} />
           </Action>
+          <Action is="infoFamilyPlacementChildCms">
+            <InfoFamilyPlacementChildCms {...this.props} />
+          </Action>
           <Action is="infoFamilyPregnancy">
             <InfoFamilyPregnancy {...this.props} />
+          </Action>
+          <Action is="infoFamilyPregnancyCms">
+            <InfoFamilyPregnancyCms {...this.props} />
           </Action>
           <Action is="infoFamilySecretChildbirth">
             <InfoFamilySecretChildbirth {...this.props} />

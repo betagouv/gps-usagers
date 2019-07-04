@@ -263,12 +263,26 @@ const statechart = {
       onEntry: "infoFamilyChildcare"
     },
     infoFamilyPregnancy: {
-      on: { BACK: "familySelection" },
+      on: {
+        BACK: "familySelection",
+        INFO_FAMILY_PREGNANCY_CMS: "infoFamilyPregnancyCms"
+      },
       onEntry: "infoFamilyPregnancy"
     },
+    infoFamilyPregnancyCms: {
+      on: { BACK: "infoFamilyPregnancy" },
+      onEntry: "infoFamilyPregnancyCms"
+    },
     infoFamilyMedical: {
-      on: { BACK: "familySelection" },
+      on: {
+        BACK: "familySelection",
+        INFO_FAMILY_MEDICAL_CMS: "infoFamilyMedicalCms"
+      },
       onEntry: "infoFamilyMedical"
+    },
+    infoFamilyMedicalCms: {
+      on: { BACK: "infoFamilyMedical" },
+      onEntry: "infoFamilyMedicalCms"
     },
     infoFamilyAdoption: {
       on: { BACK: "familyAdoption" },
@@ -283,8 +297,17 @@ const statechart = {
       onEntry: "infoFamilyCoupleLife"
     },
     infoFamilyEducation: {
-      on: { BACK: "familySelection" },
+      on: {
+        BACK: "familySelection",
+        INFO_FAMILY_EDUCATION_CMS: "infoFamilyEducationCms"
+      },
       onEntry: "infoFamilyEducation"
+    },
+    infoFamilyEducationCms: {
+      on: {
+        BACK: "infoFamilyEducation"
+      },
+      onEntry: "infoFamilyEducationCms"
     },
     infoFamilySecretChildbirth: {
       on: { BACK: "familySelection" },
@@ -299,8 +322,15 @@ const statechart = {
       onEntry: "infoFamilyChildsStructure"
     },
     infoFamilyPlacementChild: {
-      on: { BACK: "familySelection" },
+      on: {
+        BACK: "familySelection",
+        INFO_FAMILY_PLACEMENT_CHILD_CMS: "infoFamilyPlacementChildCms"
+      },
       onEntry: "infoFamilyPlacementChild"
+    },
+    infoFamilyPlacementChildCms: {
+      on: { BACK: "infoFamilyPlacementChild" },
+      onEntry: "infoFamilyPlacementChildCms"
     },
     infoFamilyHealthRecord: {
       on: { BACK: "familySelection" },

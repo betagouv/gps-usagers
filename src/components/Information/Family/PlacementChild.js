@@ -2,7 +2,6 @@ import React from "react";
 import { Back, Feedback } from "../../../components";
 import "../Styles.css";
 import { FAMILY, FAMILY_PLACEMENT_CHILD } from "../../BreadCrumps";
-import MapCms from "../../MapCms";
 
 const InfoFamilyPlacementChild = ({ transition, machineState }) => {
   return (
@@ -26,7 +25,13 @@ const InfoFamilyPlacementChild = ({ transition, machineState }) => {
         </p>
         <p>
           Vous n'avez pas reçu de courrier ?<br />
-          <MapCms />
+          <br />
+          <button
+            className="button"
+            onClick={() => transition("INFO_FAMILY_PLACEMENT_CHILD_CMS")}
+          >
+            Accèder à la liste des circonscriptions
+          </button>
         </p>
       </div>
     </div>
