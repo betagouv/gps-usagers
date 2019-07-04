@@ -27,7 +27,7 @@ const InfoReportingAdultDanger = ({ transition, machineState }) => {
             <a href="tel:115" target="_top">
               115
             </a>{" "}
-            <span>( n° d'urgence sociale)</span>
+            <span>(n° gratuit)</span>
           </h2>
         </p>
         <p>

@@ -21,7 +21,8 @@ const InfoReportingMinor = ({ transition, machineState }) => {
           <h2>
             <a href="tel:119" target="_top">
               119
-            </a>
+            </a>{" "}
+            <span>(n° gratuit)</span>
           </h2>
         </p>
         <p>
@@ -29,7 +30,7 @@ const InfoReportingMinor = ({ transition, machineState }) => {
           (CRIP) :
           <h2>
             <a href="tel:0250224224" target="_top">
-              02 50 22 42 24
+              0250 224 224
             </a>
           </h2>
         </p>
