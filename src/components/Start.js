@@ -37,11 +37,11 @@ class Start extends React.Component {
               icon="people"
               onClick={() => transition("SENIORS")}
             />
-            {/* <Card
+            <Card
               label="Famille, enfance et jeunesse"
               icon="supervisor_account"
               onClick={() => transition("FAMILY")}
-            /> */}
+            />
             <Card
               label="Signalement"
               icon="warning"

@@ -18,7 +18,11 @@ export default class InfoFamilyChildminder extends Component {
           />
         </div>
         <div className="content final">
-          <MapCms/>
+          <h3>
+            Sélectionnez votre circonscription afin d'être orienté vers le bon
+            interlocuteur
+          </h3>
+          <MapCms />
         </div>
       </div>
     );

@@ -76,10 +76,6 @@ export default class MapCms extends Component {
 
     return (
       <>
-        <h3>
-          Sélectionnez votre circonscription afin d'être orienté vers le bon
-          interlocuteur
-        </h3>
         <Map className="map" center={position} zoom={zoom}>
           {circoName && <div className="circoName">{circoName}</div>}
           <TileLayer

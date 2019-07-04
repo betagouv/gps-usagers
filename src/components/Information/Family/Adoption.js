@@ -19,8 +19,31 @@ const InfoFamilyAdoption = ({ transition, machineState }) => {
         />
       </div>
       <div className="content final">
-        <h1> </h1>
-        <p />
+        <h1>Contactez le gestionnaire du dossier</h1>
+        <p>
+          Informations générales sur l'adoption : <br />
+          <br />
+          <button
+            className="button"
+            onClick={() =>
+              window.open(
+                "https://www.calvados.fr/accueil/le-departement/solidarite---familles/enfance--familles/adoption.html",
+                "_blank"
+              )
+            }
+          >
+            Accèder au site
+          </button>
+        </p>
+        <br />
+        <p>
+          Numéro de téléphone du gestionnaire de dossier :
+          <h2 className="phoneList">
+            <a href="tel:0231571659" target="_top">
+              02 31 57 16 59
+            </a>
+          </h2>
+        </p>
       </div>
     </div>
   );

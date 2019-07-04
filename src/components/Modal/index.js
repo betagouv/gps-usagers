@@ -132,3 +132,32 @@ export const MDPHModal = ({ onRequestClose, mdph, ...rest }) => (
     <div className="modalFooter" />
   </Modal>
 );
+
+export const ClicModal = ({ onRequestClose, clic, ...rest }) => (
+  <Modal
+    className="modal"
+    overlayClassName="overlay"
+    isOpen
+    onRequestClose={onRequestClose}
+    ariaHideApp={false}
+    {...rest}
+  >
+    <div className="modalHeader">
+      <div onClick={onRequestClose} className="modalClose" />
+    </div>
+    <div className="modalContainer">
+      <div className="modalContent">
+        <div>
+          <div className="modalText" />
+          <h3>{clic.nom}</h3>
+          <div className="address">
+            {clic.adresse}
+            <br />
+            {clic.code_posta} {clic.commune}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="modalFooter" />
+  </Modal>
+);
