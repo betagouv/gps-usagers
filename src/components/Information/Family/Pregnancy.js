@@ -24,6 +24,33 @@ const InfoFamilyPregnancy = ({ transition, machineState }) => {
           </h4>
           <MapCms />
         </p>
+        <p>
+          En vous rapprochant de la protection maternelle et infantile (PMI) :{" "}
+          <br />
+          <br />
+          <button
+            className="button"
+            onClick={() =>
+              window.open("https://www.calvados.fr/pres-de-chez-vous", "_blank")
+            }
+          >
+            Accèder au site
+          </button>
+        </p>
+        <br />
+        <p>
+          En vous rapprochant du bus itinérant protection maternelle et
+          infantile (PMI) : <br />
+          <br />
+          <button
+            className="button"
+            onClick={() =>
+              window.open("https://www.calvados.fr/pres-de-chez-vous", "_blank")
+            }
+          >
+            Accèder au site
+          </button>
+        </p>
       </div>
     </div>
   );
