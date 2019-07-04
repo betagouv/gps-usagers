@@ -2,6 +2,7 @@ import React from "react";
 import { Back, Feedback } from "../../../components";
 import "../Styles.css";
 import { FAMILY, FAMILY_MEDICAL } from "../../BreadCrumps";
+import MapCms from "../../MapCms";
 
 const InfoFamilyMedical = ({ transition, machineState }) => {
   return (
@@ -15,8 +16,41 @@ const InfoFamilyMedical = ({ transition, machineState }) => {
         />
       </div>
       <div className="content final">
-        <h1> </h1>
-        <p />
+        <h1>Vous pouvez bénéficier de conseils</h1>
+        <p>
+          <h4>
+            En vous rapprochant de la circonscription ou du centre médico-social
+            le plus de chez vous
+          </h4>
+          <MapCms />
+        </p>
+        <p>
+          En vous rapprochant de la protection maternelle et infantile (PMI) :{" "}
+          <br />
+          <br />
+          <button
+            className="button"
+            onClick={() =>
+              window.open("https://www.calvados.fr/pres-de-chez-vous", "_blank")
+            }
+          >
+            Accèder au site
+          </button>
+        </p>
+        <br />
+        <p>
+          En vous rapprochant du bus itinérant protection maternelle et
+          infantile (PMI) : <br />
+          <br />
+          <button
+            className="button"
+            onClick={() =>
+              window.open("https://www.calvados.fr/pres-de-chez-vous", "_blank")
+            }
+          >
+            Accèder au site
+          </button>
+        </p>
       </div>
     </div>
   );
