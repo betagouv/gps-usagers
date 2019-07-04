@@ -15,8 +15,20 @@ const InfoFamilyCoupleLife = ({ transition, machineState }) => {
         />
       </div>
       <div className="content final">
-        <h1> </h1>
-        <p />
+        <h1>
+          Joindre le centre de planification et d'éducation familiale (CPEF)
+        </h1>
+        <p>
+          <br />
+          <button
+            className="button"
+            onClick={() =>
+              window.open("https://www.calvados.fr/pres-de-chez-vous", "_blank")
+            }
+          >
+            Accèder au site
+          </button>
+        </p>
       </div>
     </div>
   );
