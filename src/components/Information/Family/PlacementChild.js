@@ -17,14 +17,14 @@ const InfoFamilyPlacementChild = ({ transition, machineState }) => {
       <div className="content final">
         <h1>Obtenir une information</h1>
         <p>
-          Vous avez reçu un courrier ?<br />
+          - Vous avez reçu un courrier ?<br />
           <span>
             Référer vous aux coordonnées mentionnés sur le courrier reçu en haut
             à gauche
           </span>
         </p>
         <p>
-          Vous n'avez pas reçu de courrier ?<br />
+          - Vous n'avez pas reçu de courrier ?<br />
           <br />
           <button
             className="button"
