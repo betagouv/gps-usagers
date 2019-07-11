@@ -19,7 +19,7 @@ class Clic extends Component {
       "Content-Type": "application/json"
     });
 
-    await fetch("http://localhost:3001/clic", { header: header })
+    await fetch("http://localhost:5000/clic", { header: header })
       .then(response => response.json())
       .then(response => {
         this.setState({

@@ -18,7 +18,7 @@ const InfoFamilyMedical = ({ transition, machineState }) => {
         <h1>Vous pouvez bénéficier de conseils</h1>
         <p>
           - En vous rapprochant de la circonscription ou du centre médico-social
-          le plus de chez vous
+          le plus proche de chez vous
           <br />
           <br />
           <button
