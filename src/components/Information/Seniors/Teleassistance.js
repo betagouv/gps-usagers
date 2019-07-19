@@ -3,7 +3,7 @@ import ReactPiwik from "react-piwik";
 import { Map, TileLayer } from "react-leaflet";
 import { Back, Feedback } from "../../../components";
 import { CMSModal } from "../../../components/Modal";
-import { CLIC } from "../../../utils/circonscriptions";
+import { CLIC, CMS } from "../../../utils/circonscriptions";
 import "../Styles.css";
 import { SENIORS, INFO_SENIORS_TELEASSISTANCE } from "../../BreadCrumps";
 import { ContexedMap } from "../../MapCirconscription";
@@ -56,7 +56,8 @@ export default class InfoSeniorTeleassistance extends Component {
       e.target.feature.properties.tags.cas
     ]);
     e.target.options.showModal(CMSModal, {
-      circo: CLIC[circoName]
+      circo: CLIC[circoName],
+      cms: CMS[circoName]
     });
     this.setState(() => ({
       circoName: null
