@@ -51,7 +51,8 @@ const InfoHousingAssistanceRequest = ({ transition, machineState }) => {
           </div>
         </p>
         <p>
-          - Dans l'un des centres médicaux-sociaux de votre d'action sociale
+          - Dans l'un des centres médicaux-sociaux de votre cirsconscription
+          d'action sociale
           <br />
           <br />
           <button

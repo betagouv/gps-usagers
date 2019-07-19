@@ -85,7 +85,7 @@ export default class InfoHandicappedRequestForm extends Component {
             className="button"
             onClick={() => transition("INFO_HANDICAPPED_REQUEST_FORM_CMS")}
           >
-            Accèder à la liste des circonscriptions d'action sociale
+            À la MPDH ou antennes MDPH
           </button>
         </div>
       </div>

@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import ReactPiwik from "react-piwik";
 import { Map, TileLayer } from "react-leaflet";
 import { Back, Feedback } from "../../components";
-import { GestionnaireModal } from "../../components/Modal";
-import { CIRCO_PHONE } from "../../utils/circonscriptions";
+import { CMSModal } from "../../components/Modal";
+import { CIRCO, CMS } from "../../utils/circonscriptions";
+import "./Styles.css";
 import {
   RSA,
   RECIPIENT_RSA,
@@ -12,7 +13,6 @@ import {
   INFO_GESTIONNAIRE,
   INFO_GESTIONNAIRE_CIRCO
 } from "../BreadCrumps";
-import "./Styles.css";
 import { ContexedMap } from "../MapCirconscription";
 
 export default class InfoGestionnaire extends Component {
@@ -58,13 +58,13 @@ export default class InfoGestionnaire extends Component {
     const circoName = e.target.feature.properties.tags.cas;
     ReactPiwik.push([
       "trackEvent",
-      "infoGestionnaire",
+      "InfoGestionnaire",
       "circonscription",
       e.target.feature.properties.tags.cas
     ]);
-    e.target.options.showModal(GestionnaireModal, {
-      circo: CIRCO_PHONE[circoName],
-      cms: CIRCO_PHONE[circoName]
+    e.target.options.showModal(CMSModal, {
+      circo: CIRCO[circoName],
+      cms: CMS[circoName]
     });
     this.setState(() => ({
       circoName: null
@@ -110,10 +110,7 @@ export default class InfoGestionnaire extends Component {
           />
         </div>
         <div className="content final">
-          <h3>
-            Sélectionnez votre circonscription afin d'être orienté vers le bon
-            interlocuteur
-          </h3>
+          <h3>Contactez votre service d'accueil social</h3>
           <Map className="map" center={position} zoom={zoom}>
             {circoName && <div className="circoName">{circoName}</div>}
             <TileLayer

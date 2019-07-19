@@ -88,9 +88,9 @@ export default class InfoSeniorTeleassistance extends Component {
           />
         </div>
         <div className="content final">
-          <h3>
-            Contactez le gestionnaire du dossier pour avoir des renseignements :
-          </h3>
+          <h1>
+            Joindre le centre local d'information et de coordination (CLIC)
+          </h1>
           <Map className="map" center={position} zoom={zoom}>
             {circoName && <div className="circoName">{circoName}</div>}
             <TileLayer

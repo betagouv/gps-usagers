@@ -89,7 +89,7 @@ export default class InfoHandicappedRequestFormCms extends Component {
           />
         </div>
         <div className="content final">
-          <h1>Liste des circonscriptions d'action sociale :</h1>
+          <h1>Contact MDPH et ses antennes</h1>
           <Map className="map" center={position} zoom={zoom}>
             {circoName && <div className="circoName">{circoName}</div>}
             <TileLayer
