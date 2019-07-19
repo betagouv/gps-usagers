@@ -30,7 +30,7 @@ const InfoSeniorFamilyHomeRequest = ({ transition, machineState }) => {
             href="https://www.calvados.fr/accueil/le-departement/solidarite---familles/autonomie--handicap/laccueil-familial.html"
             target="_top"
           >
-            Accueil pour personnes et/ou handicapées
+            Accueil pour personnes âgées et/ou handicapées
           </a>
         </p>
       </div>

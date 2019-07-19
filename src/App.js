@@ -76,6 +76,7 @@ import InfoSeniorsReportingInfo from "./components/Information/Seniors/Reporting
 import InfoSeniorsInformations from "./components/Information/Seniors/Informations";
 import InfoHandicappedInfos from "./components/Information/Handicapped/Infos";
 import InfoHandicappedRequestForm from "./components/Information/Handicapped/RequestForm";
+import InfoHandicappedRequestFormCms from "./components/Information/Handicapped/RequestFormCms";
 import InfoHandicappedRequestHelp from "./components/Information/Handicapped/RequestHelp";
 import InfoHandicappedFinancial from "./components/Information/Handicapped/Financial";
 import InfoHandicappedFamilyHome from "./components/Information/Handicapped/FamilyHome";
@@ -277,6 +278,9 @@ class App extends Component {
           </Action>
           <Action is="infoHandicappedRequestForm">
             <InfoHandicappedRequestForm {...this.props} />
+          </Action>
+          <Action is="infoHandicappedRequestFormCms">
+            <InfoHandicappedRequestFormCms {...this.props} />
           </Action>
           <Action is="infoHandicappedRequestHelp">
             <InfoHandicappedRequestHelp {...this.props} />

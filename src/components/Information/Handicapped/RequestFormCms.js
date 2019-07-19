@@ -1,14 +1,18 @@
 import React, { Component } from "react";
-import ReactPiwik from "react-piwik";
 import { Map, TileLayer } from "react-leaflet";
 import { Back, Feedback } from "../../../components";
-import { CMSModal } from "../../../components/Modal";
-import { CLIC } from "../../../utils/circonscriptions";
-import "../Styles.css";
-import { SENIORS, INFO_SENIORS_TELEASSISTANCE } from "../../BreadCrumps";
+import { MDPHModal } from "../../../components/Modal";
+import { MDPH } from "../../../utils/circonscriptions";
+import {
+  HANDICAPPED,
+  HANDICAPPED_REQUEST,
+  HANDICAPPED_REQUEST_FORM
+} from "../../BreadCrumps";
 import { ContexedMap } from "../../MapCirconscription";
 
-export default class InfoSeniorTeleassistance extends Component {
+import "../Styles.css";
+
+export default class InfoHandicappedRequestFormCms extends Component {
   state = {
     circoName: null,
     lat: 49.183333,
@@ -49,14 +53,8 @@ export default class InfoSeniorTeleassistance extends Component {
 
   onClick = e => {
     const circoName = e.target.feature.properties.tags.cas;
-    ReactPiwik.push([
-      "trackEvent",
-      "infoCms",
-      "circonscription",
-      e.target.feature.properties.tags.cas
-    ]);
-    e.target.options.showModal(CMSModal, {
-      circo: CLIC[circoName]
+    e.target.options.showModal(MDPHModal, {
+      mdph: MDPH[circoName]
     });
     this.setState(() => ({
       circoName: null
@@ -83,13 +81,15 @@ export default class InfoSeniorTeleassistance extends Component {
           <Back
             transition={transition}
             machineState={machineState}
-            breadCrumps={[SENIORS, INFO_SENIORS_TELEASSISTANCE]}
+            breadCrumps={[
+              HANDICAPPED,
+              HANDICAPPED_REQUEST,
+              HANDICAPPED_REQUEST_FORM
+            ]}
           />
         </div>
         <div className="content final">
-          <h3>
-            Contactez le gestionnaire du dossier pour avoir des renseignements :
-          </h3>
+          <h1>Liste des circonscriptions d'action sociale :</h1>
           <Map className="map" center={position} zoom={zoom}>
             {circoName && <div className="circoName">{circoName}</div>}
             <TileLayer

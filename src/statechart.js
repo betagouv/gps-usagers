@@ -342,8 +342,15 @@ const statechart = {
       onEntry: "infoHandicappedInfos"
     },
     infoHandicappedRequestForm: {
-      on: { BACK: "handicappedRequest" },
+      on: {
+        BACK: "handicappedRequest",
+        INFO_HANDICAPPED_REQUEST_FORM_CMS: "infoHandicappedRequestFormCms"
+      },
       onEntry: "infoHandicappedRequestForm"
+    },
+    infoHandicappedRequestFormCms: {
+      on: { BACK: "infoHandicappedRequestForm" },
+      onEntry: "infoHandicappedRequestFormCms"
     },
     infoHandicappedRequestHelp: {
       on: { BACK: "handicappedRequest" },

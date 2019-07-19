@@ -13,28 +13,14 @@ const ReportingAdult = ({ transition, machineState }) => {
         />
       </div>
       <div className="content">
-        <h3>Effectuer un signalement relatif à une personne :</h3>
+        <h3>Effectuer un signalement relatif à :</h3>
         <div className="contentCard">
           <Choice
-            label="Personnes en danger"
+            label="personnes en danger (violence conjugale....)"
             onClick={() => transition("INFO_REPORTING_ADULT_DANGER")}
           />
           <Choice
-            label={[
-              "Mécontentements/difficultés avec un établissement ou service (",
-              <div class="tooltip">
-                EHPAD
-                <span class="tooltiptext">
-                  Établissement d'hébergement pour personnes âgées
-                </span>
-              </div>,
-              " / ",
-              <div class="tooltip">
-                SAD
-                <span class="tooltiptext">Service d'aide à domicile</span>
-              </div>,
-              ")"
-            ]}
+            label="personnes handicapées et/ou âgées en établissement ou bénéficiant d'un service d'aide"
             onClick={() => transition("REPORTING_ADULT_DIFFICULTIES")}
           />
         </div>

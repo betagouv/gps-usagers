@@ -28,12 +28,12 @@ class Start extends React.Component {
               onClick={() => transition("HOUSING")}
             />
             <Card
-              label="Personnes handicapées"
+              label="Handicap"
               icon="accessible_forward"
               onClick={() => transition("HANDICAPPED")}
             />
             <Card
-              label="Personnes âgées"
+              label="Vieillissement"
               icon="people"
               onClick={() => transition("SENIORS")}
             />

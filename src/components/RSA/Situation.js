@@ -16,15 +16,7 @@ const RSASituation = ({ transition, machineState }) => {
         <h3>Quelle est votre situation ?</h3>
         <div className="contentCard">
           <Choice
-            label="Étudiants"
-            onClick={() => transition("INFO_GESTIONNAIRE")}
-          />
-          <Choice
-            label="Travailleurs indépendants"
-            onClick={() => transition("INFO_GESTIONNAIRE")}
-          />
-          <Choice
-            label="Ressortissants étrangers"
+            label="Travailleurs indépendants/ Etudiants/Ressortissants étrangers"
             onClick={() => transition("INFO_GESTIONNAIRE")}
           />
           <Choice label="Autre" onClick={() => transition("INFO_CAF")} />
