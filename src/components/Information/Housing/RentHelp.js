@@ -16,6 +16,7 @@ const InfoHousingRentHelp = ({ transition, machineState }) => {
         />
       </div>
       <div className="content final">
+        <h3>Contactez votre accueil social</h3>
         <MapCms />
         <br />
         <h3>

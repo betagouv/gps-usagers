@@ -36,7 +36,7 @@ const InfoFamilyPregnancy = ({ transition, machineState }) => {
           <button
             className="button"
             onClick={() =>
-              window.open("https://www.calvados.fr/pres-de-chez-vous", "_blank")
+              window.open("https://www.calvados.fr/accueil/annuaire-pratique/carte-des-pmi.html", "_blank")
             }
           >
             Accèder au site
@@ -50,7 +50,7 @@ const InfoFamilyPregnancy = ({ transition, machineState }) => {
           <button
             className="button"
             onClick={() =>
-              window.open("https://www.calvados.fr/pres-de-chez-vous", "_blank")
+              window.open("https://www.calvados.fr/accueil/annuaire-pratique/carte-des-pmi.html", "_blank")
             }
           >
             Accèder au site
