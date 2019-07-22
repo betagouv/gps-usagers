@@ -530,8 +530,24 @@ const statechart = {
       onEntry: "infoSeniorHomecareServiceDirectory"
     },
     infoSeniorsHomeHelp: {
-      on: { BACK: "seniorsSelection" },
+      on: {
+        BACK: "seniorsSelection",
+        INFO_SENIORS_HOME_HELP_SAD: "infoSeniorsHomeHelpSad",
+        INFO_SENIORS_HOME_HELP_CLIC: "infoSeniorsHomeHelpClic"
+      },
       onEntry: "infoSeniorsHomeHelp"
+    },
+    infoSeniorsHomeHelpSad: {
+      on: {
+        BACK: "infoSeniorsHomeHelp"
+      },
+      onEntry: "infoSeniorsHomeHelpSad"
+    },
+    infoSeniorsHomeHelpClic: {
+      on: {
+        BACK: "infoSeniorsHomeHelp"
+      },
+      onEntry: "infoSeniorsHomeHelpClic"
     },
     infoSeniorsInformations: {
       on: { BACK: "seniorsSelection" },

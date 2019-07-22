@@ -94,6 +94,8 @@ import InfoReportingAdultDifficultiesPersonal from "./components/Information/Rep
 import InfoReportingAdultDifficultiesPro from "./components/Information/Reporting/AdultDifficultiesPro";
 import InfoSeniorHomecareServiceDirectory from "./components/Information/Seniors/HomecareDirectory";
 import InfoSeniorsHomeHelp from "./components/Information/Seniors/HomeHelp";
+import InfoSeniorsHomeHelpSad from "./components/Information/Seniors/HomeHelpSad";
+import InfoSeniorsHomeHelpClic from "./components/Information/Seniors/HomeHelpClic";
 import InfoSeniorsFamilyHomeInfos from "./components/Information/Seniors/FamilyHomeInfos";
 import InfoSeniorsFamilyHomeRequest from "./components/Information/Seniors/FamilyHomeRequest";
 import InfoSeniorsFamilyHomeTracking from "./components/Information/Seniors/FamilyHomeTracking";
@@ -358,6 +360,12 @@ class App extends Component {
           </Action>
           <Action is="infoSeniorsHomeHelp">
             <InfoSeniorsHomeHelp {...this.props} />
+          </Action>
+          <Action is="infoSeniorsHomeHelpSad">
+            <InfoSeniorsHomeHelpSad {...this.props} />
+          </Action>
+          <Action is="infoSeniorsHomeHelpClic">
+            <InfoSeniorsHomeHelpClic {...this.props} />
           </Action>
           <Action is="infoSeniorsTeleassistance">
             <InfoSeniorsTeleassistance {...this.props} />

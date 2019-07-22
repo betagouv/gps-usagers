@@ -15,7 +15,7 @@ const InfoHousingAssistanceHelp = ({ transition, machineState }) => {
         />
       </div>
       <div className="content final">
-        <h3>Contactez votre service d'accueil social</h3>
+        <h3>Contactez votre circonscription d'action sociale</h3>
         <MapCms />
         <br />
         <h3>

@@ -237,13 +237,6 @@ export const CMS = {
       phone: "02 14 47 54 18"
     },
     {
-      name: "Lisieux",
-      address: "Rue Taunton",
-      zipCode: "14100",
-      city: "Lisieux",
-      phone: "02 31 31 66 54"
-    },
-    {
       name: "Livarot - Pays d'Auge",
       address: "22, Place Xavier-de-Maistre",
       zipCode: "14140",
