@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import ReactPiwik from "react-piwik";
 import Autosuggest from "react-autosuggest";
 import { Map, Marker, Popup, TileLayer } from "react-leaflet";
-// import epnData from "../../assets/epn";
 import pointInfo from "../../assets/pointInfo";
 import { Back, Feedback } from "../../components";
 import "./Styles.css";
