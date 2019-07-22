@@ -30,27 +30,16 @@ const InfoFamilyPregnancy = ({ transition, machineState }) => {
         </p>
         <br />
         <p>
-          - En vous rapprochant de la protection maternelle et infantile (PMI) :{" "}
-          <br />
-          <br />
-          <button
-            className="button"
-            onClick={() =>
-              window.open("https://www.calvados.fr/accueil/annuaire-pratique/carte-des-pmi.html", "_blank")
-            }
-          >
-            Accèder au site
-          </button>
-        </p>
-        <br />
-        <p>
-          - En vous rapprochant du bus itinérant protection maternelle et
-          infantile (PMI) : <br />
+          - En vous rapprochant de la protection maternelle et infantile (PMI)
+          ou de son bus itinérant : <br />
           <br />
           <button
             className="button"
             onClick={() =>
-              window.open("https://www.calvados.fr/accueil/annuaire-pratique/carte-des-pmi.html", "_blank")
+              window.open(
+                "https://www.calvados.fr/accueil/annuaire-pratique/carte-des-pmi.html",
+                "_blank"
+              )
             }
           >
             Accèder au site
