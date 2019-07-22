@@ -108,7 +108,7 @@ export const CLIC = {
     address: "127 b, rue Roger Aini",
     zipCode: "14100",
     city: "Lisieux",
-    phone: "02 14 47 54 25"
+    phone: "02 14 47 54 00"
   },
   "USDA Centre": {
     dga: "",
@@ -223,10 +223,10 @@ export const CIRCO_PHONE = {
 export const CMS = {
   "Pays d'Auge Sud": [
     {
-      name: "Mézidon",
+      name: "Mézidon Vallée d'Auge",
       address: "1-3 Rue Emile Levieux",
       zipCode: "14270",
-      city: "Mézidon-Canon",
+      city: "Mézidon Vallée d'Auge",
       phone: "02 14 47 54 17"
     },
     {
@@ -237,13 +237,6 @@ export const CMS = {
       phone: "02 14 47 54 18"
     },
     {
-      name: "Lisieux - Chéron",
-      address: "71 rue Henry Cheron",
-      zipCode: "14100",
-      city: "Lisieux",
-      phone: "02 31 31 86 99"
-    },
-    {
       name: "Lisieux",
       address: "Rue Taunton",
       zipCode: "14100",
@@ -251,10 +244,10 @@ export const CMS = {
       phone: "02 31 31 66 54"
     },
     {
-      name: "Livarot",
-      address: "22, Place Xavier-de- Maistre",
+      name: "Livarot - Pays d'Auge",
+      address: "22, Place Xavier-de-Maistre",
       zipCode: "14140",
-      city: "Livarot",
+      city: "Livarot - Pays d'Auge",
       phone: "02 14 47 54 18"
     }
   ],
@@ -543,7 +536,7 @@ export const MDPH = {
     zipCode: 14500,
     city: "Vire VIRE NORMANDIE",
     phone: "02 31 66 26 23",
-    mail: "dominique.travert@calvados.fr",
+    mail: "",
     opening:
       "lundi, jeudi, vendredi, fermé le mardi\nle matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15. "
   },
@@ -553,7 +546,7 @@ export const MDPH = {
     zipCode: 14210,
     city: "Evrecy",
     phone: "02 31 08 32 81",
-    mail: "camille-himbert@calvados.fr.  dominique.travert@calvados.fr",
+    mail: "camille-himbert@calvados.fr",
     opening:
       "lundi, mercredi, fermé le mardi\nle matin de 9 h 30 à 12 h (public et professionnels)\nl'après-midi de 13 h 30 à 16 h 15."
   },
