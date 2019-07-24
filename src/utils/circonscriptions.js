@@ -384,18 +384,18 @@ export const CMS = {
   ],
   "Pré-Bocage": [
     {
-      name: "Aunay sur Odon",
-      address: "Rue des Jardins",
+      name: "Aunay-Villers",
+      address: "Rue des jardins Aunay sur Odon",
       zipCode: "14260",
-      city: "Aunay sur Odon",
+      city: "Les Monts d'Aunay",
       phone: "02 31 77 62 41"
     },
     {
-      name: "Villers-Bocage",
-      address: "Rue Saint Germain",
-      zipCode: "14310",
-      city: "Villers-Bocage",
-      phone: "02 31 77 77 66"
+      name: "Thury-Harcourt",
+      address: "5 rue du Docteur Gourdin - Thury-Harcourt",
+      zipCode: "14220",
+      city: "Le Hom",
+      phone: "02 31 24 23 21"
     }
   ],
   Falaise: [
@@ -405,13 +405,6 @@ export const CMS = {
       zipCode: "14680",
       city: "Bretteville sur Laize",
       phone: "02 31 41 64 72"
-    },
-    {
-      name: "Thury-Harcourt",
-      address: "5 rue du Docteur Gourdin",
-      zipCode: "14220",
-      city: "Thury-Harcourt",
-      phone: "02 31 24 23 21"
     },
     {
       name: "Saint Pierre sur Dives",

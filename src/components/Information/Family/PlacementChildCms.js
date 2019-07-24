@@ -16,10 +16,7 @@ const InfoFamilyPlacementChildCms = ({ transition, machineState }) => {
         />
       </div>
       <div className="content final">
-        <h3>
-          Sélectionnez votre circonscription afin d'être orienté vers le bon
-          interlocuteur
-        </h3>
+        <h3>Contactez votre service d'accueil social</h3>
         <MapCms />
       </div>
     </div>

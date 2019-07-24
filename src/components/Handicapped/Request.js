@@ -16,7 +16,7 @@ const HandicappedRequest = ({ transition, machineState }) => {
         <h3>VOTRE DEMANDE CONCERNE :</h3>
         <div className="contentCard">
           <Choice
-            label="L'obtention du formulaire pour en effectuer une demande"
+            label="L'obtention du formulaire pour effectuer une demande"
             onClick={() => transition("INFO_HANDICAPPED_REQUEST_FORM")}
           />
           <Choice

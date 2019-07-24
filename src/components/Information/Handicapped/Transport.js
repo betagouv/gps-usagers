@@ -19,8 +19,8 @@ const InfoHandicappedTransport = ({ transition, machineState }) => {
         <p>
           Numéro de téléphone du gestionnaire de dossier
           <h2 className="phoneList">
-            <a href="tel:0231571611" target="_top">
-              02 31 57 16 11
+            <a href="tel:0231571589" target="_top">
+              02 31 57 15 89
             </a>
           </h2>
         </p>
