@@ -19,8 +19,8 @@ const InfoFamilyPlacementChild = ({ transition, machineState }) => {
         <p>
           - Vous avez reçu un courrier ?<br />
           <span>
-            Référer vous aux coordonnées mentionnés sur le courrier reçu en haut
-            à gauche
+            Référez-vous aux coordonnées mentionnées en haut à gauche sur le
+            courrier reçu
           </span>
         </p>
         <p>
@@ -30,7 +30,7 @@ const InfoFamilyPlacementChild = ({ transition, machineState }) => {
             className="button"
             onClick={() => transition("INFO_FAMILY_PLACEMENT_CHILD_CMS")}
           >
-            Accèder à la liste des circonscriptions
+            Accéder à la liste des circonscriptions
           </button>
         </p>
       </div>

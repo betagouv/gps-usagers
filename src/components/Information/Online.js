@@ -86,7 +86,7 @@ class InfoOnline extends Component {
             .
           </p>
           <p>
-            ou rendez-vous dans le point info le plus proche de chez vous{" "}
+            ou rendez-vous dans le point info 14 le plus proche de chez vous{" "}
             <Autosuggest
               suggestions={suggestions}
               onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}

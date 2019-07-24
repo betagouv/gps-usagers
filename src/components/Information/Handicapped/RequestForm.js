@@ -79,7 +79,8 @@ export default class InfoHandicappedRequestForm extends Component {
             </a>
           </p>
           <p>
-            En sollicitant un envoi papier du formulaire ou venant le chercher :
+            En sollicitant un envoi papier du formulaire ou en venant le
+            chercher :
           </p>
           <button
             className="button"

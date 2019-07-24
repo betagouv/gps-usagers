@@ -31,9 +31,9 @@ const InfoFamilySponsorship = ({ transition, machineState }) => {
               )
             }
           >
-            Accèder au site
+            Accéder au site
           </button>
-        </p><br/> 
+        </p><br/>
         <p>
           Numéro de téléphone du gestionnaire de dossier :
           <h2 className="phoneList">

@@ -75,7 +75,9 @@ class InfoSeniorsApaHelpRequest extends Component {
           />
         </div>
         <div className="content final">
-          <h1>Rendez-vous dans le point info le plus proche de chez vous </h1>
+          <h1>
+            Rendez-vous dans le point info 14 le plus proche de chez vous{" "}
+          </h1>
           <Autosuggest
             suggestions={suggestions}
             onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}

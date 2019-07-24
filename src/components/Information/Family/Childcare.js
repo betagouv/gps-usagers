@@ -17,7 +17,7 @@ const InfoFamilyChildcare = ({ transition, machineState }) => {
       <div className="content final">
         <h1>Rechercher un mode de garde</h1>
         <p>
-          - Contactez une assistante maternelle :<br />
+          - Contacter une assistante maternelle :<br />
           <br />
           <button
             className="button"
@@ -44,7 +44,7 @@ const InfoFamilyChildcare = ({ transition, machineState }) => {
               )
             }
           >
-            Accèder au site
+            Accéder au site
           </button>
         </p>
       </div>

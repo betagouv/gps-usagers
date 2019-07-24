@@ -25,7 +25,7 @@ const InfoFamilyEducation = ({ transition, machineState }) => {
             className="button"
             onClick={() => transition("INFO_FAMILY_EDUCATION_CMS")}
           >
-            Accèder à la liste des circonscriptions
+            Accéder à la liste des circonscriptions
           </button>
         </p>
         <br />
@@ -42,7 +42,7 @@ const InfoFamilyEducation = ({ transition, machineState }) => {
               )
             }
           >
-            Accèder au site
+            Accéder au site
           </button>
         </p>
       </div>

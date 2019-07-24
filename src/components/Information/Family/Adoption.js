@@ -32,7 +32,7 @@ const InfoFamilyAdoption = ({ transition, machineState }) => {
               )
             }
           >
-            Accèder au site
+            Accéder au site
           </button>
         </p>
         <br />

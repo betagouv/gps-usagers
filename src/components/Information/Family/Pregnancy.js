@@ -25,7 +25,7 @@ const InfoFamilyPregnancy = ({ transition, machineState }) => {
             className="button"
             onClick={() => transition("INFO_FAMILY_PREGNANCY_CMS")}
           >
-            Accèder à la liste des circonscriptions d'action sociale
+            Accéder à la liste des circonscriptions d'action sociale
           </button>
         </p>
         <br />
@@ -42,7 +42,7 @@ const InfoFamilyPregnancy = ({ transition, machineState }) => {
               )
             }
           >
-            Accèder au site
+            Accéder au site
           </button>
         </p>
       </div>

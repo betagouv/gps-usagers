@@ -28,7 +28,7 @@ const InfoCPAM = ({ transition, machineState }) => {
               )
             }
           >
-            Accèder au site
+            Accéder au site
           </button>
         </p>
         <br />

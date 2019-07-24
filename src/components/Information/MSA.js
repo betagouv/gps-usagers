@@ -36,7 +36,7 @@ const InfoMSA = ({ transition, machineState }) => {
               )
             }
           >
-            Accèder à votre compte
+            Accéder à votre compte
           </button>
         </p>
         <br />

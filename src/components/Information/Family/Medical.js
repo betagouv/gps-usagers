@@ -25,7 +25,7 @@ const InfoFamilyMedical = ({ transition, machineState }) => {
             className="button"
             onClick={() => transition("INFO_FAMILY_MEDICAL_CMS")}
           >
-            Accèder à la liste des circonscriptions d'action sociale
+            Accéder à la liste des circonscriptions d'action sociale
           </button>
         </p>
         <br />
@@ -42,7 +42,7 @@ const InfoFamilyMedical = ({ transition, machineState }) => {
               )
             }
           >
-            Accèder au site
+            Accéder au site
           </button>
         </p>
       </div>

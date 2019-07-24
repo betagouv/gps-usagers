@@ -29,7 +29,7 @@ const InfoFamilyCoupleLife = ({ transition, machineState }) => {
               )
             }
           >
-            Accèder au site
+            Accéder au site
           </button>
         </p>
       </div>

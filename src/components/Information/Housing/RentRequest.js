@@ -55,7 +55,7 @@ const InfoHousingRentRequest = ({ transition, machineState }) => {
             className="button"
             onClick={() => transition("INFO_HOUSING_RENT_REQUEST_CMS")}
           >
-            Accèder à la liste des circonscriptions d'action sociale
+            Accéder à la liste des circonscriptions d'action sociale
           </button>
         </p>
       </div>
