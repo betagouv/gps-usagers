@@ -19,8 +19,7 @@ const InfoHousingRentRequest = ({ transition, machineState }) => {
         />
       </div>
       <div className="content final">
-        <h1>Remplissez le formulaire de demande</h1>
-        <p> Vous pouvez obtenir le formulaire : </p>
+        <h1>Obtenir le formulaire de demande</h1>
         <p>
           - Sur le site du Département :{" "}
           <a
