@@ -47,10 +47,6 @@ const SeniorsSelection = ({ transition, machineState }) => {
             label="Etablissements pour personnes âgées dépendantes (EHPAD)"
             onClick={() => transition("SENIORS_EHPAD")}
           />
-          <Choice
-            label="Conférence des financeurs"
-            onClick={() => transition("INFO_SENIORS_FINANCIERS_MEETING")}
-          />
         </div>
       </div>
     </div>
