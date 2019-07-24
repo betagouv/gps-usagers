@@ -23,9 +23,17 @@ const InfoSeniorFamilyHomeTracking = ({ transition, machineState }) => {
         />
       </div>
       <div className="content final">
-        <h1>Vous pouvez contacter le gestionnaire suivant :</h1>
+        <h1>Vous pouvez contacter l'un des gestionnaires suivant pour :</h1>
         <p>
-          Numéro de téléphone du gestionnaire de dossier
+          - Bénéficier d’un accueil familial
+          <h2 className="phoneList">
+            <a href="tel:0231571635" target="_top">
+              02 31 57 16 35
+            </a>
+          </h2>
+        </p>
+        <p>
+          - Suivre mon dossier d'aide sociale
           <h2 className="phoneList">
             <a href="tel:0231571718" target="_top">
               02 31 57 17 18

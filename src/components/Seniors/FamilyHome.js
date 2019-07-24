@@ -23,12 +23,8 @@ const SeniorsInstitutions = ({ transition, machineState }) => {
             label="Devenir accueillant"
             onClick={() => transition("INFO_SENIORS_FAMILY_HOME_REQUEST")}
           />
-          {/* <Choice
-            label="Démarches pour bénéficier d’un accueil familial"
-            onClick={() => transition("INFO_SENIORS_FAMILY_HOME_REQUEST")}
-          /> */}
           <Choice
-            label="Avancement de mon dossier d'aide sociale"
+            label="Bénéficier d’un accueil familial ou suivre mon dossier d'aide sociale"
             onClick={() => transition("INFO_SENIORS_FAMILY_HOME_TRACKING")}
           />
         </div>
