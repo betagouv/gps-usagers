@@ -99,6 +99,7 @@ export const HANDICAPPED = "Personnes handicapées";
 export const HANDICAPPED_INFOS = "Informations générales";
 export const HANDICAPPED_FINANCIAL = "Difficultés financières";
 export const HANDICAPPED_REQUEST = "Déposer un dossier";
+export const INFO_HANDICAPPED_HOMECARE_SERVICES_ASK = "Demande d'aide ménagère";
 export const HANDICAPPED_REQUEST_FORM =
   "L'obtention du formulaire pour en effectuer une demande";
 export const HANDICAPPED_REQUEST_HELP =

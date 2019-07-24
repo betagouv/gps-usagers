@@ -23,7 +23,7 @@ const InfoSeniorHomecareHelp = ({ transition, machineState }) => {
         />
       </div>
       <div className="content final">
-        <h1>Obtenir le formulaire</h1>
+        <h1>Obtenir le formulaire de demande</h1>
         <p>
           - Sur le site du Département{" "}
           <a

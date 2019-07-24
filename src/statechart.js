@@ -120,6 +120,8 @@ const statechart = {
         HANDICAPPED_TRACKING_REQUEST: "handicappedTrackingRequest",
         HANDICAPPED_PAYMENT: "handicappedPayment",
         INFO_HANDICAPPED_FAMILY_HOME: "infoHandicappedFamilyHome",
+        INFO_HANDICAPPED_HOMECARE_SERVICES_ASK:
+          "infoHandicappedHomecareServiceAsk",
         INFO_HANDICAPPED_TRANSPORT: "infoHandicappedTransport",
         INFO_HANDICAPPED_FINANCIAL: "infoHandicappedFinancial"
       },
@@ -347,6 +349,10 @@ const statechart = {
         INFO_HANDICAPPED_REQUEST_FORM_CMS: "infoHandicappedRequestFormCms"
       },
       onEntry: "infoHandicappedRequestForm"
+    },
+    infoHandicappedHomecareServiceAsk: {
+      on: { BACK: "handicappedSelection" },
+      onEntry: "infoHandicappedHomecareServiceAsk"
     },
     infoHandicappedRequestFormCms: {
       on: { BACK: "infoHandicappedRequestForm" },
