@@ -102,8 +102,8 @@ export default class InfoCMS extends Component {
           </Map>
           <br />
           <h3>
-            Ou rendez-vous dans l'un des CCAS (centres communaux d'action
-            sociale) de votre mairie
+            Rendez-vous dans votre mairie ou dans l'un des CCAS (centres
+            communaux d'action sociale) de votre mairie
           </h3>
         </div>
       </div>

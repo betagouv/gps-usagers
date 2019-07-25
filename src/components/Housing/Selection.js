@@ -19,7 +19,7 @@ const HousingSelection = ({ transition, machineState }) => {
           onClick={() => transition("INFO_HOUSING_SEARCH")}
         />
         <Choice
-          label="Informations sur une aide financière pour l'accès à un logement ou en effectuer la demande d'aide financière"
+          label="Aides financières pour l'accès à un logement : information et/ou demander une aide financière"
           onClick={() => transition("HOUSING_ASSISTANCE")}
         />
         <Choice
