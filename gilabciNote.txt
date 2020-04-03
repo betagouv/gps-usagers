@@ -1,0 +1,91 @@
+
+#hook_stage:
+#  image: centos:7
+#  stage: deploy
+#  type: deploy
+#  tags:
+#    - deploy
+#  script:
+#    - curl -X POST $PORTAINER_HOOK_APP
+#  only:
+#    - production
+
+build_stage_front:
+  image: node:11
+  stage: build
+  type: build
+  tags:
+    - build
+  script:
+    - npm config set proxy http://conception:30n35pt90N@proxycalvados.cg14.ad14.int:8080
+    - npm config set https-proxy http://conception:30n35pt90N@proxycalvados.cg14.ad14.int:2121
+    - npm install -g yarn
+    - yarn config set proxy http://conception:30n35pt90N@proxycalvados.cg14.ad14.int:8080
+    - yarn config set https-proxy http://conception:30n35pt90N@proxycalvados.cg14.ad14.int:2121
+    - yarn install
+    - yarn build:front
+  artifacts:
+    paths:
+      - packages/front/dist
+    expire_in: 1 hour
+  only:
+    - master
+
+deploy_stage_front:
+  image: docker:latest
+  stage: deploy
+  type: deploy
+  tags:
+    - deploy
+  variables:
+    RELEASE_IMAGE: $DOCKER_REPO/$IMAGE_BASE_NAME_FRONT:production
+  script:
+    # tag final image
+    - echo "${DOCKER_USER}"
+    - echo $DOCKER_PASSWORD
+    - docker build -t $IMAGE_FRONT .
+    - docker tag $IMAGE_FRONT $RELEASE_IMAGE
+    - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+    - docker push $DOCKER_REPO/$IMAGE_BASE_NAME_FRONT:production
+  only:
+    - master
+
+build_stage_admin:
+  image: node:11
+  stage: build
+  type: build
+  tags:
+    - build
+  script:
+    - npm config set proxy http://conception:30n35pt90N@proxycalvados.cg14.ad14.int:8080
+    - npm config set https-proxy http://conception:30n35pt90N@proxycalvados.cg14.ad14.int:2121
+    - npm install -g yarn
+    - yarn config set proxy http://conception:30n35pt90N@proxycalvados.cg14.ad14.int:8080
+    - yarn config set https-proxy http://conception:30n35pt90N@proxycalvados.cg14.ad14.int:2121
+    - yarn install
+    - yarn build:admin
+  artifacts:
+    paths:
+      - packages/admin/dist
+    expire_in: 1 hour
+  only:
+    - master
+
+deploy_stage_admin:
+  image: docker:latest
+  stage: deploy
+  type: deploy
+  tags:
+    - deploy
+  variables:
+    RELEASE_IMAGE: $DOCKER_REPO/$IMAGE_BASE_NAME_ADMIN:production
+  script:
+    # tag final image
+    - echo "${DOCKER_USER}"
+    - echo $DOCKER_PASSWORD
+    - docker build -t $IMAGE_ADMIN .
+    - docker tag $IMAGE_ADMIN $RELEASE_IMAGE
+    - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+    - docker push $DOCKER_REPO/$IMAGE_BASE_NAME_ADMIN:production
+  only:
+    - master

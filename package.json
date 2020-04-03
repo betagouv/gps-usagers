@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "build:server": "lerna run build --scope={@gpsu/common,@gpsu/server}",
+    "build:admin": "lerna run build --scope={@gpsu/common,@gpsu/controller,@gpsu/admin}",
+    "build:front": "lerna run build --scope={@gpsu/common,@gpsu/controller,@gpsu/front}",
+    "clean:all": "lerna clean &&  rm -rf node_modules && yarn cache clean"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/rimraf",
+      "**/rimraf/**",
+      "**/metro-bundler-config-yarn-workspaces",
+      "**/metro-bundler-config-yarn-workspaces/**"
+    ]
+  },
+  "devDependencies": {
+    "lerna": "^2.11.0"
+  },
+  "dependencies": {}
+}

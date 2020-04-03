@@ -1,0 +1,16 @@
+# Journey create input
+input CreateJourneyInput {
+  name: String!
+  title: String
+  description: String
+  type: String!
+  icon: String
+  parent: String
+  color: String!
+  isActive: Boolean!
+}
+
+# Create a new journey
+type Mutation {
+  createJourney(input: CreateJourneyInput!): Journey!
+}

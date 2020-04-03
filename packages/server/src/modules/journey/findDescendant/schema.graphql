@@ -1,0 +1,4 @@
+# Find all journeys
+type Query {
+  findDescendantJourneys(parentJourneyId: String): Journey
+}

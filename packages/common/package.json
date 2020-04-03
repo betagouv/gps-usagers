@@ -1,0 +1,21 @@
+{
+  "name": "@gpsu/common",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf ./dist && tsc"
+  },
+  "devDependencies": {
+    "@types/yup": "0.26.7",
+    "rimraf": "2.6.3",
+    "tslint": "5.12.1",
+    "tslint-config-prettier": "1.17.0",
+    "typescript": "3.1.6"
+  },
+  "dependencies": {
+    "web": "^0.0.2",
+    "yup": "0.26.10"
+  }
+}
