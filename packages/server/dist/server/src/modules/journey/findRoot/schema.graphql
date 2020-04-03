@@ -1,0 +1,4 @@
+# Find all journeys
+type Query {
+  findRootJourneys: [Journey!]!
+}

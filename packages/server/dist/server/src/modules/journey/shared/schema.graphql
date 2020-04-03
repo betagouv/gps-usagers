@@ -1,0 +1,38 @@
+enum JourneyTypeEnum {
+  journey
+  choice
+  final
+}
+
+enum JourneyColorEnum {
+  blue
+  gray
+  green
+  red
+}
+
+type DataJourney {
+  type: String!
+  value: String!
+  link: String
+  address: String
+  zip: String
+  city: String
+}
+
+type Journey {
+  id: ID!
+  type: String!
+  name: String!
+  title: String
+  description: String
+  icon: String
+  order: Int!
+  data: [DataJourney]
+  special: [DataJourney]
+  parent: Journey
+  ancestors: [Journey]
+  color: String
+  isActive: Boolean!
+  children: [Journey]
+}

@@ -1,0 +1,33 @@
+0 silly input [ 'build' ]
+1 silly flags { _: [ 'run' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   scope:
+1 silly flags    [ '@gpsu/ui', '@gpsu/common', '@gpsu/controller', '@gpsu/admin' ],
+1 silly flags   script: 'build',
+1 silly flags   args: [] }
+2 verbose rootPath /Volumes/Workspace/www/gps
+3 info version 2.11.0
+4 silly existsSync /Volumes/Workspace/www/gps/VERSION
+5 info scope [ '@gpsu/ui', '@gpsu/common', '@gpsu/controller', '@gpsu/admin' ]
+6 silly initialize attempt
+7 silly initialize success
+8 silly execute attempt
+9 silly runScriptInDir build [] common
+10 silly getExecOpts { cwd: '/Volumes/Workspace/www/gps/packages/common' }
+11 silly runScriptInDir build [] controller
+12 silly getExecOpts { cwd: '/Volumes/Workspace/www/gps/packages/controller' }
+13 silly runScriptInDir build [] ui
+14 silly getExecOpts { cwd: '/Volumes/Workspace/www/gps/packages/ui' }
+15 error build Errored while running script in '@gpsu/controller'
+16 error execute callback with error
+17 error Error: Command failed: yarn run build
+17 error error Command failed with exit code 2.
+17 error $ rimraf ./dist && tsc
+17 error src/modules/Journey/Delete/index.tsx(71,17): error TS2322: Type '({ query: any; fetchPolicy: string; } | { query: any; fetchPolicy: string; variables: { parentJourneyId: any; }; })[]' is not assignable to type '{ query: any; fetchPolicy: string; }[]'.
+17 error   Type '{ query: any; fetchPolicy: string; } | { query: any; fetchPolicy: string; variables: { parentJourneyId: any; }; }' is not assignable to type '{ query: any; fetchPolicy: string; }'.
+17 error     Type '{ query: any; fetchPolicy: string; variables: { parentJourneyId: any; }; }' is not assignable to type '{ query: any; fetchPolicy: string; }'.
+17 error       Object literal may only specify known properties, and 'variables' does not exist in type '{ query: any; fetchPolicy: string; }'.
+17 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+17 error
+17 error     at Promise.all.then.arr (/Volumes/Workspace/www/gps/node_modules/lerna/node_modules/execa/index.js:236:11)

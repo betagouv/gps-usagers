@@ -1,0 +1,9 @@
+input OrderJourneysInput {
+  id: ID!
+  order: Int!
+}
+
+# Order journey
+type Mutation {
+  orderJourneys(input: [OrderJourneysInput]): Boolean!
+}

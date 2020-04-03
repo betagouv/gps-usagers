@@ -1,0 +1,4 @@
+# Read one journey
+type Query {
+  readJourney(journeyId: String!): Journey
+}

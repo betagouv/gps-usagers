@@ -1,0 +1,4 @@
+# Delete a journey
+type Mutation {
+  deleteJourney(journeyId: String!): Journey!
+}

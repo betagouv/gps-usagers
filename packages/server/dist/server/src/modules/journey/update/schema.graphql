@@ -1,0 +1,27 @@
+input DataJourneyInput {
+  type: String!
+  value: String!
+  link: String
+  address: String
+  zip: String
+  city: String
+}
+
+# Journey update input
+input UpdateJourneyInput {
+  id: String
+  name: String
+  title: String
+  description: String
+  data: [DataJourneyInput]
+  special: [DataJourneyInput]
+  icon: String
+  type: String
+  color: String
+  isActive: Boolean
+}
+
+# Update a new journey
+type Mutation {
+  updateJourney(input: UpdateJourneyInput!): Journey!
+}
