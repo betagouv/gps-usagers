@@ -16,7 +16,7 @@
   "dependencies": {
     "apollo-cache": "1.2.1",
     "graphql": "0.13.2",
-    "graphql-code-generator": "0.18.0",
+    "graphql-code-generator": "0.18.2",
     "graphql-tag": "2.9.2",
     "moment": "2.24.0",
     "react": "16.8.6",
